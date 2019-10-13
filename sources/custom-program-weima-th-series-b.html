@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<link rel="shortcut icon" href="/res/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/res/style/bootstrap.min.css">
+<link rel="stylesheet" href="/res/style/navbar.css" type="text/css">
+<link rel="stylesheet" href="/res/style/style.css">
+<title>#NVJOB. Custom program for WEIMA TH Standard Series (TH714) (Briquette Press). B</title>
+<meta name="description" content="This is not an official program. Features of the work: Automatic start, no preliminary preparation required. When the press is clogged, self-cleaning occurs, after self-cleaning, work continues. No encoder is required at the press outlet.">
+</head>
+<body>
+<div class="topnavmenu">
+<nav class="navbar navbar-dropdown navbar-fixed-top navbar-toggleable-sm transparent">
+<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+<div class="hamburger"><span></span><span></span><span></span><span></span></div>
+</button>
+<div class="menu-logo"><div class="navbar-brand">
+<a href="/">#NVJOB</a>
+</div></div>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav">
+<li class="nav-item"><a href="/apps/">MY APPS &nbsp;&nbsp;</a></li>
+<li class="nav-item"><a href="/unity/">UNITY ASSETS &nbsp;&nbsp;</a></li>
+<li class="nav-item"><a href="/sources/">OTHER SOURCES &nbsp;&nbsp;</a></li>
+<li class="nav-item"><a href="/dlog/">DEVLOG &nbsp;&nbsp;</a></li>
+<li class="nav-item"><a href="/donations.html">DONATE &nbsp;&nbsp;</a></li>
+</ul>
+</div>
+</nav>
+</div>
+<div class="topBanner">
+<div class="bannermob">
+<span id="typed" class="banner_top_arrow"></span>
+</div>
+<div class="bannerpc"><iframe width="100%" height="100%" src="/res/" frameborder="0" class="topBannerIn"></iframe></div>
+</div>
+
+
+
+
+<!------------------------------------------------->
+
+
+<div class="topnameblank">
+<h1>Custom program for WEIMA TH Standard Series (TH714) (Briquette Press). B</h1>
+</div>
+
+<!------------------------------------------------->
+
+
+<div class="contentall">
+<div class="contentall-in">
+
+<iframe style="width: 100%;" class="mbr-embedded-video" src="https://www.youtube.com/embed/vYgpMgc0Lm4?rel=0&amp;showinfo=0&amp;autoplay=0&amp;loop=1&amp;playlist=vYgpMgc0Lm4" width="1280" height="720" frameborder="0" allowfullscreen=""></iframe>
+
+
+<br/><br/>
+
+
+<h3>Attention!!!</h3>
+
+This is not an official program. For the program to function, all devices must be connected according to the inputs and outputs installed in the program.<br/>
+You must understand what you are doing.<br/>
+You must have knowledge of electrical engineering and technological processes.<br/>
+The program was written to restore the dead briquette press.
+
+<br/><br/>
+
+<h3>Features:</h3>
+ - Automatic start, no preliminary preparation required.<br/>
+ - When the press is clogged, self-cleaning occurs, after self-cleaning, work continues.<br/>
+ - No encoder is required at the press outlet.
+
+
+<br/><br/>
+
+For TH714 and compatible
+<br/>
+Siemens S7-200
+<br/>
+Current version 4.1
+
+<br/>
+
+<table class="downloadc"><tbody><tr>
+<td>
+<a href="/link/?url=https://github.com/nvjob/custom-program-weima-th-series-b" target="_blank">Download from GitHub</a>
+<a href="http://nvjob.dx.am/board/programs-for-industrial-automation/custom-program-for-weima-briquette-press-b/index-3.html" target="_blank">Thread on Forum</a>
+</td>
+<td>
+<div class="downloadicon"></div>
+</td>
+</tr></tbody></table>
+
+
+<h3>Inputs:</h3>
+
+I0.0 - Power.<br/>
+I0.1 - Start the program in automatic mode. <br/>
+I0.2 - Stop the program in automatic mode. <br/>
+I0.3 - Manual mode. <br/>
+I0.4 - Vertical piston, sensor, lower position. <br/>
+I0.5 - Vertical piston, sensor, upper position. <br/>
+I0.6 - Horizontal piston, sensor, position retracted. <br/>
+I0.7 - Horizontal piston, sensor, position extended. <br/>
+I1.0 - Not involved. <br/>
+I1.1 - Valve button. <br/>
+I1.2 - Accident, stop. <br/>
+I1.3 - Change in operating time of the screw. Min time. <br/>
+I1.4 - Change in the operating time of the screw. Max. time.  <br/>
+I1.5 - Not involved.<br/>
+<em>See comments in the program for more details.</em>
+
+
+<br/><br/>
+
+
+<h3>Outputs:</h3>
+
+Q0.0 - The engine of the hydraulic power station (star-delta). <br/>
+Q0.1 - Hydroelectric power station engine (star-delta). <br/>
+Q0.2 - Fan. <br/>
+Q0.3 - Auger. <br/>
+Q0.4 - Vertical piston, valve, up position (pushes down). <br/>
+Q0.5 - Vertical piston, valve, lower position (pushes up). <br/>
+Q0.6 - Horizontal piston, valve, retracts the piston. <br/>
+Q0.7 - Horizontal piston, valve, extends the piston. <br/>
+Q1.0 - Collet Piston. <br/>
+Q1.1 - Light Bulb Start<br/>
+<em>See comments in the program for more details.</em>
+
+<br/><br/>
+
+<img src="https://raw.githubusercontent.com/nvjob/nvrepo/master/other%20sources/weima%20th%20b/40/pic/Scheme.png" style="width:100%; max-width:800px"/>
+
+<br/><br/>
+
+
+<h3>Instruction manual</h3>
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/nvjob/nvrepo/master/other%20sources/weima%20th%20b/40/pic/Scheme%202.jpg" style="width:100%; max-width:500px"/>
+
+<br/><br/>
+
+1. Hour meter, counts the hours worked in the process in automatic mode. <br/>
+2. The start of the hydroelectric station. If there are no malfunctions (the “7” lamp should be lit), the engine of the hydraulic power station starts. <br/>
+3. Stop the hydroelectric station. If automatic mode has been started, then it also ends. <br/>
+4. Start auto mode. The press starts in automatic mode, the press is initially cleaned (the light on the “4-5” switch blinks), after successful cleaning, the press goes into normal operation (the light on the “4-5” switch is on). If the engine of the hydraulic power station has not been started, the automatic mode will not start. Switch “8” should be in position “a” “Auto”. <br/>
+5. Stop auto mode. the press is automatically cleaned (the lamp on the “4-5” switch blinks), after successful cleaning, the automatic mode ends (the lamp on the “4-5” switch goes out). If you press the button when the press is not started in automatic mode, then one auto-cleaning cycle will occur (the light on the “4-5” switch blinks). <br/>
+6. Switching the time of feeding the material into the chamber with a screw. The shorter the time, the smaller the portion and the briquette itself at the exit. Positions: a - 1.5 seconds, b - 2 seconds, c - 2.5 seconds. <br/>
+7. Work status indicator. If there are no malfunctions (emergency sensors are connected and not triggered, all the machines are on, the emergency stop button is not pressed), then the lamp should light up green. <br/>
+8. Switching between automatic and manual mode. Position “a” - automatic mode, position “b” - manual mode. Manual mode blocks the operation of the press in automatic mode and allows you to manually control the valves of the hydraulic station. If you put the press into manual mode during operation in automatic mode, then the automatic mode ends without auto-cleaning. <br/>
+9. Manual control of the valves of the hydraulic station of the vertical piston. Position “a” - the piston drops, position “b” - the piston rises. Switch “8” should be in position “b” “Manual”. <br/>
+10. Managing the valves of a horizontal piston hydraulic station in manual mode. Position “a” - the piston retracts, position “b” - the piston extends. Switch “8” should be in position “b” “Manual”. <br/>
+11. Control valves of the hydraulic collet. Position “a” - collet is closed, position “b” - collet is open. Switch “8” should be in position “b” “Manual”.
+
+In automatic mode, protection against stopping the press when clogging material in a vertical and horizontal piston is provided. When clogging, the press is automatically cleaned; after auto-cleaning, the press switches to the normal mode of operation in automatic mode. Auto-cleaning will be performed until the press is cleaned for normal operation. During self-cleaning, the light on the “4-5” switch flashes.
+
+
+<br/>
+<div class="razdelline2"></div>
+
+
+<h3>License</h3>
+GNU General Public License v3.0
+
+
+<br/>
+
+
+</div>
+</div>
+
+
+<!------------------------------------------------->
+
+
+<div class="bottomfooter">
+<a href="/">Nicholas Veselov - Indie Developer</a>
+<br/>
+© Copyright 2016 <a href="/">#NVJOB</a>. Website powered by <a href="https://github.com/nvjob" target="_blank">GitHub.com</a>
+</div>
+<script src="/res/js/jquery.min.js"></script>
+<script src="/res/js/run_prettify.js"></script>
+<script src="/res/js/bootstrap.min.js"></script>
+<script src="/res/js/smooth-scroll.js"></script>
+<script src="/res/js/dropdown.js"></script>
+<script src="/res/js/other.js"></script>
+<script src="/res/js/typed.js"></script>
+<script src="/res/js/baneer.text.js"></script>
+</body>
+</html>

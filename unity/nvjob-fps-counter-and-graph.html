@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<link rel="shortcut icon" href="/res/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/res/style/bootstrap.min.css">
+<link rel="stylesheet" href="/res/style/navbar.css" type="text/css">
+<link rel="stylesheet" href="/res/style/style.css">
+<title>#NVJOB FPS Counter and Graph</title>
+<meta name="description" content="#NVJOB FPS Counter and Graph. FPS counter has a buffer in which it stores values, then the mean arithmetic value is calculated from these values.">
+</head>
+<body>
+<div class="topnavmenu">
+<nav class="navbar navbar-dropdown navbar-fixed-top navbar-toggleable-sm transparent">
+<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+<div class="hamburger"><span></span><span></span><span></span><span></span></div>
+</button>
+<div class="menu-logo"><div class="navbar-brand">
+<a href="/">#NVJOB</a>
+</div></div>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav">
+<li class="nav-item"><a href="/apps/">MY APPS &nbsp;&nbsp;</a></li>
+<li class="nav-item"><a href="/unity/">UNITY ASSETS &nbsp;&nbsp;</a></li>
+<li class="nav-item"><a href="/sources/">OTHER SOURCES &nbsp;&nbsp;</a></li>
+<li class="nav-item"><a href="/dlog/">DEVLOG &nbsp;&nbsp;</a></li>
+<li class="nav-item"><a href="/donations.html">DONATE &nbsp;&nbsp;</a></li>
+</ul>
+</div>
+</nav>
+</div>
+<div class="topBanner">
+<div class="bannermob">
+<span id="typed" class="banner_top_arrow"></span>
+</div>
+<div class="bannerpc"><iframe width="100%" height="100%" src="/res/" frameborder="0" class="topBannerIn"></iframe></div>
+</div>
+
+
+
+
+<!------------------------------------------------->
+
+
+<div class="topnameblank">
+<h1>#NVJOB FPS Counter and Graph</h1>
+</div>
+
+<!------------------------------------------------->
+
+
+<div class="contentall">
+<div class="contentall-in">
+
+FPS counter has a buffer in which it stores values, then the mean arithmetic value is calculated from these values.
+
+<br/><br/>
+
+<iframe style="width: 100%;" class="mbr-embedded-video" src="https://www.youtube.com/embed/suy4ND4_hn4?rel=0&amp;showinfo=0&amp;autoplay=0&amp;loop=1&amp;playlist=suy4ND4_hn4" width="1280" height="720" frameborder="0" allowfullscreen=""></iframe>
+
+<br/><br/>
+
+
+<h3>Features:</h3>
+ - The graph is drawn after a given time (graphUpdate variable), and not once per frame.<br/>
+ - Coroutine responsible for drawing the graph is run once in void Awake ().<br/>
+ - Graph lines are stored in a static pool and are subsequently taken from there and returned there.<br/>
+ - You can use FPS counter as a class by calling it from anywhere else.
+
+<br/><br/>
+
+
+
+<code class="prettyprint ">// You can use the FPS counter as a class.
+public class Example : MonoBehaviour
+{
+using UnityEngine;
+
+    void Update()
+    {
+       print(StFPS.Counter(60, Time.deltaTime));   
+    }
+}
+</code>
+
+<br/>
+
+
+For Unity version of at least 2019.1.8 (64-bit)
+<br/>
+Current version 1.2
+
+<br/>
+
+
+<table class="downloadc"><tbody><tr>
+<td>
+<a href="/link/?url=https://assetstore.unity.com/packages/tools/gui/nvjob-fps-counter-and-graph-simple-and-fast-154529" target="_blank" title="#NVJOB FPS Counter and Graph - simple and fast">Download from Unity Asset Store</a>
+<a href="/link/?url=https://github.com/nvjob/Unity-FPS-Counter" target="_blank" title="#NVJOB">Download from GitHub</a>
+<a href="http://nvjob.dx.am/board/-nvjob-unity-assets/-nvjob-fps-counter-and-graph/-nvjob-fps-counter-and-graph-release-8_1.html" target="_blank">Thread on Forum</a>
+</td>
+<td>
+<div class="downloadicon"></div>
+</td>
+</tr></tbody></table>
+
+
+<img src="https://raw.githubusercontent.com/nvjob/nvrepo/master/unity%20assets/fps%20counter%20and%20graph/12/pic/Unity-FPS-Counter-0.jpg" style="width:100%"/>
+
+<br/><br/>
+
+
+<iframe style="width: 100%;" class="mbr-embedded-video" src="https://www.youtube.com/embed/fnTN8IWTiNs?rel=0&amp;showinfo=0&amp;autoplay=0&amp;loop=1&amp;playlist=fnTN8IWTiNs" width="1280" height="720" frameborder="0" allowfullscreen=""></iframe>
+
+<br/>
+
+<div class="razdelline2"></div>
+
+<h3>License</h3>
+This project is licensed under the MIT License.
+
+
+<br/>
+
+
+</div>
+</div>
+
+
+<!------------------------------------------------->
+
+
+
+<div class="bottomfooter">
+<a href="/">Nicholas Veselov - Indie Developer</a>
+<br/>
+© Copyright 2016 <a href="/">#NVJOB</a>. Website powered by <a href="https://github.com/nvjob" target="_blank">GitHub.com</a>
+</div>
+<script src="/res/js/jquery.min.js"></script>
+<script src="/res/js/run_prettify.js"></script>
+<script src="/res/js/bootstrap.min.js"></script>
+<script src="/res/js/smooth-scroll.js"></script>
+<script src="/res/js/dropdown.js"></script>
+<script src="/res/js/other.js"></script>
+<script src="/res/js/typed.js"></script>
+<script src="/res/js/baneer.text.js"></script>
+</body>
+</html>

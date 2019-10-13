@@ -279,7 +279,7 @@ top:0;
 position:fixed;
 z-index:99999;
 overflow:hidden;
-background:url(https://raw.githubusercontent.com/nvjob/nvrepo/master/website/nvjob/res/a5.png) no-repeat center;
+background:url(/res/images/a5.png) no-repeat center;
 background-size:100% 100%;
 }
 

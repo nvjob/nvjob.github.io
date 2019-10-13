@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<link rel="shortcut icon" href="/res/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/res/style/bootstrap.min.css">
+<link rel="stylesheet" href="/res/style/navbar.css" type="text/css">
+<link rel="stylesheet" href="/res/style/style.css">
+<title>#NVJOB. Custom program for WEIMA TH Standard Series (Briquette Press). A</title>
+<meta name="description" content="This is not an official program. Features of the work: Automatic start, no preliminary preparation required. When the press is clogged, self-cleaning occurs, after self-cleaning, work continues. No encoder is required at the press outlet.">
+</head>
+<body>
+<div class="topnavmenu">
+<nav class="navbar navbar-dropdown navbar-fixed-top navbar-toggleable-sm transparent">
+<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+<div class="hamburger"><span></span><span></span><span></span><span></span></div>
+</button>
+<div class="menu-logo"><div class="navbar-brand">
+<a href="/">#NVJOB</a>
+</div></div>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav">
+<li class="nav-item"><a href="/apps/">MY APPS &nbsp;&nbsp;</a></li>
+<li class="nav-item"><a href="/unity/">UNITY ASSETS &nbsp;&nbsp;</a></li>
+<li class="nav-item"><a href="/sources/">OTHER SOURCES &nbsp;&nbsp;</a></li>
+<li class="nav-item"><a href="/dlog/">DEVLOG &nbsp;&nbsp;</a></li>
+<li class="nav-item"><a href="/donations.html">DONATE &nbsp;&nbsp;</a></li>
+</ul>
+</div>
+</nav>
+</div>
+<div class="topBanner">
+<div class="bannermob">
+<span id="typed" class="banner_top_arrow"></span>
+</div>
+<div class="bannerpc"><iframe width="100%" height="100%" src="/res/" frameborder="0" class="topBannerIn"></iframe></div>
+</div>
+
+
+
+
+<!------------------------------------------------->
+
+
+<div class="topnameblank">
+<h1>Custom program for WEIMA TH Standard Series (Briquette Press). A</h1>
+</div>
+
+<!------------------------------------------------->
+
+
+<div class="contentall">
+<div class="contentall-in">
+
+<img src="https://raw.githubusercontent.com/nvjob/nvrepo/master/other%20sources/weima%20th%20a/28/pic/2.jpg" alt="#NVJOB Custom program for WEIMA TH Standard Series (Briquette Press). A" title="#NVJOB Custom program for WEIMA TH Standard Series (Briquette Press). A"/>
+
+
+<br/><br/>
+
+
+<h3>Attention!!!</h3>
+
+This is not an official program. For the program to function, all devices must be connected according to the inputs and outputs installed in the program.<br/>
+You must understand what you are doing.<br/>
+You must have knowledge of electrical engineering and technological processes.<br/>
+The program was written to restore the dead briquette press.
+
+<br/><br/>
+
+<h3>Features:</h3>
+ - Automatic start, no preliminary preparation required.<br/>
+ - When the press is clogged, self-cleaning occurs, after self-cleaning, work continues.<br/>
+ - No encoder is required at the press outlet.
+
+<br/><br/>
+
+For large press with two engines on hydro station.
+<br/>
+Siemens S7-200
+<br/>
+Current version 2.8
+
+<br/>
+
+
+<table class="downloadc"><tbody><tr>
+<td>
+<a href="/link/?url=https://github.com/nvjob/custom-program-weima-th-series-a" target="_blank">Download from GitHub</a>
+<a href="http://nvjob.dx.am/board/programs-for-industrial-automation/custom-program-for-weima-briquette-press-a/index-4.html" target="_blank">Thread on Forum</a>
+</td>
+<td>
+<div class="downloadicon"></div>
+</td>
+</tr></tbody></table>
+
+
+<iframe style="width: 100%;" class="mbr-embedded-video" src="https://www.youtube.com/embed/UAsh35nRsfA?rel=0&amp;showinfo=0&amp;autoplay=0&amp;loop=1&amp;playlist=UAsh35nRsfA" width="1280" height="720" frameborder="0" allowfullscreen=""></iframe>
+
+<br/><br/>
+
+<h3>INPUTS:</h3>
+
+I0.0 - Power. Starting up the hydraulic station.(Network 1) <br/>
+I0.1 - Start the program in automatic mode. (Network 11 - 12) <br/>
+I0.2 - Stop the program in automatic mode. Manual mode. (Network 19) <br/>
+I0.3 - Not involved. <br/>
+I0.4 - Vertical piston, sensor, lower position. <br/>
+I0.5 - Vertical piston, sensor, upper position. <br/>
+I0.6 - Horizontal piston, sensor, position retracted. <br/>
+I0.7 - Horizontal piston, sensor, position extended. <br/>
+I1.0 - Not involved. <br/>
+I1.1 - Pressure switch. <br/>
+I1.2 - Accident, stop. (Normally closed. When opened, an emergency stop occurs.) <br/>
+I1.3 - Change in operating time of the screw. Min time.(Network 43 - 44) (Three position switch.) <br/>
+I1.4 - Change in the operating time of the screw. Max. time.(Network 47 - 48) (Three position switch.) <br/>
+When I1.3 and I1.4 are not included this corresponds to the average time.(Network 45 - 46) (Three position switch.) <br/>
+I1.5 - (optional) Sensor for supplying material to the tank. It is installed at the right level in the tank, to automatically feed the material into the tank, to maintain the same amount of material in the tank.
+
+<br/><br/>
+
+<h3>OUTPUTS:</h3>
+
+Q0.0 - The engine of the hydraulic power station (star-delta). <br/>
+Q0.1 - Hydroelectric power station engine (star-delta). Main valve. <br/>
+Q0.2 - Fan. <br/>
+Q0.3 - Auger <br/>
+Q0.4 - Vertical piston, valve, up position (pushes down). <br/>
+Q0.5 - Vertical piston, valve, lower position (pushes up). <br/>
+Q0.6 - Horizontal piston, valve, retracts the piston. <br/>
+Q0.7 - Horizontal piston, valve, extends the piston. <br/>
+Q1.0 - Collet Piston. <br/>
+Q1.1 - The small engine of a hydraulic power station. <br/>
+Q2.1 - (optional) Auger for feeding sawdust into the tank.
+
+<br/><br/>
+
+<img src="https://raw.githubusercontent.com/nvjob/nvrepo/master/other%20sources/weima%20th%20a/28/pic/5.jpg" alt="#NVJOB Custom program for WEIMA TH Standard Series (Briquette Press). A" title="#NVJOB Custom program for WEIMA TH Standard Series (Briquette Press). A" />
+
+
+<br/>
+<div class="razdelline2"></div>
+
+
+<h3>License</h3>
+GNU General Public License v3.0
+
+
+<br/>
+
+
+</div>
+</div>
+
+
+<!------------------------------------------------->
+
+
+<div class="bottomfooter">
+<a href="/">Nicholas Veselov - Indie Developer</a>
+<br/>
+© Copyright 2016 <a href="/">#NVJOB</a>. Website powered by <a href="https://github.com/nvjob" target="_blank">GitHub.com</a>
+</div>
+<script src="/res/js/jquery.min.js"></script>
+<script src="/res/js/run_prettify.js"></script>
+<script src="/res/js/bootstrap.min.js"></script>
+<script src="/res/js/smooth-scroll.js"></script>
+<script src="/res/js/dropdown.js"></script>
+<script src="/res/js/other.js"></script>
+<script src="/res/js/typed.js"></script>
+<script src="/res/js/baneer.text.js"></script>
+</body>
+</html>

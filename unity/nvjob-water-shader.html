@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<link rel="shortcut icon" href="/res/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/res/style/bootstrap.min.css">
+<link rel="stylesheet" href="/res/style/navbar.css" type="text/css">
+<link rel="stylesheet" href="/res/style/style.css">
+<title>#NVJOB Water Shader - simple and fast</title>
+<meta name="description" content="Two types of water. Supported rendering path deferred and forward. This shader is suitable for scenes where water is not a key element of the scene, but a decorative element.
+">
+</head>
+<body>
+<div class="topnavmenu">
+<nav class="navbar navbar-dropdown navbar-fixed-top navbar-toggleable-sm transparent">
+<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+<div class="hamburger"><span></span><span></span><span></span><span></span></div>
+</button>
+<div class="menu-logo"><div class="navbar-brand">
+<a href="/">#NVJOB</a>
+</div></div>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav">
+<li class="nav-item"><a href="/apps/">MY APPS &nbsp;&nbsp;</a></li>
+<li class="nav-item"><a href="/unity/">UNITY ASSETS &nbsp;&nbsp;</a></li>
+<li class="nav-item"><a href="/sources/">OTHER SOURCES &nbsp;&nbsp;</a></li>
+<li class="nav-item"><a href="/dlog/">DEVLOG &nbsp;&nbsp;</a></li>
+<li class="nav-item"><a href="/donations.html">DONATE &nbsp;&nbsp;</a></li>
+</ul>
+</div>
+</nav>
+</div>
+<div class="topBanner">
+<div class="bannermob">
+<span id="typed" class="banner_top_arrow"></span>
+</div>
+<div class="bannerpc"><iframe width="100%" height="100%" src="/res/" frameborder="0" class="topBannerIn"></iframe></div>
+</div>
+
+
+
+
+<!------------------------------------------------->
+
+
+<div class="topnameblank">
+<h1>#NVJOB Water Shader - simple and fast</h1>
+</div>
+
+<!------------------------------------------------->
+
+
+<div class="contentall">
+<div class="contentall-in">
+
+<img src="https://raw.githubusercontent.com/nvjob/nvrepo/master/unity%20assets/water%20shader%20saf%20sr/144/pic/1.jpg" alt="#NVJOB Water Shader - simple and fast" title="#NVJOB Water Shader - simple and fast" style="width:100%; max-width:1741px"/>
+
+<br/><br/>
+
+Simple and fast water shader. Two types of water.<br/>
+Supported rendering path deferred and forward.<br/>
+This shader is suitable for scenes where water is not a key element of the scene, but a decorative element.
+
+<br/><br/>
+
+For Unity version of at least 2019.1.8 (64-bit)
+<br/>
+Current version 1.4.4
+
+<br/>
+
+<table class="downloadc"><tbody><tr>
+<td>
+<a href="/link/?url=https://assetstore.unity.com/packages/vfx/shaders/nvjob-water-shader-simple-and-fast-149916" target="_blank" title="#NVJOB Water Shader - simple and fast Download from Unity Asset Store">Download from Unity Asset Store</a>
+<a href="/link/?url=https://github.com/nvjob/NVJOB-Water-Shader-simple-and-fast" target="_blank" title="#NVJOB Water Shader - simple and fast Download from GitHub">Download from GitHub</a>
+<a href="/link/?url=https://github.com/nvjob/NVJOB-Water-Shader-old-versions" target="_blank" title="#NVJOB Water Shader - simple and fast archive of previous versions">Archive of previous versions</a>
+<a href="http://nvjob.dx.am/board/-nvjob-unity-assets/-nvjob-water-shader-simple-and-fast/-nvjob-water-shader-simple-and-fast-standard-render-release-5_1.html" target="_blank">Thread on Forum</a>
+</td>
+<td>
+<div class="downloadicon"></div>
+</td>
+</tr></tbody></table>
+
+
+
+<iframe style="width: 100%;" class="mbr-embedded-video" src="https://www.youtube.com/embed/Br8upLzvTVU?rel=0&amp;showinfo=0&amp;autoplay=0&amp;loop=1&amp;playlist=Br8upLzvTVU" width="1280" height="720" frameborder="0" allowfullscreen=""></iframe>
+
+<br/><br/>
+
+<h3>Prerequisites</h3>
+To work on the project, you will need a Unity version of at least 2019.1.8 (64-bit).
+
+<br/><br/>
+
+<h3>Information</h3>
+The movement of the waves is carried out using global shader variables: _WaterLocalUvX, _WaterLocalUvZ, _WaterLocalUvNX, _WaterLocalUvNZ.
+
+<br/><br/>
+
+_WaterLocalUvX, _WaterLocalUvZ - Offset main texture.<br/>
+_WaterLocalUvNX, _WaterLocalUvNZ - Offset normal map texture.
+
+<br/><br/>
+
+
+<code class="prettyprint ">using UnityEngine;
+
+public class Water : MonoBehaviour
+{
+    public float UvRotateSpeed = 0.4f;
+    public float UvRotateDistance = 2.0f;
+    public float UvBumpRotateSpeed = 0.4f;
+    public float UvBumpRotateDistance = 2.0f;
+
+    Vector2 lwVector, lwNVector;
+
+    private void Awake()
+    {
+        lwVector = Vector2.zero;
+        lwNVector = Vector2.zero;
+    }
+
+    void Update()
+    {
+        lwVector = Quaternion.AngleAxis(Time.time * UvRotateSpeed, Vector3.forward) * Vector2.one * UvRotateDistance;
+        lwNVector = Quaternion.AngleAxis(Time.time * UvBumpRotateSpeed, Vector3.forward) * Vector2.one * UvBumpRotateDistance;
+        Shader.SetGlobalFloat("_WaterLocalUvX", lwVector.x);
+        Shader.SetGlobalFloat("_WaterLocalUvZ", lwVector.y);
+        Shader.SetGlobalFloat("_WaterLocalUvNX", lwNVector.x);
+        Shader.SetGlobalFloat("_WaterLocalUvNZ", lwNVector.y);
+    }
+}
+</code>
+
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/nvjob/nvrepo/master/unity%20assets/water%20shader%20saf%20sr/144/pic/5.jpg" alt="#NVJOB Water Shader - simple and fast" title="#NVJOB Water Shader - simple and fast" style="width:100%; max-width:350px"/>
+
+<br/><br/>
+
+<img src="https://raw.githubusercontent.com/nvjob/nvrepo/master/unity%20assets/water%20shader%20saf%20sr/144/pic/2.jpg" alt="#NVJOB Water Shader - simple and fast" title="#NVJOB Water Shader - simple and fast" style="width:100%;" />
+
+<br/><br/>
+
+<img src="https://raw.githubusercontent.com/nvjob/nvrepo/master/unity%20assets/water%20shader%20saf%20sr/144/pic/3.jpg" alt="#NVJOB Water Shader - simple and fast" title="#NVJOB Water Shader - simple and fast" style="width:100%;" />
+
+<br/><br/>
+
+<img src="https://raw.githubusercontent.com/nvjob/nvrepo/master/unity%20assets/water%20shader%20saf%20sr/144/pic/4.jpg" alt="#NVJOB Water Shader - simple and fast" title="#NVJOB Water Shader - simple and fast" style="width:100%;" />
+
+
+<br/>
+<div class="razdelline2"></div>
+
+
+<h3>License</h3>
+This project is licensed under the MIT License.
+
+
+<br/>
+
+
+</div>
+</div>
+
+
+<!------------------------------------------------->
+
+
+
+<div class="bottomfooter">
+<a href="/">Nicholas Veselov - Indie Developer</a>
+<br/>
+© Copyright 2016 <a href="/">#NVJOB</a>. Website powered by <a href="https://github.com/nvjob" target="_blank">GitHub.com</a>
+</div>
+<script src="/res/js/jquery.min.js"></script>
+<script src="/res/js/run_prettify.js"></script>
+<script src="/res/js/bootstrap.min.js"></script>
+<script src="/res/js/smooth-scroll.js"></script>
+<script src="/res/js/dropdown.js"></script>
+<script src="/res/js/other.js"></script>
+<script src="/res/js/typed.js"></script>
+<script src="/res/js/baneer.text.js"></script>
+</body>
+</html>
