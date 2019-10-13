@@ -1,1 +1,44 @@
 AddDefaultCharset utf-8
+RewriteEngine on 
+
+FileETag MTime Size
+<ifmodule mod_expires.c>
+<filesmatch "\.(jpg|gif|png|css|js)$">
+ExpiresActive on
+ExpiresDefault "access plus 1 month"
+</filesmatch>
+</ifmodule>
+
+AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/javascript text/css application/x-javascript
+
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4.0[678] no-gzip
+BrowserMatch bMSIE !no-gzip !gzip-only-text/html
+
+##################################################
+
+#RewriteCond %{HTTPS} =on
+#RewriteRule ^(.*)$ http://nvjob.pro/$1 [R=301,L]
+
+##################################################
+
+Redirect 301 /ru /
+Redirect 301 /ru/ /
+Redirect 301 /ball3079 https://nvjob.itch.io/ball-3079
+Redirect 301 /ball3079/ https://nvjob.itch.io/ball-3079
+Redirect 301 /devlogs/ /dlog/
+Redirect 301 /blog/ /dlog/
+Redirect 301 /donations.html /donations.php
+Redirect 301 /donate /donations.php
+Redirect 301 /app/ /apps/
+Redirect 301 /app/ball-3079-privacy-policy /apps/ball-3079-privacy-policy
+Redirect 301 /furby-web-app /furby/
+
+
+
+##################################################
+
+ErrorDocument 404 /apps/404
+ErrorDocument 401 /apps/404
+ErrorDocument 403 /apps/404
+ErrorDocument 500 /apps/404
