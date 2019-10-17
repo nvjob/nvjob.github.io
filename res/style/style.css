@@ -122,6 +122,8 @@ margin-bottom: 2.3125rem;
 
 pre {
 white-space: pre-wrap;
+margin: 0;
+padding: 0;
 }
 
 a, a:hover {
