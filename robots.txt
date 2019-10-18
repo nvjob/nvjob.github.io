@@ -1,2 +1,2 @@
 User-agent: *
-Host: nvjob.pro
+Host: nvjob.github.io
