@@ -1,3 +1,13 @@
+
+/*!
+ * #NVJOB Promo Banner
+ * (c) 2016 - 2019 #NVJOB Nicholas Veselov https://nvjob.github.io
+ * Attribution-NonCommercial-NoDerivs 2.0 Generic (CC BY-NC-ND 2.0)
+ * https://creativecommons.org/licenses/by-nc-nd/2.0/
+ */
+
+
+
 var typed5 = new Typed('#typed', {
 strings: [
 'Shader "#NVJOB" {', 
