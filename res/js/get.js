@@ -1,10 +1,8 @@
-
 /*!
  * GET URL Js 0.0.2
  * (c) 2016 - 2019 #NVJOB Nicholas Veselov https://nvjob.github.io
  * Licensed under MIT (https://nvjob.github.io/mit-license)
  */
-
 
 $(document).ready(function() {
 

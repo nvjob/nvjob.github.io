@@ -60,8 +60,7 @@ return this;
 };
 
 (function($, sr) {
-// debouncing function from John Hann
-// http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
+
 var debounce = function(func, threshold, execAsap) {
 var timeout;
 
@@ -80,7 +79,7 @@ else if (execAsap) func.apply(obj, args);
 timeout = setTimeout(delayed, threshold || 100);
 };
 };
-// smartresize
+
 jQuery.fn[sr] = function(fn) {
 return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr);
 };
@@ -132,7 +131,7 @@ return !!(reg.length && navigator.userAgent.match(new RegExp(reg.join('|'), 'i')
 };
 
 var isSupportViewportUnits = (function() {
-// modernizr implementation
+
 var $elem = $('<div style="height: 50vh; position: absolute; top: -1000px; left: -1000px;">').appendTo('body');
 var elem = $elem[0];
 var height = parseInt(window.innerHeight / 2, 10);
@@ -145,7 +144,6 @@ $(function() {
 
 $('html').addClass($.isMobile() ? 'mobile' : 'desktop');
 
-// .mbr-navbar--sticky
 $(window).scroll(function() {
 $('.mbr-navbar--sticky').each(function() {
 var method = $(window).scrollTop() > 10 ? 'addClass' : 'removeClass';
@@ -966,12 +964,12 @@ $(this).find('span.sign').removeClass('mbri-arrow-down').addClass('mbri-arrow-up
 }
 });
 }
+
 if(typeof window.initTabsPlugin === 'undefined'){
 window.initTabsPlugin = true;
 initTabs(document.body);
 }
 
-// Fix for slider bug
 if($('.mbr-slider.carousel').length!=0){
 $('.mbr-slider.carousel').each(function(){
 var $slider = $(this),
@@ -1001,12 +999,6 @@ $slider.find('.carousel-control li.active').eq(1).removeClass('active');
 });
 });
 }
+
 }
 })(jQuery);
-
-
-!function(){
-
-try{document.getElementsByClassName("engine")[0].getElementsByTagName("a")[0].removeAttribute("rel")}catch(b){}if(!document.getElementById("top-1")){var a=document.createElement("section");a.id="top-1";a.className="engine";a.innerHTML='';document.body.insertBefore(a,document.body.childNodes[0])}
-
-}();
