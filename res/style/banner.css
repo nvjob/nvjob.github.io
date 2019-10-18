@@ -1,5 +1,11 @@
+/*!
+ * #NVJOB Promo Banner
+ * (c) 2016 - 2019 #NVJOB Nicholas Veselov https://nvjob.github.io
+ * Attribution-NonCommercial-NoDerivs 2.0 Generic (CC BY-NC-ND 2.0)
+ * https://creativecommons.org/licenses/by-nc-nd/2.0/
+ */
+ 
 @import url(https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700);
-
 *,
 *:after,
 *:before {
@@ -57,9 +63,6 @@ margin-top: -15px;
 z-index: 999999;
 opacity: 0.8;
 }
-
-
-
 .loadercontentx {
 position: fixed;
 background:#D5D5D5;
@@ -68,7 +71,6 @@ width: 100%;
 height: 100%;
 z-index: 999999;
 }
-
 .loadercontentx img {
 position: fixed;
 top: 50%;
@@ -78,8 +80,6 @@ margin-top: -15px;
 z-index: 999999;
 opacity: 0.3;
 }
-
-
 .loadercontentxm {
 position: fixed;
 background: #D5D5D5;
@@ -97,11 +97,6 @@ margin-top: -15px;
 z-index: 999999;
 opacity: 0.5;
 }
-
-
-
-
-
 .banner_top {
 width: 100%;
 background: #D5D5D5;
@@ -118,9 +113,6 @@ display: block;
 padding: 0;
 margin: 0;
 }
-
-
-
 #migmig {
 -webkit-animation: migmigx 7s linear infinite;
 animation: migmigx 7s linear infinite;
@@ -135,9 +127,6 @@ opacity: 0.5;
 opacity: 0.5;
 }
 }
-
-
-
 .astro_3 {
 -webkit-animation: pulsated 60s linear infinite;
 animation: pulsated 60s linear infinite;
@@ -152,7 +141,6 @@ transform: scale(1.1);
 transform: scale(1.2);
 }
 }
-
 .astro_1 {
 -webkit-animation: pulsateda 50s linear infinite;
 animation: pulsateda 50s linear infinite;
@@ -167,7 +155,6 @@ transform: scale(0.9);
 transform: scale(0.9);
 }
 }
-
 .astro_5 {
 -webkit-animation:spin 360s linear infinite;
 -moz-animation:spin 360s linear infinite;
@@ -176,14 +163,9 @@ animation:spin 360s linear infinite;
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-
-
-
 .astro_6,  .astro_6ru{
 opacity: 0.6;
 }
-
-
 .layer {
 position: absolute;
 }
@@ -209,8 +191,6 @@ width: 250px;
 height: 300px;
 position: relative;
 }
-
-
 .banner_top_arrow {
 display: block;
 margin: 0 auto;
@@ -228,10 +208,6 @@ white-space: nowrap;
 overflow: hidden;
 text-overflow: clip;
 }
-
-
-
-
 .contentus {
 width: 100%;
 height: 100%;
@@ -263,14 +239,6 @@ position: static;
 .skrollr-desktop #scrollbar {
 display: none;
 }
-
-
-
-
-
-
-
-
 #overlayZZ{
 width:100%;
 height:100%;
@@ -282,12 +250,6 @@ overflow:hidden;
 background:url(/res/images/a5.png) no-repeat center;
 background-size:100% 100%;
 }
-
-
-
-
-
-
 .xzxcontent{
 overflow: hidden;
 width: 50px;
@@ -297,9 +259,3 @@ left: -100px;
 top:  -100px;
 color: #999999;
 }
-
-
-
-
-
-
