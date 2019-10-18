@@ -17,4 +17,4 @@ https://www.instagram.com/nvjob.pro
 Designed by #NVJOB Nicholas Veselov - https://nvjob.github.io
 
 ### License
-Site design - CC BY-NC-ND 2.0 (https://creativecommons.org/licenses/by-nc-nd/2.0/)
+https://github.com/nvjob/nvjob.github.io/blob/master/LICENSE.md
