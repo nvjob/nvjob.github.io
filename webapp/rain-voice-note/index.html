@@ -8,8 +8,8 @@
 <link rel="stylesheet" href="/res/style/bootstrap.min.css">
 <link rel="stylesheet" href="/res/style/navbar.css" type="text/css">
 <link rel="stylesheet" href="/res/style/style.css">
-<title>#NVJOB. Rain Voice Note. Speech To Text.</title>
-<meta name="description" content="Voice notepad for typing using voice. This is an open source WEB application made using CW Frame and Google Cloud Speech API.">
+<title>#NVJOB. Nicholas Veselov. Rain Voice Note 1.0.0.3 Web App.</title>
+<meta name="description" content="I am an independent developer. I do programming, I write programs and utilities, I develop industrial automation and gadgets. I also develop games, but I mainly write various modules and invent various scripts and shaders.">
 </head>
 <body>
 <div class="topnavmenu">
@@ -42,7 +42,7 @@
 
 
 <div class="topnameblank">
-<h1>Rain Voice Note</h1>
+<h1>Rain Voice Note Web App</h1>
 </div>
 
 
@@ -50,28 +50,51 @@
 <div class="contentall-in">
 
 
-Voice notepad for typing using voice using a microphone (Speech To Text).<br/>
-This is an open source WEB application made using CW Frame (<a href="https://nvjob.github.io/apps/cw-frame" target="_blank" title="CW Frame">nvjob.github.io/apps/cw-frame</a>).<br/>
-Voice recognition is implemented using the Google Cloud Speech API (<a href="https://cloud.google.com/speech-to-text" target="_blank">cloud.google.com/speech-to-text</a>).
 
+<!---------------------------------------------------
+------ Rain Voice Note Web | Start ----------------->
+
+<link rel="stylesheet" href="rain-voice-note.1003.css" type="text/css" media="screen" />
+
+<div class="rainvn">
+<div class="rainvn_top">
+<div class="rainvn_lang"><select id="select_language" onchange="updateCountry()"></select><select id="select_dialect"></select></div>
+<button id="rainvn_mic_button" class="rainvn_mic_button" onclick="rainvnMicButton(event)"><img id="mic_button_img" src="rainvn_mic_button.png" alt="Mic"></button>
+</div>
+<div class="rainvn_text">
+<span id="rainvn_text_final"></span><span id="rainvn_text_interim"></span>
+</div>
+</div>
+
+<script type="text/javascript" src="rain-voice-note.1003.js"></script>
+
+<!------ Rain Voice Note Web | End -----------------
+--------------------------------------------------->
+
+
+<br/>
+
+
+<h3>Microphone Permission for Rain Voice Note</h3>
+
+Click the Microphone icon.<br/>
+Click on the red-crossed camera in the right corner of the Chrome address bar.<br/>
+Select Always allow https://nvjob.github.io to access your microphone.<br/>
+Click on Done. Reload app.<br/>
+This will only need to be done once the first time you use the web app.
 <br/><br/>
 
+<img src="permission.png"/>
 
-<img src="https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/devlog/rain%20voice%20note/1003/pic/1.png" alt="#NVJOB Rain Voice Note Speech To Text." title="#NVJOB Rain Voice Note Speech To Text"/>
-
-<br/><br/>
-
-For Windows (Desktop App)<br/>
-Current version 1.0.0.3
 
 <br/>
 
 
 <table class="downloadc"><tbody><tr>
 <td>
-<a href="/link/?url=https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/devlog/rain%20voice%20note/1003/rain%20voice%20note.zip" target="_blank">Download from GitHub (Desktop App)</a>
-<a href="/webapp/rain-voice-note/" target="_blank">Rain Voice Note Web App</a>
-<a href="/link/?url=https://github.com/nvjob/rain-voice-note" target="_blank">Download from GitHub (Source)</a>
+<a href="/dlog/rain-voice-note.html" target="_blank">Source Code</a>
+<a href="/link/?url=https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/devlog/rain%20voice%20note/1003/rain%20voice%20note.zip" target="_blank">Download Desktop App from GitHub</a>
+<a href="/donate.html" target="_blank">Sponsorship Donation</a>
 </td>
 <td>
 <div class="downloadicon"></div>
@@ -80,18 +103,13 @@ Current version 1.0.0.3
 
 
 
-<iframe style="width: 100%;" class="mbr-embedded-video" src="https://www.youtube.com/embed/3mb9nE4Q070?rel=0&amp;showinfo=0&amp;autoplay=0&amp;loop=1&amp;playlist=3mb9nE4Q070" width="1280" height="720" frameborder="0" allowfullscreen=""></iframe>
-
-
-<br/>
 <div class="razdelline2"></div>
-
 
 <h3>License</h3>
 This project is licensed under <a href="https://nvjob.github.io/gnu-license" target="_blank">GNU GPL v3.0</a>
 
-
 <br/>
+
 
 
 </div>

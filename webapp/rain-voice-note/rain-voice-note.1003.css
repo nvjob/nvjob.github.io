@@ -1,0 +1,100 @@
+/*!
+* Rain Voice Note Web 1.0.0.3 - https://nvjob.github.io/dlog/rain-voice-note.html
+* (c) 2016-2019 #NVJOB Nicholas Veselov - https://nvjob.github.io
+* GNU General Public License v3.0
+*/
+
+.rainvn,
+.rainvn * {
+margin: 0px auto;
+padding: 0;
+border: 0;
+vertical-align: baseline;
+background: transparent;
+font-family: 'Titillium Web', sans-serif !important;
+}
+
+.rainvn {
+display: block;
+overflow: hidden;
+max-width: 100%;
+height: auto;
+padding: 10px;
+background: #f0f0f0;
+border: 7px solid #D5D5D5;
+font-size: 1rem;
+line-height: 1.4;
+}
+
+.rainvn select {
+opacity: 0.9;
+border: 0px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+width: 70px;
+}
+
+/*********************************/
+
+.rainvn_mic_button {
+margin: 7px 4px 5px 3px;
+float: right;
+cursor: pointer;
+width: 33px;
+height: 33px;
+}
+
+.rainvn_mic_button img {
+cursor: pointer;
+opacity: 0.6;
+padding: 5px;
+}
+
+.rainvn_mic_button img:hover {
+cursor: pointer;
+opacity: 0.9;
+padding: 5px;
+}
+
+.rainvn_lang {
+font-size: 0.8rem;
+float: left;
+margin: 7px 3px 5px 0px;
+}
+
+/*********************************/
+
+.rainvn_text {
+height: 60vh;
+overflow: auto;
+display: block;
+width: 100%;
+padding: 3px 10px 10px 10px;
+}
+
+#rainvn_text_final {
+opacity: 1;
+}
+
+#rainvn_text_interim {
+opacity: 0.7;
+}
+
+/*********************************/
+
+@media (max-width: 768px) {
+
+.rainvn {
+padding: 10px 0px;
+margin: 0;
+border:0px;
+border-top: 7px solid #D5D5D5;
+border-bottom: 7px solid #D5D5D5;
+font-size: 0.9rem;
+}
+
+}
+
+
+
