@@ -1,4 +1,4 @@
-# nvjob.github.io
+# nvjob.github.io - site repository
 Nicholas Veselov - Indie Developer <br>
 Russia, St. Petersburg <br>
 nvjob.dev@gmail.com, reset86@gmail.com <br>
