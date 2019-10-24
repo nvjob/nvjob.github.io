@@ -86,8 +86,27 @@ SimplePool.GiveObj(numElement)-> numElement - number of the item in editor (Simp
 
 <br/>
 
+Checking that the pool is not empty::<br/>
+<code class="prettyprint">GameObject obj = SimplePool.GiveObj(0);
+if (obj != null)
+{
+}</code>
+
+<br/>
+
 After all the transformations of the object, activate it:<br/>
 <code class="prettyprint">obj.SetActive(true);</code>
+
+
+
+
+
+
+
+
+
+
+
 
 <br/>
 
