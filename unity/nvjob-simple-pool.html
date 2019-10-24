@@ -77,7 +77,7 @@ Current version 1.2
 <h3>Information</h3>
 
 <h5>Getting an object from a pool:</h5>
-<code class="prettyprint ">GameObject obj = SimplePool.GiveObj(0);</code>
+<code class="prettyprint">GameObject obj = SimplePool.GiveObj(0);</code>
 SimplePool.GiveObj() instead of using Instantiate(Object).
 <br/>
 SimplePool.GiveObj(numElement)-> numElement - number of the item in editor (SimplePool).
@@ -87,9 +87,12 @@ SimplePool.GiveObj(numElement)-> numElement - number of the item in editor (Simp
 <br/><br/>
 
 <h5>After all the transformations of the object, activate it:</h5>
-<code class="prettyprint ">obj.SetActive(true);</code>
+<code class="prettyprint">obj.SetActive(true);</code>
 
+<br/><br/>
 
+<h5>Return object to the pool, remove from the scene:</h5>
+<code class="prettyprint">SimplePool.Takeobj(obj);</code>
 
 
 
