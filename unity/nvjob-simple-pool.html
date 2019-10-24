@@ -102,16 +102,11 @@ After all the transformations of the object, activate it:<br/>
 The number of elements in the editor (SimplePool):<br/>
 <code class="prettyprint">SimplePool.numObjectsList</code>
 
-
-
-
-
-
-
-
 <br/>
 
 <h5>Return object to the pool, remove from the scene:</h5>
+SimplePool.Takeobj() instead of using - Destroy(Object).<br/>
+SimplePool.Takeobj(GameObject)-> GameObject - is an object that to be returned to the pool.<br/>
 <code class="prettyprint">SimplePool.Takeobj(obj);</code>
 
 
