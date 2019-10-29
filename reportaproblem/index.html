@@ -9,8 +9,8 @@
 <link rel="stylesheet" href="/res/style/navbar.css" type="text/css">
 <link rel="stylesheet" href="/res/style/style.css">
 <link rel="stylesheet" href="rap.css">
-<title>#NVJOB. Report a Problem.</title>
-<meta name="description" content="Issue - name of the program or asset, version and describe the problem.">
+<title>#NVJOB. Solution of Problems.</title>
+<meta name="description" content="Report a Problem / Issue Tracker / FAQ">
 </head>
 <body>
 <div class="topnavmenu">
@@ -40,36 +40,152 @@
 </div>
 
 
+<!------------------------------------------------------------------------>
 
 
 <div class="topnameblank">
 <h1>Report a Problem</h1>
 </div>
 
+<div class="contentall">
+<div class="contentall-in">
+
+<div id="success"></div>
+<div class="contact-all">
+<div class="contact-wrapper">
+<form method="post" action="http://nvjob.dx.am/form.php" id="contactform">
+<div>
+<label for="email">Your email:</label>
+<input type="text" size="50" name="email" id="email" value="" class="required email" />
+</div>
+<div>
+<label for="subject">Subject:</label>
+<input type="text" size="50" name="subject" id="subject" value="" class="required" />
+</div>
+<div>
+<label for="digits">Captcha (current day of the month, 2 digits, from 01 to 31):</label>
+<input type="number" size="50" maxlength="2" name="digits" id="digits" value="" class="required" />
+</div>
+<div>
+<label for="message">Issue (name of the program or asset, version and describe the problem):</label>
+<textarea rows="3" cols="50" name="message" id="message" class="required"></textarea>
+</div>
+<input type="submit" value="Send Issue" name="submit" class="submit" />
+</form>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<!------------------------------------------------------------------------>
+
+
+<div class="topnameblank">
+<h1>Issue Tracker / FAQ</h1>
+</div>
 
 <div class="contentall">
 <div class="contentall-in">
 
 
-<br><br><br><br>
+<!--------------------------------------------------->
 
+<section class="faq-section">
+<input type="checkbox" id="q3">
+<label for="q3">Limit the unity version to 2019. All your assets does work in unity 2018 so I hope the lower unity version limit will possible.</label>           
+<div class="short-answer">
+Scripts and shaders from the assets themselves can work on lower versions of Unity.
+</div>
+<div class="full-answer">
+At the moment, version 2019.1.8 has the least number of problems and errors and it has all the basic functions, it is for this version that I release assets.<br>
+But scripts and shaders from the assets themselves can work in lower versions of Unity.<br>
+I work alone, and I just do not have time to test all assets on very old versions of Unity.<br>
+I recommend that you do not stay too long on very old versions of Unity, but do not rush to install the latest versions of Unity, find a compromise.
+</div>
+</section>
 
+<!--------------------------------------------------->
 
+<section class="faq-section">
+<input type="checkbox" id="q4">
+<label for="q4">#NVJOB Dynamic Sky Lite: Can I use this and your water shader in a commercial game? I can't understand the license file clearly.</label>           
+<div class="short-answer">
+All my free assets are licensed under MIT.
+</div>
+<div class="full-answer">
+All my free assets are licensed under MIT.<br>
+MIT license imposes almost no restrictions. MIT software is free to use in commercial applications.<br>
+Read the detailed text with an explanation here - <a href="https://nvjob.github.io/mit-license" target="_blank">nvjob.github.io/mit-license</a>.
+</div>
+</section>
 
-<div class="razdelline"></div>
+<!--------------------------------------------------->
 
-<!----------------------------------------------------------------------------------------------------------------------------------------------------------->
+<section class="faq-section">
+<input type="checkbox" id="q5">
+<label for="q5">How can i include the copyright and the license notice in my game?</label>           
+<div class="short-answer">
+It means you just have to include it in the source.
+</div>
+<div class="full-answer">
+It means you just have to include it in the source. As in normally you don't need to do anything other then not remove the license clause from the code if you use it in whole. Or if you just use a substantial part of it, add the license to that code. You do NOT have to show it to end users.
+</div>
+</section>
 
+<!--------------------------------------------------->
 
+<section class="faq-section">
+<input type="checkbox" id="q1">
+<label for="q1">Infinity Square/Space: I would like to implement multiplayer, but I don't know how yet.</label>
+<div class="short-answer">
+At the moment I do not plan to add multiplayer, maybe later I will do it.
+</div>
+<div class="full-answer">
+From the very beginning, this game was developed precisely as a multiplayer game. <br>
+I lost interest in the development of this game, as I did not see any interest from the community. Therefore, I completed the development of the game and made an asset out of it, at the moment there is only single player mode in the asset.<br>
+Perhaps later, when I have a desire, I implement multiplayer in the game.
+</div>
+</section>
 
+<!--------------------------------------------------->
 
+<section class="faq-section">
+<input type="checkbox" id="q2">
+<label for="q2">Infinity Square/Space: I don’t understand why unpack ProjectSettings.zip, if everything works like that?</label>           
+<div class="short-answer">
+You are absolutely right, ProjectSettings.zip is not necessary to unpack.
+</div>
+<div class="full-answer">
+You are absolutely right, ProjectSettings.zip is not necessary to unpack.<br>
+The description was written for the version on GitHub.
+</div>
+</section>
 
+<!--------------------------------------------------->
 
+<section class="faq-section">
+<input type="checkbox" id="q6">
+<label for="q6">#NVJOB Dynamic Sky Lite: Can you add more features for this and water shader in the future releases? I'll certainly wait them!</label>           
+<div class="short-answer">
+I am constantly working on updating my assets.
+</div>
+<div class="full-answer">
+I am constantly working on updating my assets. I add new features to my assets as I make them up, and I also work on bugs and optimize performance.<br>
+I can start working on a new asset and stop working on other assets for some time, but this does not know that I abandoned them.
+</div>
+</section>
+
+<!--------------------------------------------------->
 
 
 
 </div>
 </div>
+
+
+<!------------------------------------------------------------------------>
 
 
 
@@ -79,6 +195,8 @@
 © Copyright 2016 <a href="/">#NVJOB</a>. Website powered by <a href="https://github.com/nvjob" target="_blank">GitHub.com</a>
 </div>
 <script src="/res/js/jquery.min.js"></script>
+<script src="jquery.validate.min.js" type="text/javascript"></script>
+<script type="text/javascript"> $(document).ready(function(){ $("#contactform").validate(); }); </script>
 <script src="/res/js/run_prettify.js"></script>
 <script src="/res/js/bootstrap.min.js"></script>
 <script src="/res/js/smooth-scroll.js"></script>
@@ -86,5 +204,6 @@
 <script src="/res/js/other.js"></script>
 <script src="/res/js/typed.js"></script>
 <script src="/res/js/baneer.text.js"></script>
+<script src="get.js"></script>
 </body>
 </html>
