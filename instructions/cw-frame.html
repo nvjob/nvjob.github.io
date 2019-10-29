@@ -8,8 +8,8 @@
 <link rel="stylesheet" href="/res/style/bootstrap.min.css">
 <link rel="stylesheet" href="/res/style/navbar.css" type="text/css">
 <link rel="stylesheet" href="/res/style/style.css">
-<title>#NVJOB. Nicholas Veselov. Independent developer.</title>
-<meta name="description" content="I am an independent developer. I do programming, I write programs and utilities, I develop industrial automation and gadgets. I also develop games, but I mainly write various modules and invent various scripts and shaders.">
+<title>#NVJOB. CW Frame Instruction.</title>
+<meta name="description" content="CW Frame Instruction.">
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151102873-1"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -49,13 +49,110 @@ gtag('config', 'UA-151102873-1');
 
 
 <div class="topnameblank">
-<h1>XXXXXXXXXXXXXXXXXX</h1>
+<h1>CW Frame Instruction</h1>
 </div>
 
 
 <div class="contentall">
 <div class="contentall-in">
-ZZZZZZZZZZZZZZZZZZZZZZ
+
+
+At the first start, CW Frame will prompt you to create an application key, this key encrypts your application settings, the key is stored in clear form in the master.app.key file and encrypted in the app.key file.
+
+<br/><br/>
+
+<img src="https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/apps/cw%20frame/0015/pic/i1.png" style="max-width:215px;" alt="#NVJOB Nicholas Veselov (nvjob.github.io) | CW Frame Instruction" title="#NVJOB Nicholas Veselov (nvjob.github.io) | CW Frame Instruction" />
+
+<br/><br/>
+
+Save the master.app.key files and the app.dll application file if you plan to make new versions of your current application in the future. The file app.key is generated automatically from the master.app.key file.
+
+<br/><br/>
+
+<img src="https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/apps/cw%20frame/0015/pic/i2.png" style="max-width:326px;" alt="#NVJOB Nicholas Veselov (nvjob.github.io) | CW Frame Instruction" title="#NVJOB Nicholas Veselov (nvjob.github.io) | CW Frame Instruction" />
+
+<br/><br/>
+
+The key must contain at least 4 characters.
+
+<br/><br/>
+
+<img src="https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/apps/cw%20frame/0015/pic/i3.png" style="max-width:404px;" alt="#NVJOB Nicholas Veselov (nvjob.github.io) | CW Frame Instruction" title="#NVJOB Nicholas Veselov (nvjob.github.io) | CW Frame Instruction" />
+
+<br/>
+
+<div class="razdelline2"></div>
+
+
+<img src="https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/apps/cw%20frame/0015/pic/i41.png" style="max-width:490px;" alt="#NVJOB Nicholas Veselov (nvjob.github.io) | CW Frame Instruction" title="#NVJOB Nicholas Veselov (nvjob.github.io) | CW Frame Instruction" />
+
+<br/><br/>
+
+1. Domain - domain of the site where the application is located, or page. Example: domen.com
+<br/><br/>
+2. Application URL - path to the directory where the application is located, or page. Example: http://domain.com/test/app/
+<br/><br/>
+3. Site Title - should be accurate, up to capital letters, it is better to copy from the page code between the title tags.
+<br/><br/>
+4. Fixed size application - sets the fixed size of the application window without the ability to resize the window.
+<br/><br/>
+5. Lock move application - the position of the window is fixed in one place, according to the specified coordinates, without the possibility of moving the window.
+<br/><br/>
+6. Kiosk, full screen - forcibly makes the application full-screen, browser mode Chrome kiosk.
+<br/><br/>
+7. Width - the width of the window of your application. If the fixed size is disabled, the width should still be set.
+<br/><br/>
+8. Height - the height of the window of your application. If the fixed size is disabled, the height should still be set.
+<br/><br/>
+9. X-Axis - the location of your application's window along the X axis. Example: 100 (this is 100 pixels from the left edge of the screen).<br/>
+Additional functionality of this field, in the field you need to enter the specified values:<br/>
+11111 - application window is centered on screen (X and Y).<br/>
+22222 - application window at the top right edge of screen.<br/>
+33333 - application window at the bottom right edge of screen.<br/>
+44444 - application window at the bottom left edge of screen.<br/>
+55555 - application window is centered on the left edge of screen.<br/>
+66666 - application window is centered on the right edge of screen.<br/>
+77777 - application window at the right edge of the screen, with the ability to set the position along the Y axis.<br/>
+88888 - application window in the center of the X-axis screen, with the possibility to set the position along the Y axis.
+<br/><br/>
+10. Y-axis - the position of the window along the Y-axis, the count from the upper edge of the screen. Example: 100 (this is 100 pixels from the top of the screen.)
+<br/><br/>
+11. Ping - domain ping, the default value is 250 milliseconds. Checking the availability of the domain, if the domain is unavailable, the application will report this.
+<br/><br/>
+12. Waiting - the time interval for polling the site, the default is 100 seconds. This means that the ping of the domain will occur every 100 seconds.
+<br/><br/>
+13. Lock on top of all windows - the window of your application is always on top of all windows.
+<br/><br/>
+14. Incognito, without history - your application will be launched in the incognito mode of the Chrome browser.
+<br/><br/>
+15. Do not check appin.txt - (for more on this, see the video) the check for the presence of the appin.txt file and its contents (the word: yes) is disabled. Be sure to enable if there is no access to the domain or the application is a page of a third-party site.
+Why is it needed appin.txt file to check the presence of the directory on the server where the application is located and the quality of the connection to this server. Appin.txt file should contain the word "yes" (without quotes), if the file was found and the word is read, then the application is launched. The appin.txt file must be in the same directory as the application itself.
+<br/><br/>
+16. Block RMB - the application disables the standard context menu of Chrome, when you right-click. Own context windows created on JS, continue to work.
+<br/><br/>
+17. Application transparency - the transparency of your application window, from 0 to 255.
+<br/><br/>
+18. Compile - application is compiled into the executable file app.exe and placed in the "release" folder on the desktop. The compiled application can be renamed as you like and placed in any directory.
+<br/><br/>
+19. Debug - debugging your application without compilation into the final executable file.
+
+<br/><br/>
+
+
+
+<iframe class="mbr-embedded-video" src="https://www.youtube.com/embed/3mb9nE4Q070?rel=0&amp;showinfo=0&amp;autoplay=0&amp;loop=1&amp;playlist=3mb9nE4Q070" width="1280" height="720" frameborder="0" allowfullscreen=""></iframe>
+
+
+<br/>
+
+<div class="razdelline2"></div>
+
+<h3>License</h3>
+This project is licensed under <a href="https://nvjob.github.io/donationware" target="_blank">DonateWare License</a>
+
+<br/>
+
+
 </div>
 </div>
 
