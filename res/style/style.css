@@ -14,11 +14,11 @@ padding: 0;
 outline: none !important;
 letter-spacing: 0.015rem;
 word-spacing: 0.06rem;
--webkit-transition: all .15s ease-out;
--moz-transition: all .15s ease-out;
--ms-transition: all .15s ease-out;
--o-transition: all .15s ease-out;
-transition: all .15s ease-out;
+-webkit-transition: all .12s ease-out;
+-moz-transition: all .12s ease-out;
+-ms-transition: all .12s ease-out;
+-o-transition: all .12s ease-out;
+transition: all .12s ease-out;
 }
 html {
 width: 100%;
