@@ -211,11 +211,16 @@ color: #585858;
 border-bottom: 0px;
 }
 .contentall iframe, .contentall img, .contentall video{
-max-width: 100%;
 padding: 7px;
 margin: 0;
 background: #D5D5D5;
 border: 0px;
+}
+.contentall iframe, .contentall video{
+width: 100%;
+}
+.contentall img{
+max-width: 100%;
 }
 .contentall video{
 cursor: pointer;
