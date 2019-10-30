@@ -221,6 +221,7 @@ width: 100%;
 }
 .contentall img{
 max-width: 100%;
+height: auto;
 }
 .contentall video{
 cursor: pointer;
