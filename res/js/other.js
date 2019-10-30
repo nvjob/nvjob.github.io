@@ -1004,10 +1004,12 @@ $slider.find('.carousel-control li.active').eq(1).removeClass('active');
 
 $('video').bind('contextmenu', function(e) {
 this.paused ? this.play() : this.pause();
+return false;
 });
 
 $('video').click(function() {
 this.paused ? this.play() : this.pause();
+return false;
 });
 
 })(jQuery);
