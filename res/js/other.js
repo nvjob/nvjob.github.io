@@ -1003,7 +1003,7 @@ $slider.find('.carousel-control li.active').eq(1).removeClass('active');
 }
 
 $('video').bind('contextmenu', function(e) {
-return false;
+this.paused ? this.play() : this.pause();
 });
 
 $('video').click(function() {
