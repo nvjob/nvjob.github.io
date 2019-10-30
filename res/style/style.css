@@ -211,7 +211,7 @@ color: #585858;
 border-bottom: 0px;
 }
 .contentall iframe, .contentall img, .contentall video{
-width: 100%;
+max-width: 100%;
 padding: 7px;
 margin: 0;
 background: #D5D5D5;
