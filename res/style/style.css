@@ -217,6 +217,9 @@ margin: 0;
 background: #D5D5D5;
 border: 0px;
 }
+.contentall video{
+cursor: pointer;
+}
 /*==========================================================================*/
 .razdelline{
 width: 100%;
