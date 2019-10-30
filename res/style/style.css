@@ -210,7 +210,7 @@ font-weight: 300;
 color: #585858;
 border-bottom: 0px;
 }
-.contentall iframe,  .contentall img{
+.contentall iframe,  .contentall img, .contentall video{
 max-width: 100%;
 padding: 7px;
 margin: 0;
@@ -407,7 +407,7 @@ border-bottom: 7px solid #D5D5D5;
 font-size: 0.8rem;
 line-height: 1.4;
 }
-.contentall iframe,  .contentall img{
+.contentall iframe, .contentall img, .contentall video{
 max-width: 100%;
 padding: 7px 0px;
 margin: 0;
