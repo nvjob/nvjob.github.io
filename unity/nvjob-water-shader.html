@@ -68,13 +68,14 @@ gtag('config', 'UA-151102873-1');
 
 Simple and fast water shader. Two types of water.<br/>
 Supported rendering path deferred and forward.<br/>
+It works on all platforms.<br/>
 This shader is suitable for scenes where water is not a key element of the scene, but a decorative element.
 
 <br/><br/>
 
 For Unity version of at least 2019.1.8 (64-bit)
 <br/>
-Current version 1.4.4
+Current version 1.4.5
 
 <br/>
 
@@ -136,6 +137,50 @@ public class Water : MonoBehaviour
 }
 </code>
 
+<br/>
+
+<h3>For working shaders on mobile platforms with Forward Rendering.</h3>
+In asset this fix is already added to the general script.
+
+<br/><br/>
+
+<code class="prettyprint ">using UnityEngine;
+
+using UnityEngine;
+
+[ExecuteInEditMode]
+public class depthTextureFix : MonoBehaviour
+{
+    void OnEnable()
+    {
+        GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
+    }
+}
+</code>
+
+<br/>
+
+<h3>For working shaders on mobile platforms with Forward Rendering.</h3>
+
+<code class="prettyprint ">using UnityEngine;
+
+using UnityEngine;
+
+public class WindZoneRot : MonoBehaviour
+{
+    Transform tr;
+
+    private void Awake()
+    {
+        tr = transform;
+    }
+
+    void LateUpdate()
+    {
+        tr.rotation = Quaternion.LookRotation(new Vector3(Shader.GetGlobalFloat("_WaterLocalUvNX"), 0, Shader.GetGlobalFloat("_WaterLocalUvNZ")), Vector3.zero) * Quaternion.Euler(0, -40, 0);
+    }
+}
+</code>
 
 <br/>
 
