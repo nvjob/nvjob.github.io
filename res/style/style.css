@@ -223,6 +223,9 @@ width: 100%;
 max-width: 100%;
 height: auto;
 }
+iframe.yandexdonate{
+background: #F5F5F5;
+}
 /*==========================================================================*/
 .razdelline{
 width: 100%;
