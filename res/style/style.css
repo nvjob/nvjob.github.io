@@ -223,6 +223,14 @@ width: 100%;
 max-width: 100%;
 height: auto;
 }
+
+.contentall img.patreon_logo{
+width: 100%;
+max-width:300px; 
+padding:20px
+}
+
+
 /*==========================================================================*/
 .razdelline{
 width: 100%;
