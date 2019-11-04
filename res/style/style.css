@@ -427,6 +427,7 @@ border: 0px;
 }
 .contentall img.patreon_logo{
 width: 100%;
+max-width: 100%;
 padding:20px
 }
 }
