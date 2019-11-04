@@ -425,11 +425,6 @@ margin: 0;
 background: #D5D5D5;
 border: 0px;
 }
-.contentall img.patreon_logo{
-width: 100%;
-max-width: 100%;
-padding:20px
-}
 }
 /*==========================================================================*/
 @media (max-width: 400px) {
@@ -487,6 +482,11 @@ margin: 13px 0px;
 }
 .downloadc td{
 padding: 5px 0px;
+}
+.contentall img.patreon_logo{
+width: 100%;
+max-width: 100%;
+padding:20px
 }
 }
 /*==========================================================================*/
