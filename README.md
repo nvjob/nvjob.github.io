@@ -13,8 +13,8 @@ https://www.instagram.com/nvjob.pro
 
 -------------------------------------------------------------------
 
-**Authors**<br>
+**Authors:**<br>
 #NVJOB Nicholas Veselov - https://nvjob.github.io
 
-#### License
+**License:**<br>
 https://github.com/nvjob/nvjob.github.io/blob/master/LICENSE.md
