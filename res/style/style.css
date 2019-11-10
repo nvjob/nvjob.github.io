@@ -145,7 +145,8 @@ width: 100%;
 height: 100%;
 }
 iframe.topBannerIn{
-width: 55%;
+width: 96%;
+max-width: 1060px;
 height: 50vh;
 margin: 0 auto;
 padding: 0;
