@@ -487,7 +487,8 @@ padding: 5px 0px;
 .contentall img.patreon_logo{
 width: 100%;
 max-width: 100%;
-padding:15px
+padding:15px;
+margin: 10px 0px;
 }
 }
 /*==========================================================================*/
