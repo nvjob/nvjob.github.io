@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<link rel="shortcut icon" href="/res/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/res/style/bootstrap.min.css">
+<link rel="stylesheet" href="/res/style/navbar.css" type="text/css">
+<link rel="stylesheet" href="/res/style/style.css">
+<title>#NVJOB Simple Boids Unity Asset</title>
+<meta name="description" content="This is a simple pool for optimizing object loading.">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151102873-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-151102873-1');
+</script>
+</head>
+<body>
+<div class="topnavmenu">
+<nav class="navbar navbar-dropdown navbar-fixed-top navbar-toggleable-sm transparent">
+<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+<div class="hamburger"><span></span><span></span><span></span><span></span></div>
+</button>
+<div class="menu-logo"><div class="navbar-brand">
+<a href="/">#NVJOB</a>
+</div></div>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav">
+<li class="nav-item"><a href="/apps/">MY APPS &nbsp;&nbsp;</a></li>
+<li class="nav-item"><a href="/unity/">UNITY ASSETS &nbsp;&nbsp;</a></li>
+<li class="nav-item"><a href="/sources/">OTHER SOURCES &nbsp;&nbsp;</a></li>
+<li class="nav-item"><a href="/dlog/">DEVLOG &nbsp;&nbsp;</a></li>
+
+<li class="nav-item"><a href="/support">SUPPORT &nbsp;&nbsp;</a></li>
+<li class="nav-item"><a href="/patrons">PATRONS &nbsp;&nbsp;</a></li>
+</ul>
+</div>
+</nav>
+</div>
+<div class="topBanner">
+<div class="bannermob">
+<span id="typed" class="banner_top_arrow"></span>
+</div>
+<div class="bannerpc"><iframe width="100%" height="100%" src="/res/" frameborder="0" class="topBannerIn"></iframe></div>
+</div>
+
+
+
+
+<div class="topnameblank">
+<h1>#NVJOB Simple Boids</h1>
+</div>
+
+
+<div class="contentall">
+<div class="contentall-in">
+
+<video class="mbr-embedded-video" src="https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/nvjob%20simple%20pool/12/pic/1.vd4" width="1280" height="720" loop="true" autoplay="true" preload="metadata" muted="muted"></video>
+
+<br/><br/>
+
+This is a simple pool for optimizing object loading.<br>
+All objects in the pool are loaded during initialization, and then retrieved from the pool and returned back to the pool without sacrificing performance.<br>
+The pool allows you to completely abandon Instantiate and Destroy after initialization.
+
+<br><br>
+
+For Unity version of at least 2019.1.8 (64-bit)
+<br/>
+Current version 1.1.1
+
+<br/>
+
+<table class="downloadc"><tbody><tr>
+<td>
+<a href="/link/?url=https://github.com/nvjob/simple-pool" target="_blank" title="#NVJOB">Download from GitHub</a>
+<a href="/link/?url=https://assetstore.unity.com/packages/tools/integration/nvjob-simple-pool-156582" target="_blank" title="#NVJOB">Download from Unity Asset Store</a>
+<a href="/reportaproblem/" target="_blank">Report a Problem / Issue Tracker / FAQ</a>
+</td>
+<td>
+<div class="downloadicon"></div>
+</td>
+</tr></tbody></table>
+
+<img src="https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/nvjob%20simple%20pool/12/pic/1.jpg" alt="#NVJOB Nicholas Veselov (nvjob.github.io) | Simple Pool Unity Asset" title="#NVJOB Nicholas Veselov (nvjob.github.io) | Simple Pool Unity Asset" />
+<br><br>
+
+<h3>Getting an object from a pool:</h3>
+SimplePool.GiveObj() instead of using Instantiate(Object).<br/>
+SimplePool.GiveObj(numElement)-> numElement - number of the Element in editor (SimplePool).
+<br/><br/>
+<img src="https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/nvjob%20simple%20pool/12/pic/3.jpg" alt="#NVJOB Nicholas Veselov (nvjob.github.io) | Simple Pool Unity Asset" title="#NVJOB Nicholas Veselov (nvjob.github.io) | Simple Pool Unity Asset" />
+<br/><br/>
+<code class="prettyprint">GameObject obj = SimplePool.GiveObj(0);</code>
+
+<br/>
+
+Checking that the pool is not empty, if the pool is empty it will return null:<br/>
+<code class="prettyprint">GameObject obj = SimplePool.GiveObj(0);
+if (obj != null)
+{
+// All further manipulations with the object.
+}</code>
+
+<br/>
+
+After all the transformations of the object, activate it:<br/>
+<code class="prettyprint">obj.SetActive(true);</code>
+
+<br/>
+
+The number of elements in the editor (SimplePool):<br/>
+<code class="prettyprint">SimplePool.numObjectsList</code>
+
+<br/>
+
+<h3>Return object to the pool, remove from the scene:</h3>
+SimplePool.Takeobj() instead of using - Destroy(Object).<br/>
+SimplePool.Takeobj(GameObject)-> GameObject - is an object that to be returned to the pool.<br/>
+<code class="prettyprint">SimplePool.Takeobj(obj);</code>
+
+<br/>
+
+<h3>Example script:</h3>
+<code class="prettyprint">using UnityEngine;
+
+public class Example : MonoBehaviour
+{
+    GameObject obj;
+
+    void Start()
+    {
+        if(SimplePool.numObjectsList == 0) obj = SimplePool.GiveObj(0);
+        else obj = SimplePool.GiveObj(Random.Range(0, SimplePool.numObjectsList));
+        if (obj != null)
+        {
+            obj.transform.SetPositionAndRotation(transform.position, transform.rotation);
+            obj.transform.parent = transform;
+            obj.SetActive(true);
+            Invoke("DestroyObject", 5);
+        }
+    }
+
+    void DestroyObject()
+    {
+        SimplePool.Takeobj(obj);
+    }
+}</code>
+
+<br/>
+
+<iframe class="mbr-embedded-video" src="https://www.youtube.com/embed/fhuhPnpSoJU?rel=0&amp;showinfo=0&amp;autoplay=0&amp;loop=1&amp;playlist=fhuhPnpSoJU" width="1280" height="720" frameborder="0" allowfullscreen=""></iframe>
+
+<br/>
+
+<div class="razdelline2"></div>
+
+<h3>License</h3>
+This project is licensed under <a href="https://nvjob.github.io/mit-license" target="_blank">MIT License</a>
+
+<br/>
+
+
+</div>
+</div>
+
+
+
+<div class="bottomfooter">
+(C) Copyright 2016-2019 <a href="https://nvjob.github.io">#NVJOB</a>
+<br/>
+<a href="https://nvjob.github.io" title="#NVJOB Nicholas Veselov independent software and assets developer">Nicholas Veselov - independent software and assets developer</a>
+<br/>
+<a href="https://github.com/nvjob" target="_blank">Website powered by GitHub.com</a>
+</div>
+<script src="/res/js/jquery.min.js"></script>
+<script src="/res/js/run_prettify.js"></script>
+<script src="/res/js/bootstrap.min.js"></script>
+<script src="/res/js/smooth-scroll.js"></script>
+<script src="/res/js/dropdown.js"></script>
+<script src="/res/js/other.js"></script>
+<script src="/res/js/typed.js"></script>
+<script src="/res/js/baneer.text.js"></script>
+</body>
+</html>
