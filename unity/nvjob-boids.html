@@ -210,12 +210,9 @@ The asset includes two shaders, one for birds and butterflies, the second for fi
 
 <h3>Performance Tuning</h3>
 
-- Use no more than 500 birds and fish in the scene, this amount will almost not affect performance. A noticeable drawdown in performance starts with 2000 objects.
-<br/>
-- <strong>Important!</strong> Do not enable the "Rotation Clamp" option. This option uses eulerAngles twice. See "BirdsRotationClamp" for details.
-<br/>
-- Do not use shadows for prefab objects unless necessary.
-<br/>
+- Use no more than 500 birds and fish in the scene, this amount will almost not affect performance. A noticeable drawdown in performance starts with 2000 objects.<br/>
+- Do not use shadows for prefab objects unless necessary.<br/>
+- <strong>Important!</strong> Do not enable the "Rotation Clamp" option. This option uses eulerAngles twice. See "BirdsRotationClamp" for details.<br/>
 - <strong>Important!</strong> If you expose the Render Queue of the shader over 2500, make sure that the Render Queue for different materials for the prefabs is not the same, for example 2501 and 2502.<br/>
 <img src="https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/nvjob%20boids/pic/10.png"/><br/>
 <img src="https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/nvjob%20boids/pic/11.png"/><br/>
