@@ -120,7 +120,7 @@ strong, b {
 font-weight: 600;
 }
 span {
-margin: 3px auto;
+padding-bottom: 5px;
 }
 /*==========================================================================*/
 .topnavmenu, .navbar-brand, .topnavmenu a, .navbar-brand a, .bg-color a {
