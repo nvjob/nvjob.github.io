@@ -119,7 +119,7 @@ text-decoration: none;
 strong, b {
 font-weight: 600;
 }
-span {
+indent {
 display: block;
 padding-bottom: 10px;
 }
