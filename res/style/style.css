@@ -119,11 +119,9 @@ text-decoration: none;
 strong, b {
 font-weight: 600;
 }
-
 span {
 margin: 3px auto;
 }
-
 /*==========================================================================*/
 .topnavmenu, .navbar-brand, .topnavmenu a, .navbar-brand a, .bg-color a {
 opacity: 1;
