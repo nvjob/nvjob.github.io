@@ -1,10 +1,9 @@
 .slides {
 background:#F5F5F5;
-height:478px;
 margin:0 auto;
 overflow:hidden;
 position:relative;
-width:850px;
+width: 100%;
 }
 .slides ul {
 list-style:none;
