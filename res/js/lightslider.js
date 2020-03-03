@@ -10,12 +10,12 @@ mode: 'slide',
 useCSS: true,
 cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',
 easing: 'linear', //'for jquery animation',//
-speed: 500, //ms'
+speed: 400, //ms'
 auto: true,
 pauseOnHover: false,
 loop: true,
 slideEndAnimation: true,
-pause: 2000,
+pause: 2500,
 keyPress: false,
 controls: true,
 prevHtml: '',
