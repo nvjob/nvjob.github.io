@@ -42,6 +42,7 @@ object-fit: cover;
 #slider .arrows a {
 position: absolute;
 text-decoration: none !important;
+border: 0p !important;
 color: rgba(255, 255, 255, 0.65);
 top: 43%;
 left: 15px;
