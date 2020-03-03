@@ -73,23 +73,3 @@ top:0;
 }
 
 
-.slides ul  li:nth-child(2), .slides ul  li:nth-child(2) div {
--webkit-animation-delay: 6.0s;
--moz-animation-delay: 6.0s;
-}
-
-.slides ul  li:nth-child(3), .slides ul  li:nth-child(3) div {
--webkit-animation-delay: 12.0s;
--moz-animation-delay: 12.0s;
-}
-
-.slides ul  li:nth-child(4), .slides ul  li:nth-child(4) div {
--webkit-animation-delay: 18.0s;
--moz-animation-delay: 18.0s;
-}
-
-.slides ul li img {
-display:block;
-}
-
-
