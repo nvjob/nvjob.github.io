@@ -11,7 +11,7 @@ list-style:none;
 position:relative;
 }
 
-/* Кадры анимации #anim_slides */
+
 @-webkit-keyframes anim_slides {
 0% {
 opacity:0;
