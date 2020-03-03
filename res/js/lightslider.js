@@ -1,19 +1,19 @@
 (function ($, undefined) {
 'use strict';
 var defaults = {
-item: 3,
+item: 1,
 autoWidth: false,
 slideMove: 1,
-slideMargin: 10,
+slideMargin: 0,
 addClass: '',
 mode: 'slide',
 useCSS: true,
 cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',
 easing: 'linear', //'for jquery animation',//
 speed: 400, //ms'
-auto: false,
+auto: true,
 pauseOnHover: false,
-loop: false,
+loop: true,
 slideEndAnimation: true,
 pause: 2000,
 keyPress: false,
@@ -21,7 +21,7 @@ controls: true,
 prevHtml: '',
 nextHtml: '',
 rtl: false,
-adaptiveHeight: false,
+adaptiveHeight: true,
 vertical: false,
 verticalHeight: 500,
 vThumbWidth: 100,
@@ -1139,22 +1139,23 @@ return this;
 };
 }(jQuery));
 
+$(document).ready(function() { $('#image-gallery').lightSlider({ }); });
 
 
 
 
-$(document).ready(function() {
-$('#image-gallery').lightSlider({
-adaptiveHeight:true,
-item:1,
-slideMargin:0,
-item:1,
-thumbItem:9,
-speed:400,
-auto:true,
-loop:true
-});
-});
+//$(document).ready(function() {
+//$('#image-gallery').lightSlider({
+//adaptiveHeight:true,
+//item:1,
+//slideMargin:0,
+//item:1,
+//thumbItem:9,
+//speed:400,
+//auto:true,
+//loop:true
+//});
+//});
 
 
 
