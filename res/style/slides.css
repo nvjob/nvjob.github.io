@@ -3,14 +3,15 @@ background:#F5F5F5;
 margin:0 auto;
 overflow:hidden;
 position:relative;
-width: 100%;
+width:100%;
+height:549px;
 }
-
 .slides ul {
 list-style:none;
 position:relative;
 }
 
+/* Кадры анимации #anim_slides */
 @-webkit-keyframes anim_slides {
 0% {
 opacity:0;
@@ -50,6 +51,8 @@ opacity:0;
 opacity:0;
 position:absolute;
 top:0;
+
+/* анимация css3 */
 -webkit-animation-name: anim_slides;
 -webkit-animation-duration: 24.0s;
 -webkit-animation-timing-function: linear;
@@ -58,6 +61,7 @@ top:0;
 -webkit-animation-delay: 0;
 -webkit-animation-play-state: running;
 -webkit-animation-fill-mode: forwards;
+
 -moz-animation-name: anim_slides;
 -moz-animation-duration: 24.0s;
 -moz-animation-timing-function: linear;
@@ -68,7 +72,7 @@ top:0;
 -moz-animation-fill-mode: forwards;
 }
 
-
+/* Задержки css3 */
 .slides ul  li:nth-child(2), .slides ul  li:nth-child(2) div {
 -webkit-animation-delay: 6.0s;
 -moz-animation-delay: 6.0s;
@@ -85,6 +89,7 @@ top:0;
 display:block;
 }
 
+/* Кадры анимации #anim_titles */
 @-webkit-keyframes anim_titles {
 0% {
 left:100%;
@@ -140,6 +145,9 @@ padding:10px 20px;
 position:absolute;
 top:80%;
 width:100%;
+
+
+/* Анимация css3 */
 -webkit-animation-name: anim_titles;
 -webkit-animation-duration: 24.0s;
 -webkit-animation-timing-function: linear;
@@ -148,6 +156,7 @@ width:100%;
 -webkit-animation-delay: 0;
 -webkit-animation-play-state: running;
 -webkit-animation-fill-mode: forwards;
+
 -moz-animation-name: anim_titles;
 -moz-animation-duration: 24.0s;
 -moz-animation-timing-function: linear;
