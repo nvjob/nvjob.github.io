@@ -1150,7 +1150,7 @@ item:1,
 slideMargin:0,
 item:1,
 thumbItem:9,
-speed:500,
+speed:400,
 auto:true,
 loop:true
 });
