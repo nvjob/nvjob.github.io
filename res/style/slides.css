@@ -1,14 +1,15 @@
 .slides {
-
 width:100%;
-
 }
+
+
 .slides ul {
 list-style:none;
-
 }
 
-/* Кадры анимации #anim_slides */
+
+
+
 @-webkit-keyframes anim_slides {
 0% {
 opacity:0;
@@ -26,6 +27,8 @@ opacity:0;
 opacity:0;
 }
 }
+
+
 @-moz-keyframes anim_slides {
 0% {
 opacity:0;
@@ -44,10 +47,11 @@ opacity:0;
 }
 }
 
+
+
 .slides ul li {
 opacity:0;
 top:0;
-
 
 -webkit-animation-name: anim_slides;
 -webkit-animation-duration: 24.0s;
@@ -69,7 +73,6 @@ top:0;
 }
 
 
-/* Задержки css3 */
 .slides ul  li:nth-child(2), .slides ul  li:nth-child(2) div {
 -webkit-animation-delay: 6.0s;
 -moz-animation-delay: 6.0s;
