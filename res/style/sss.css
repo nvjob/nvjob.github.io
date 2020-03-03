@@ -1,7 +1,5 @@
 .sss {
 height: 0;
-margin: 0; 
-padding: 0;
 position: relative;
 display: block;
 overflow: hidden;
@@ -9,8 +7,6 @@ overflow: hidden;
 
 .ssslide {
 width: 100%;
-margin: 0;
-padding: 0;
 position: absolute;
 top: 0;
 left: 0;
