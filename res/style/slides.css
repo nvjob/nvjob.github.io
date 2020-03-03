@@ -40,17 +40,9 @@ height: 100%;
 object-fit: cover;
 }
 
-#slider .pager {
-font-size: 14px;
-font-weight: 900;
-color: #777;
-text-align: center;
-margin-top: 5px;
-}
-
 #slider .arrows a {
 position: absolute;
-text-decoration: none;
+text-decoration: none !important;
 color: rgba(255, 255, 255, 0.65);
 top: 43%;
 left: 15px;
