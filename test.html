@@ -100,9 +100,7 @@ I can do something to order if not busy and Im wondering: utility, small program
 <a class="next" href="#">></a>
 </div>
 
-<div class="pager">
-1 / 4
-</div>
+
 
 </div>
 
@@ -180,9 +178,6 @@ var slidesCont = $this.children('.slides-container');
 // Get all slides
 var slides = slidesCont.children('.slide');
 
-// Get pager div
-var pager = $this.children('.pager');
-
 // Get Previous / Next links
 var arrowsCont = $this.children('.arrows');
 var prevSlide = arrowsCont.children('.prev');
@@ -214,8 +209,6 @@ currentSlideIndex++;
 currentSlide = currentSlide.next();
 currentSlide.delay(500).addClass('active').fadeIn(700);
 }
-
-pager.text(currentSlideIndex+' / '+slidesCount);
 }
 
 // Function responsible for fading to previous slide
@@ -231,8 +224,6 @@ currentSlideIndex--;
 currentSlide = currentSlide.prev();
 currentSlide.delay(500).addClass('active').fadeIn(700);
 }
-
-pager.text(currentSlideIndex+' / '+slidesCount);
 }
 
 // Function that starts the autoplay and resets it in case user navigated (clicked prev or next)
