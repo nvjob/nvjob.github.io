@@ -5,10 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 <link rel="shortcut icon" href="/res/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/res/style/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="/res/style/bootstrap.min.css">
 <link rel="stylesheet" href="/res/style/navbar.css" type="text/css">
-<link rel="stylesheet" href="/res/style/style.css" type="text/css">
-<link rel="stylesheet" href="/res/style/slides.css" type="text/css" />
+<link rel="stylesheet" href="/res/style/style.css">
 <title>#NVJOB Nicholas Veselov - Independent Developer</title>
 <meta name="description" content="I am an independent developer. I became interested in electrical engineering and programming since childhood. Since 2005 I have been working in the IT field.">
 <meta name="google-site-verification" content="YvHOYELU-1nkWNSFW0BcVCvD8Nu8fk83J1D02qqHbeQ" />
@@ -72,49 +71,7 @@ On this site are published my work, which I developed for myself.
 #NVJOB - is a hashtag that I use to tag my work. By this hashtag you will find me and my projects in any search engine.
 <br><br>
 I can do something to order if not busy and Im wondering: utility, small program, Unity game, shader, script, bot or cheat with machine vision, program to automate processes in Windows, arduino sketch, site, target page.
-
-
 <br><br>
-
-
-
-
-
-
-
-
-
-
-
-
-<div id="slider">
-<div class="slides-container">
-<div class="slide"><img src="/repo/unity%20assets/nvjob%20boids/scr/Fish%20Boids%201.jpg" alt="Slider img 1" ></div>
-<div class="slide"><img src="/repo/unity%20assets/nvjob%20boids/scr/Fish%20Boids%202.jpg" alt="Slider img 2" ></div>
-<div class="slide"><img src="/repo/unity%20assets/nvjob%20boids/scr/Fish%20Boids%203.jpg" alt="Slider img 3" ></div>
-<div class="slide"><img src="/repo/unity%20assets/nvjob%20boids/scr/Fish%20Boids%204.jpg" alt="Slider img 3" ></div>
-</div>
-
-<div class="arrows">
-<a class="prev" href="#"><</i></a>
-<a class="next" href="#">></a>
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-<br>
-
-
-
 <h2>Contacts</h2>
 <div class="noinlineblock">
 Russia, St. Petersburg<br>
@@ -163,105 +120,6 @@ nvjob.dev@gmail.com
 
 
 <script src="/res/js/jquery.min.js"></script>
-
-
-
-
-<script>
-function dxSimpleSlider(element = '#dx-slider', auto = false, pause) {
-
-// Get parent element
-var $this = $(element);
-
-// Slides container
-var slidesCont = $this.children('.slides-container');
-// Get all slides
-var slides = slidesCont.children('.slide');
-
-// Get Previous / Next links
-var arrowsCont = $this.children('.arrows');
-var prevSlide = arrowsCont.children('.prev');
-var nextSlide = arrowsCont.children('.next');
-
-// Total slides count
-var slidesCount = slides.length;
-
-// Set currentSlide to first child
-var currentSlide = slides.first();
-var currentSlideIndex = 1;
-
-var autoPlay = null;
-
-// Hide all slides except first and add active class to first
-slides.not(':first').css('display', 'none');
-currentSlide.addClass('active');
-
-// Function responsible for fading to next slide
-function fadeNext() {
-currentSlide.removeClass('active').fadeOut(700);
-
-if(currentSlideIndex == slidesCount) {
-currentSlide = slides.first();
-currentSlide.delay(500).addClass('active').fadeIn(700);
-currentSlideIndex = 1;
-} else {
-currentSlideIndex++;
-currentSlide = currentSlide.next();
-currentSlide.delay(500).addClass('active').fadeIn(700);
-}
-}
-
-// Function responsible for fading to previous slide
-function fadePrev() {
-currentSlide.removeClass('active').fadeOut(700);
-
-if(currentSlideIndex == 1) {
-currentSlide = slides.last();
-currentSlide.delay(500).addClass('active').fadeIn();
-currentSlideIndex = slidesCount;
-} else {
-currentSlideIndex--;
-currentSlide = currentSlide.prev();
-currentSlide.delay(500).addClass('active').fadeIn(700);
-}
-}
-
-// Function that starts the autoplay and resets it in case user navigated (clicked prev or next)
-function AutoPlay() {
-clearInterval(autoPlay);
-
-if(auto == true)
-autoPlay = setInterval(function() {fadeNext()}, pause);
-}
-
-// Detect if user clicked on arrow for next slide and fade next slide if it did
-$(nextSlide).click(function(e) {
-e.preventDefault();
-fadeNext();
-AutoPlay();
-});
-
-// Detect if user clicked on arrow for previous slide and fade previous slide if it did
-$(prevSlide).click(function(e) {
-e.preventDefault();
-fadePrev();
-AutoPlay();
-});
-
-// Start autoplay if auto is set to true
-AutoPlay();
-
-}
-
-$(function() {
-dxSimpleSlider('#slider', true, 8000);
-});
-</script>
-
-
-
-
-
 <script src="/res/js/run_prettify.js"></script>
 <script src="/res/js/bootstrap.min.js"></script>
 <script src="/res/js/smooth-scroll.js"></script>
