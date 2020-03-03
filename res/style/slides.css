@@ -4,14 +4,12 @@ height: auto;
 }
 
 
-
-
 .slides {
-height:478px;
 overflow:hidden;
 position:relative;
 max-width: 100%;
 }
+
 
 .slides ul {
 list-style:none;
