@@ -10,7 +10,7 @@ mode: 'slide',
 useCSS: true,
 cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',
 easing: 'linear', //'for jquery animation',//
-speed: 400, //ms'
+speed: 500, //ms'
 auto: true,
 pauseOnHover: false,
 loop: true,
@@ -34,7 +34,7 @@ currentPagerPosition: 'middle',
 enableTouch: true,
 enableDrag: true,
 freeMove: true,
-swipeThreshold: 40,
+swipeThreshold: 60,
 responsive: [],
 /* jshint ignore:start */
 onBeforeStart: function ($el) {},
@@ -1140,22 +1140,4 @@ return this;
 }(jQuery));
 
 $(document).ready(function() { $('#image-gallery').lightSlider({ }); });
-
-
-
-
-//$(document).ready(function() {
-//$('#image-gallery').lightSlider({
-//adaptiveHeight:true,
-//item:1,
-//slideMargin:0,
-//item:1,
-//thumbItem:9,
-//speed:400,
-//auto:true,
-//loop:true
-//});
-//});
-
-
 
