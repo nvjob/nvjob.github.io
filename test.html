@@ -8,6 +8,9 @@
 <link rel="stylesheet" href="/res/style/bootstrap.min.css">
 <link rel="stylesheet" href="/res/style/navbar.css" type="text/css">
 <link rel="stylesheet" href="/res/style/style.css">
+
+<link rel="stylesheet"  href="/res/css/lightslider.css"/>
+
 <title>#NVJOB Nicholas Veselov - Independent Developer</title>
 <meta name="description" content="I am an independent developer. I became interested in electrical engineering and programming since childhood. Since 2005 I have been working in the IT field.">
 <meta name="google-site-verification" content="YvHOYELU-1nkWNSFW0BcVCvD8Nu8fk83J1D02qqHbeQ" />
@@ -120,6 +123,27 @@ nvjob.dev@gmail.com
 
 
 <script src="/res/js/jquery.min.js"></script>
+
+
+
+<script src="/res/js/lightslider.js"></script> 
+<script>
+$(document).ready(function() {
+$('#image-gallery').lightSlider({
+adaptiveHeight:true,
+item:1,
+slideMargin:0,
+item:1,
+thumbItem:9,
+speed:500,
+auto:true,
+loop:true
+});
+});
+</script>
+
+
+
 <script src="/res/js/run_prettify.js"></script>
 <script src="/res/js/bootstrap.min.js"></script>
 <script src="/res/js/smooth-scroll.js"></script>
