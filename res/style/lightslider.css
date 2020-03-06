@@ -12,6 +12,11 @@ border: 0px !important;
 display: none;
 }
 
+#image-gallery-stub{
+display: block;
+}
+
+
 
 .lSSlideOuter {
 overflow: hidden;

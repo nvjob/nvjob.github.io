@@ -1,4 +1,8 @@
-$(window).load(function() { document.getElementById("image-gallery").style.display = "block"; });
+$(window).load(function() { 
+document.getElementById("image-gallery-stub").style.display = "none"; 
+document.getElementById("image-gallery").style.display = "block"; 
+});
+
 
 (function ($, undefined) {
 'use strict';
