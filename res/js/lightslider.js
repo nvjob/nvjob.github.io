@@ -4,7 +4,6 @@ document.getElementById("image-gallery").style.display = "block";
 }, 50);
 });
 
-
 (function ($, undefined) {
 'use strict';
 var defaults = {
