@@ -1,3 +1,12 @@
+$(window).load(function() {
+setTimeout(function() {
+
+document.getElementById("image-gallery").style.display = "block";
+
+}, 800);
+});
+
+
 (function ($, undefined) {
 'use strict';
 var defaults = {

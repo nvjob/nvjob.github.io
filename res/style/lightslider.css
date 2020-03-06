@@ -8,6 +8,10 @@ a {
 border: 0px !important;
 }
 
+#image-gallery{
+display: none;
+}
+
 
 .lSSlideOuter {
 overflow: hidden;
