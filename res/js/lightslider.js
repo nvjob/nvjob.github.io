@@ -1,5 +1,5 @@
 $(window).load(function() { 
-document.getElementById("image-gallery").style.display = "block"; 
+document.getElementById("loadhide").style.display = "block"; 
 });
 
 
