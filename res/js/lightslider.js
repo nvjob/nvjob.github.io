@@ -1,8 +1,4 @@
-$(window).load(function() {
-setTimeout(function() {
-document.getElementById("image-gallery").style.display = "block";
-}, 50);
-});
+$(window).load(function() { document.getElementById("image-gallery").style.display = "block"; });
 
 (function ($, undefined) {
 'use strict';
