@@ -156,8 +156,24 @@ StFPS.Counter - is public static Vector3Int, where x - is the minimum FPS, y - i
 
 <br/><br/>
 
+Logging to the file is done by calling public static void StFPS.LogWrite ().
 
-<img src="/repo/unity%20assets/fps%20counter%20and%20graph/12/pic/Unity-FPS-Counter-0.jpg" style="width:100%" alt="#NVJOB Nicholas Veselov (nvjob.github.io) | FPS Counter and Graph Unity Asset" title="#NVJOB Nicholas Veselov (nvjob.github.io) | FPS Counter and Graph Unity Asset" />
+<br/><indent></indent>
+
+<code class="prettyprint ">using UnityEngine;
+public class Example : MonoBehaviour
+{
+    void OnApplicationQuit()
+    {
+        StFPS.LogWrite();
+    }
+}
+</code>
+
+
+
+
+
 
 <br/><br/>
 
