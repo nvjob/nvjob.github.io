@@ -138,13 +138,15 @@ You can use the FPS counter as a class.
 <br/><br/>
 
 <code class="prettyprint ">
+using UnityEngine;
+
 public class Example : MonoBehaviour
 {
-using UnityEngine;
+    float timeUpdate = 1.0f;
 
     void Update()
     {
-       print(StFPS.Counter(60, Time.deltaTime));   
+    print(StFPS.Counter(timeUpdate));
     }
 }
 </code>
