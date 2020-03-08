@@ -153,6 +153,22 @@ public class Example : MonoBehaviour
 
 <br/>
 
+Logging to the file is done by calling public static void StFPS.LogWrite(), this is done only once, for example, when exiting the program.
+
+<br/><indent></indent>
+
+<code class="prettyprint ">using UnityEngine;
+public class Example : MonoBehaviour
+{
+    void OnApplicationQuit()
+    {
+        StFPS.LogWrite();
+    }
+}
+</code>
+
+<br/>
+
 <code class="prettyprint ">using UnityEngine;
 using UnityEngine.UI;
 public class Example : MonoBehaviour
@@ -169,26 +185,6 @@ public class Example : MonoBehaviour
     }
 }
 </code>
-
-
-
-<br/><br/>
-
-Logging to the file is done by calling public static void StFPS.LogWrite(), this is done only once, for example, when exiting the program.
-
-<br/><indent></indent>
-
-<code class="prettyprint ">using UnityEngine;
-public class Example : MonoBehaviour
-{
-    void OnApplicationQuit()
-    {
-        StFPS.LogWrite();
-    }
-}
-</code>
-
-
 
 
 
