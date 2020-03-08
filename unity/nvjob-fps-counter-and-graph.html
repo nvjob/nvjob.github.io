@@ -151,6 +151,27 @@ public class Example : MonoBehaviour
 }
 </code>
 
+<br/>
+
+<code class="prettyprint ">using UnityEngine;
+using UnityEngine.UI;
+public class Example : MonoBehaviour
+{
+    public Button exitButton;
+    void Awake()
+    {
+        exitButton.onClick.AddListener(ExitButton);
+    }
+    void ExitButton()
+    {
+        StFPS.LogWrite();
+        Application.Quit();
+    }
+}
+</code>
+
+
+
 <br/><br/>
 
 Logging to the file is done by calling public static void StFPS.LogWrite(), this is done only once, for example, when exiting the program.
