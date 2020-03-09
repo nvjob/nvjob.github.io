@@ -151,7 +151,7 @@ There are two examples in the asset, for understanding the operation and setting
 <i>Brightness Vector Value Y</i> - the direction of change of the transparency frequency along the Y axis.<br/>
 <i>Brightness Vector Value Z</i> - minimum transparency of the text (from 0 to 1, outside it's HDR).<br/>
 <i>Brightness Vector Value W</i> - maximum transparency of the text (from 0 to 1, outside it's HDR).<br/>
-<i>Unscaled Time On*</i> - used if a change is required during a pause (Time.timeScale = 0).<br/>
+<i>Unscaled Time On**</i> - used if a change is required during a pause (Time.timeScale = 0).<br/>
 <indent></indent>
 <strong>Other Settings</strong><br/>
 <i>Saturation</i> - text saturation (HDR).<br/>
@@ -169,6 +169,24 @@ There are two examples in the asset, for understanding the operation and setting
 
 
 
+<br/><br/>
+
+
+** If you need to stop the total time (Time.timeScale = 0), but you want the shader to continue working, then turn on "Unscaled Time On" and change the external shader variable "_NV_AF_Time".
+
+<br/><indent></indent>
+
+<code class="prettyprint ">using UnityEngine;
+public class Example : MonoBehaviour
+{
+    float afTime;
+    void LateUpdate()
+    {
+        afTime += Time.unscaledDeltaTime;
+        Shader.SetGlobalFloat("_NV_AF_Time", afTime);
+    }
+}
+</code>
 
 
 
