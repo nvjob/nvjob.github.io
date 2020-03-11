@@ -98,6 +98,47 @@ There are two examples in the asset, for understanding the operation and setting
 This asset is available only to patrons. Be sure to check out the license.
 
 
+<br/><br/>
+
+<h3>Scripting</h3>
+
+Simple Name Generator is a static public class.<br/>
+SimpleNameGen.GiveAName(Type Name) - Get the name according to the selected type.<br/>
+Type Name (int) is the type of name, there are currently 7 types of names (see list):<br/>
+1 - Female Old Name.<br/>
+2 - Female New Name.<br/>
+3 - Male Old Name.<br/>
+4 - Male New Name.<br/>
+5 - Female Fantasy Name.<br/>
+6 - Male Fantasy Name.<br/>
+7 - Sci Fi Name.
+
+
+
+
+<br/><indent></indent>
+
+<code class="prettyprint ">using UnityEngine;
+public class Example : MonoBehaviour
+{
+    float timeUpdate = 1.0f;
+    void Update()
+    {
+    print("Min FPS:" + StFPS.Counter(timeUpdate).x);
+    print("Avg FPS:" + StFPS.Counter(timeUpdate).y);
+    print("Max FPS:" + StFPS.Counter(timeUpdate).z);
+    }
+}
+</code>
+
+<br/>
+
+
+
+
+
+
+
 
 
 
