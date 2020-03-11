@@ -98,6 +98,7 @@ This asset is available only to patrons. Be sure to check out the license.
 
 <br/><br/>
 
+
 <h3>Scripting</h3>
 
 Simple Name Generator is a static public class.<br/>
@@ -117,14 +118,15 @@ Type Name (int) is the type of name, there are currently 7 types of names (see l
 <br/><indent></indent>
 
 <code class="prettyprint ">using UnityEngine;
+using UnityEngine.UI;
 public class Example : MonoBehaviour
 {
-    float timeUpdate = 1.0f;
-    void Update()
+    public int typeName = 7;  //  7 - Sci Fi Name
+    void Start()
     {
-    print("Min FPS:" + StFPS.Counter(timeUpdate).x);
-    print("Avg FPS:" + StFPS.Counter(timeUpdate).y);
-    print("Max FPS:" + StFPS.Counter(timeUpdate).z);
+        string curentName = SimpleNameGen.Uppercase(SimpleNameGen.GiveAName(typeName));
+        GetComponent<Text>().text = curentName;
+        print(curentName);
     }
 }
 </code>
