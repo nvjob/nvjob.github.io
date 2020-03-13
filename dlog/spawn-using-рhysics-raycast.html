@@ -79,6 +79,7 @@ public class Spawn : MonoBehaviour
     public GameObject enemy;
     public float radiusSpawn = 10;
     public int numOfBasicEnemies = 10;
+    public float heightAboveGround = 2.0f;
     public LayerMask groundLayer;
     Transform tr;
     RaycastHit hit;
@@ -97,7 +98,7 @@ public class Spawn : MonoBehaviour
             if (Physics.Raycast(v3rc, Vector3.down, out hit, 150, groundLayer))
             {
                 GameObject enemyRay = Instantiate(enemy);
-                enemyRay.transform.SetPositionAndRotation(new Vector3(v3rc.x, hit.point.y + 2.0f, v3rc.z), tr.rotation);
+                enemyRay.transform.SetPositionAndRotation(new Vector3(v3rc.x, hit.point.y + heightAboveGround, v3rc.z), tr.rotation);
                 enemyRay.transform.parent = tr;
             }
         }
