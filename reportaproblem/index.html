@@ -128,6 +128,22 @@ SRP does not support _GrabPass. Offset Wall Shader is a surface shader.
 
 <!--------------------------------------------------->
 
+
+<section class="faq-section">
+<input type="checkbox" id="q9">
+<label for="q9">#NVJOB Shader for Unity SpeedTree (STC). Artifacts.</label>           
+<div class="short-answer">
+You must set the Render Queue (material) to more than 2500 if you are using the Forward rendering path.
+</div>
+<div class="full-answer">
+You must set the Render Queue (material) to more than 2500 if you are using the Forward rendering path.<br>
+If you expose the Render Queue of the shader over 2500, make sure that the Render Queue for different materials for the prefabs is not the same, for example 2501 and 2502.
+</div>
+</section>
+
+
+<!--------------------------------------------------->
+
 <section class="faq-section">
 <input type="checkbox" id="q3">
 <label for="q3">Limit the unity version to 2019. All your assets does work in unity 2018 so I hope the lower unity version limit will possible.</label>           
