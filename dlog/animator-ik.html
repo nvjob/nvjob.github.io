@@ -62,6 +62,55 @@ gtag('config', 'UA-151102873-1');
 
 
 
+<br/><br/>
+
+
+<code class="prettyprint ">// #NVJOB Nicholas Veselov - https://nvjob.github.io
+
+using UnityEngine;
+
+public class BoneIK : MonoBehaviour
+{
+    public Transform target;
+    public Transform head;
+    public float lookAtCoolTime = 0.4f;
+    public float lookAtHeatTime = 0.4f;
+    public float towards = 5.0f;
+    public float weightMul = 1;
+    public float clampWeight = 0.5f;
+    public bool yTargetHeadSynk;
+
+    Transform tr;
+    Animator anim;
+    Vector3 lookAtTargetPosition, lookAtPosition;
+    float lookAtWeight;
+
+    void Start()
+    {
+        tr = transform;
+        anim = GetComponent<Animator>();
+        lookAtTargetPosition = target.position + tr.forward;
+        lookAtPosition = head.position + tr.forward;
+    }
+
+    void Update()
+    {
+        lookAtTargetPosition = target.position + tr.forward;
+    }
+
+    void OnAnimatorIK()
+    {
+        if (yTargetHeadSynk == false) lookAtTargetPosition.y = head.position.y;
+        Vector3 curDir = lookAtPosition - head.position;
+        curDir = Vector3.RotateTowards(curDir, lookAtTargetPosition - head.position, towards * Time.deltaTime, float.PositiveInfinity);
+        lookAtPosition = head.position + curDir;
+        float blendTime = 1 > lookAtWeight ? lookAtHeatTime : lookAtCoolTime;
+        lookAtWeight = Mathf.MoveTowards(lookAtWeight, 1, Time.deltaTime / blendTime);
+        anim.SetLookAtWeight(lookAtWeight * weightMul, 0.4f, 0.8f, 0.9f, clampWeight);
+        anim.SetLookAtPosition(lookAtPosition);
+    }
+}
+</code>
 
 
 
