@@ -57,7 +57,61 @@ gtag('config', 'UA-151102873-1');
 
 <div class="contentall">
 <div class="contentall-in">
-clear
+
+
+
+Transforming bones using a script during animation playback.<br/>
+This simple script allows you to rotate an animated object.<br/>
+Only works with Animation Type - Humanoid.
+
+
+<br/><br/>
+
+<iframe style="width: 100%;" class="mbr-embedded-video" src="https://www.youtube.com/embed/mMQ23Egih6E?rel=0&amp;showinfo=0&amp;autoplay=0&amp;loop=1&amp;playlist=mMQ23Egih6E" width="1280" height="720" frameborder="0" allowfullscreen=""></iframe>
+
+
+<br/><br/>
+
+
+<code class="prettyprint ">// #NVJOB Nicholas Veselov - https://nvjob.github.io
+
+using UnityEngine;
+
+public class Spawn : MonoBehaviour
+{
+    public GameObject enemy;
+    public float radiusSpawn = 10;
+    public int numOfBasicEnemies = 10;
+    public LayerMask groundLayer;
+    Transform tr;
+    RaycastHit hit;
+
+    void Awake()
+    {
+        tr = transform;    
+    }    
+
+    void Start()
+    {
+        for (int i = 0; i < numOfBasicEnemies; i++)
+        {
+            Vector2 randomCircle = Random.insideUnitCircle * radiusSpawn;
+            Vector3 v3rc = new Vector3(tr.position.x + randomCircle.x, 100, tr.position.z + randomCircle.y);
+            if (Physics.Raycast(v3rc, Vector3.down, out hit, 150, groundLayer))
+            {
+                GameObject enemyRay = Instantiate(enemy);
+                enemyRay.transform.SetPositionAndRotation(new Vector3(v3rc.x, hit.point.y + 2.0f, v3rc.z), tr.rotation);
+                enemyRay.transform.parent = tr;
+            }
+        }
+    }
+}
+</code>
+
+
+
+
+
 </div>
 </div>
 
