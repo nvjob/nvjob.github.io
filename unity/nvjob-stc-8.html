@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,36 +51,47 @@ gtag('config', 'UA-151102873-1');
 
 
 
-<!------------------------------------------------->
-
-
 <div class="topnameblank">
 <h1>#NVJOB Shader for Unity SpeedTree 8 (STC)</h1>
 </div>
-
-<!------------------------------------------------->
 
 
 <div class="contentall">
 <div class="contentall-in">
 
-<img src="/repo/unity%20assets/stc/20/pic/4.jpg" alt="#NVJOB Nicholas Veselov (nvjob.github.io) | Shader for Unity SpeedTree (STC) Unity Asset" title="#NVJOB Nicholas Veselov (nvjob.github.io) | Shader for Unity SpeedTree (STC) Unity Asset" style="width:100%;"/>
+
+<video class="mbr-embedded-video" src="/repo/unity%20assets/alpha%20flashing%20text%202/pic/1.vd4" width="1280" height="720" loop="true" autoplay="true" preload="metadata" muted="muted"></video>
 
 <br/><br/>
 
-Customization of wind and other parameters of the shader. Now all types of geometry are supported, including billboards. Billboards can also be customized.
+This is a small set for UI effects.
+<br/><indent></indent>
+The asset includes two shaders, one shader for text, the second for sprites.<br>
+Shaders allow you to get various effects, not just a smooth change in transparency (see examples).
+<br/><indent></indent>
+The asset includes a script that changes the transparency of the text. <br>
+You can change the alpha channel for several texts at once by setting different parameters.
 
-<br/><br/>
+<br><br>
 
-For Unity version of at least 2019.1.0 (64-bit)
+<h3>Features:</h3>
+- Shader for text.<br>
+- Shader for sprites.<br>
+- A script for a large number of texts with different settings.<br>
+- Settings for customizing effects.<br>
+- Works with Time.timeScale = 0.<br>
+- Good performance.
+<br><br>
+
+For Unity version of at least 2019.1.8 (64-bit)
 <br/>
-Current version 3.1
+Current version 2.3
 
 <br/>
 
 <table class="downloadc"><tbody><tr>
 <td>
-<a href="/link/?url=https://github.com/nvjob/NVGen-Shader-for-Unity-SpeedTree" target="_blank" title="#NVJOB Shader for Unity SpeedTree (STC)">Download from GitHub</a>
+<a href="/link/?url=https://github.com/nvjob/alpha-flashing-text-simple" target="_blank" title="#NVJOB">Download from GitHub</a>
 <a href="/reportaproblem/" target="_blank">Report a Problem / Issue Tracker / FAQ</a>
 </td>
 <td>
@@ -88,26 +100,128 @@ Current version 3.1
 </tr></tbody></table>
 
 
-<h3>Shader features:</h3>
-- Complete customization of the wind.<br/>
-- Higher performance than standard Unity SpeedTree shader.<br/>
-- Support for Occlusion Map, adjust the intensity of the Occlusion Map.<br/>
-- Adjust the intensity of the Normal Map.<br/>
-- Support Specular Color, Shininess adjustment.<br/>
-- Adjust Shadow Cutoff. For artistic purposes or to increase productivity.<br/>
-- Adjust Ambient Lighting.<br/>
-- Adjust the color, brightness and contrast.
+
+<h3>Information</h3>
+The script and shaders are independent of each other and are used depending on the task. But can also be used together.<br/>
+There are two examples in the asset, for understanding the operation and settings.
+<br/><indent></indent>
+<strong>I recommend</strong> importing this asset into a new project. Study the operation of the asset and copy the components you need to your project.
+<br/><br/>
+
+
+
+<h3>Component Settings (Alpha Flashing Text)</h3>
+
+<indent></indent>
+
+<img src="/repo/unity%20assets/alpha%20flashing%20text%202/pic/4.png" alt="#NVJOB Alpha Flashing UI Unity Asset" title="#NVJOB Alpha Flashing UI Unity Asset"/>
+
+<br/><br/>
+
+<strong>Settings</strong><br/>
+<i>Text List</i> - a list of all texts, you can change the transparency of many different texts.<br/>
+<i>Size</i> - indicate the number of texts.<br/>
+<i>Text</i> - UI Text<br/>
+<i>Min Alpha*</i> - minimum transparency of the text (from 0 to 1).<br/>
+<i>Max Alpha*</i> - maximum transparency of the text (from 0 to 1).<br/>
+<i>Timer Alpha</i> - time to change the transparency of the text, the larger this value, the slower the change in transparency (1 sec / this value).
+
+<br/><indent></indent>
+
+* The script uses a channel alpha limit from 0 to 1. If you set Max Alpha to 1.2 (example 0, text 2), then after a value of 1, there will be a delay, this can also be used to achieve the desired artistic effect.
+
 
 
 <br/><br/>
 
-<img src="/repo/unity%20assets/stc/20/pic/1.jpg" alt="#NVJOB Nicholas Veselov (nvjob.github.io) | Shader for Unity SpeedTree (STC) Unity Asset" title="#NVJOB Nicholas Veselov (nvjob.github.io) | Shader for Unity SpeedTree (STC) Unity Asset" style="width:100%; max-width:650px"/>
 
+
+<h3>Shaders Settings (Alpha Flashing UI / Text)</h3>
+
+<indent></indent>
+
+<img src="/repo/unity%20assets/alpha%20flashing%20text%202/pic/5.png" alt="#NVJOB Alpha Flashing UI Unity Asset" title="#NVJOB Alpha Flashing UI Unity Asset"/>
+
+<br/><br/>
+
+<strong>Color Settings</strong><br/>
+<i>Text Color</i> - text color (HDR).<br/>
+<indent></indent>
+<strong>Blink</strong><br/>
+<i>Blink rate</i> - the frequency of change in the transparency of the text, the higher this value, the higher the speed.<br/>
+<i>Alpha Vector Value X</i> - the direction of change of the transparency frequency along the X axis.<br/>
+<i>Alpha Vector Value Y</i> - the direction of change of the transparency frequency along the Y axis.<br/>
+<i>Alpha Vector Value Z</i> - minimum transparency of the text (from 0 to 1, outside it's HDR).<br/>
+<i>Alpha Vector Value W</i> - maximum transparency of the text (from 0 to 1, outside it's HDR).<br/>
+<i>Unscaled Time On**</i> - used if a change is required during a pause (Time.timeScale = 0).<br/>
+<indent></indent>
+<strong>Other Settings</strong><br/>
+<i>Saturation</i> - text saturation (HDR).<br/>
+<i>Brightness</i> - text brightness (HDR).<br/>
+<i>Contrast</i> - text contrast (HDR).
+
+
+
+<br/><br/>
+
+
+
+<h3>Shaders Settings (Alpha Flashing UI / Sprite)</h3>
+
+<indent></indent>
+
+<img src="/repo/unity%20assets/alpha%20flashing%20text%202/pic/6.png" alt="#NVJOB Alpha Flashing UI Unity Asset" title="#NVJOB Alpha Flashing UI Unity Asset"/>
+
+<br/><br/>
+
+<strong>Color Settings</strong><br/>
+<i>Tint 0</i> - main color of the sprite (HDR).<br/>
+<i>Tint 1 On</i> - enable additional color.<br/>
+<i>Tint 1</i> - additional color of the sprite (HDR).<br/>
+<indent></indent>
+<strong>Blink</strong><br/>
+<i>Blink Color rate</i> - the frequency of change in the color of the sprite, the higher this value, the higher the speed.<br/>
+<i>Blink rate</i> - the frequency of change in the transparency of the sprite, the higher this value, the higher the speed.<br/>
+<i>Alpha Vector Value X</i> - the direction of change of the transparency frequency along the X axis.<br/>
+<i>Alpha Vector Value Y</i> - the direction of change of the transparency frequency along the Y axis.<br/>
+<i>Alpha Vector Value Z</i> - minimum transparency of the sprite (from 0 to 1, outside it's HDR).<br/>
+<i>Alpha Vector Value W</i> - maximum transparency of the sprite (from 0 to 1, outside it's HDR).<br/>
+<i>Unscaled Time On**</i> - used if a change is required during a pause (Time.timeScale = 0).<br/>
+<indent></indent>
+<strong>Other Settings</strong><br/>
+<i>Saturation</i> - sprite saturation (HDR).<br/>
+<i>Brightness</i> - sprite brightness (HDR).<br/>
+<i>Contrast</i> - sprite contrast (HDR).
+
+
+<br/><br/>
+
+
+** If you need to stop the total time (Time.timeScale = 0), but you want the shader to continue working, then turn on "Unscaled Time On" and change the external shader variable "_NV_AF_Time".
+
+<br/><indent></indent>
+
+<code class="prettyprint ">using UnityEngine;
+public class Example : MonoBehaviour
+{
+    float afTime;
+    void LateUpdate()
+    {
+        afTime += Time.unscaledDeltaTime;
+        Shader.SetGlobalFloat("_NV_AF_Time", afTime);
+    }
+}
+</code>
+
+<br>
+
+
+<img src="/repo/unity%20assets/alpha%20flashing%20text%202/pic/1.jpg" alt="#NVJOB Alpha Flashing UI Unity Asset" title="#NVJOB Alpha Flashing UI Unity Asset"/>
 
 
 <br/>
-<div class="razdelline2"></div>
 
+<div class="razdelline2"></div>
 
 <h3>License</h3>
 This project is licensed under <a href="https://nvjob.github.io/mit-license" target="_blank">MIT License</a>
@@ -118,9 +232,6 @@ This project is licensed under <a href="https://nvjob.github.io/mit-license" tar
 
 </div>
 </div>
-
-
-<!------------------------------------------------->
 
 
 
