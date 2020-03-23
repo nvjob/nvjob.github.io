@@ -94,7 +94,7 @@ public class BoneIK : MonoBehaviour
     void Start()
     {
         tr = transform;
-        anim = GetComponent<Animator>();
+        anim = GetComponent&lt;Animator&gt;();
         lookAtTargetPosition = target.position + tr.forward;
         lookAtPosition = head.position + tr.forward;
     }
