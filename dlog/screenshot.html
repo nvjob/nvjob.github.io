@@ -113,7 +113,7 @@ public class NVScreenShot : MonoBehaviour
         string filePath  = System.IO.Directory.GetCurrentDirectory() + "/screenshot";
         if (!System.IO.Directory.Exists(filePath)) System.IO.Directory.CreateDirectory(filePath);        
 
-        thisCamera = GetComponent<\Camera\>();
+        thisCamera = GetComponent<\Camera>();
         nameScreenshotSt = nameScreenshot;
         numberShot = 0;        
     }
