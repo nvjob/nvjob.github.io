@@ -1,5 +1,6 @@
-# NVJOB.GITHUB.IO
-<a href="https://nvjob.github.io/" target="_blank">Nicholas Veselov independent software and assets developer</a> <br>
+.GITHUB.IO
+<a href="https://nvjob.github.io/" target="_blank">#NVJOB</a><br>
+Nicholas Veselov independent software and assets developer<br>
 Russia, St. Petersburg
 <br><br>
 ![GitHub Logo](https://raw.githubusercontent.com/e-prom/e-prom.github.io/master/res/images/nvjob.jpg)
