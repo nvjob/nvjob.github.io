@@ -8,6 +8,6 @@ Russia, St. Petersburg
 
 -------------------------------------------------------------------
 
-**Authors:** NVJOB Nicholas Veselov - https://nvjob.github.io
+**Authors:** #NVJOB Nicholas Veselov - https://nvjob.github.io
 
 **License:** https://github.com/nvjob/nvjob.github.io/blob/master/LICENSE.md
