@@ -145,7 +145,7 @@ There is an example in this asset to understand the operation and settings.
 &#8226; <i>Detail Texture</i> - an additional texture for details, only for the "Branch Detail" geometry type.<br/>
 &#8226; <i>Main Color</i> - main color, HDR. Color hue depends on "Hue Color" and "Color and Light Tuning".<br/>
 &#8226; <i>Hue Variation</i> - enable hue variation, the hue depends on the set hue color, and the intensity of the hue depends on the position of the object in world space. In this way you can get many shades for the forest with one material.<br/>
-&#8226; <i>Hue Color</i> - color of the hue, the alpha channel also affects the intensity of the hue.<br/>
+&#8226; <i>Hue Color</i> - color of the hue, HDR. Alpha channel also affects the intensity of the hue.<br/>
 &#8226; <i>Alpha Cutoff</i> - determine the cutoff point for the which areas will be shown. For "Frond" and "Leaf".<br/>
 &#8226; <i>Shadow Cutoff</i> - determine the cutoff point for shadow. For design or to increase performance. For "Frond" and "Leaf".
 
@@ -155,11 +155,11 @@ There is an example in this asset to understand the operation and settings.
 
 &#8226; <i>Specular Map</i> - enable specular, disabled by default.<br/>
 
-&#8226; <i>Specular Map Texture</i> - specular texture, green channel.<br/>
-&#8226; <i>Specular Intensity</i> - the intensity of the specular texture, according to the principle of contrast. HDR.<br/>
-&#8226; <i>Shininess</i> - <br/>
-&#8226; <i>Gloss</i> - <br/>
-&#8226; <i>Specular Color</i> - 
+&#8226; <i>Specular Map Texture</i> - specular texture, green channel. Black areas will be zero specular reflection, while white areas will be full specular reflection.<br/>
+&#8226; <i>Specular Intensity</i> - intensity of the specular texture, according to the principle of contrast. HDR.<br/>
+&#8226; <i>Shininess</i> - shininess, is a multiplier for "Specular Map Texture". If "Specular Map Texture" is none, then "Shininess" * 1. HDR.<br/>
+&#8226; <i>Gloss</i> - degree of gloss, HDR.<br/>
+&#8226; <i>Specular Color</i> - specular color, HDR.
 
 
 <br/><indent></indent>
