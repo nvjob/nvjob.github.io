@@ -1,15 +1,11 @@
-# nvjob.github.io - site repository
-Nicholas Veselov - Indie Developer <br>
+# NVJOB.GITHUB.IO
+<a href="https://nvjob.github.io/" target="_blank">Nicholas Veselov independent software and assets developer</a>
+<br><br>
+![GitHub Logo](https://raw.githubusercontent.com/e-prom/e-prom.github.io/master/res/images/nvjob.jpg)
+<br><br>
 Russia, St. Petersburg <br>
-nvjob.dev@gmail.com, reset86@gmail.com <br>
 
-https://nvjob.github.io <br>
-https://github.com/nvjob <br>
-http://nvjob.dx.am <br>
-https://reddit.com/user/reset86 <br>
-https://twitter.com/nvjob <br>
-https://assetstore.unity.com/publishers/30428 <br>
-https://www.instagram.com/nvjob.pro
+
 
 -------------------------------------------------------------------
 
