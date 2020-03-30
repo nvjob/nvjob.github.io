@@ -130,7 +130,8 @@ There is an example in this asset to understand the operation and settings.
 
 
 <i>Geometry Type</i> - Type of geometry. Branch - bark of a tree, opaque. Branch Detail - bark of a tree, opaque, two Albedo.<br/>
-<i>Backface Culling</i> - Branch Detail - bark of a tree, opaque, two Albedo.<br/>
+<i>Backface Culling</i> - Culling is an optimization that does not render polygons facing away from the viewer. All polygons have a front and a back side. Culling makes use of the fact that most objects are closed; if you have a cube, you will never see the sides facing away from you (there is always a side facing you in front of it) so Unity doesn’t need to draw the sides facing away. <br/>
+Back - Don’t render polygons that are facing away from the viewer (default) i.e. back-facing polygons are culled. Front - Don’t render polygons that are facing towards the viewer. Used for turning objects inside-out. Off - Disables culling - all faces are drawn. Used for special effects.
 
 
 
