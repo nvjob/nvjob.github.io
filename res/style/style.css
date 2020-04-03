@@ -330,7 +330,7 @@ overflow: hidden;
 text-overflow: ellipsis;
 text-align: center;
 width: 99%;
-border-color: #555;
+border-bottom: 0.08rem dashed #aaa !important;
 }
 /*==========================================================================*/
 .bottomfooter{
