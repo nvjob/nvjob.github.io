@@ -330,7 +330,7 @@ overflow: hidden;
 text-overflow: ellipsis;
 text-align: center;
 width: 99%;
-border-bottom: 0.06em dashed #aaa !important;
+border-bottom: 0.05em dashed #aaa !important;
 }
 /*==========================================================================*/
 .bottomfooter{
