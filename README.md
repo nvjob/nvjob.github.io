@@ -3,7 +3,7 @@
 Nicholas Veselov independent software and assets developer<br>
 Russia, St. Petersburg
 <br><br>
-![GitHub Logo](https://raw.githubusercontent.com/e-prom/e-prom.github.io/master/res/images/nvjob.jpg)
+![GitHub Logo](https://github.com/nvjob/nvjob.github.io/raw/master/res/images/nvjob.jpg)
 
 
 -------------------------------------------------------------------
