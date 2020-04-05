@@ -1013,3 +1013,10 @@ return false;
 });
 
 })(jQuery);
+
+
+
+$(window).load(function() {
+document.getElementById("loadhide").style.display = "block";
+});
+

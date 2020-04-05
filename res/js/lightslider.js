@@ -1,8 +1,3 @@
-$(window).load(function() { 
-document.getElementById("loadhide").style.display = "block"; 
-});
-
-
 (function ($, undefined) {
 'use strict';
 var defaults = {

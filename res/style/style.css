@@ -124,6 +124,13 @@ display: block;
 padding-bottom: 10px;
 }
 /*==========================================================================*/ 
+#loadhide{
+display: none;
+}
+.gallery{
+overflow: hidden;
+}
+/*==========================================================================*/ 
 .topnavmenu, .navbar-brand, .topnavmenu a, .navbar-brand a, .bg-color a {
 opacity: 1;
 font-family: 'Oswald', sans-serif;
