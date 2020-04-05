@@ -1018,5 +1018,16 @@ return false;
 
 $(window).load(function() {
 document.getElementById("loadhide").style.display = "block";
+
+var vid = document.getElementsByClassName("mbr-embedded-video");
+vid.play();
+
 });
+
+
+
+
+
+
+
 
