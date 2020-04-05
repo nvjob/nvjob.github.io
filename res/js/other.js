@@ -1002,13 +1002,6 @@ $slider.find('.carousel-control li.active').eq(1).removeClass('active');
 
 }
 
-})(jQuery);
-
-
-
-$(window).load(function() {
-document.getElementById("loadhide").style.display = "block";
-
 $('video').bind('contextmenu', function(e) {
 this.paused ? this.play() : this.pause();
 return false;
@@ -1019,12 +1012,11 @@ this.paused ? this.play() : this.pause();
 return false;
 });
 
+})(jQuery);
+
+
+
+$(window).load(function() {
+document.getElementById("loadhide").style.display = "block";
 });
-
-
-
-
-
-
-
 
