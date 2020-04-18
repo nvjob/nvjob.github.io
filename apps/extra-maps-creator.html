@@ -69,10 +69,10 @@ gtag('config', 'UA-151102873-1');
 <br/><br/>
 
 This is a small program for creating Extra Textures (for SpeedTree 8, <a href="https://nvjob.github.io/unity/nvjob-stc-8" target="_blank">STC8</a>, <a href="https://nvjob.github.io/unity/kx-pbr-shader" target="_blank">KX PBR Shader</a>, and many other assets on the Unity Asset Store).
-
 <br/>
-
 Channel packing is efficient because it allows the renderer to sample up to four grayscale maps that use the same UV coordinates with a single Texture fetch.
+<br/>
+The resulting texture can be saved in 3 different formats: png, tiff, jpg.
 
 <br/><br/>
 
@@ -94,9 +94,14 @@ Current version 1.0.1
 </td>
 </tr></tbody></table>
 
+<h3>Information</h3>
 
+Textures do not require prior preparation. When packaged, the size of all textures automatically changes to the size of the texture located in Channel R.<br/>
+Example (for SpeedTree 8 or STC8). You have Smoothness, Metallic, and Occlusion texurs.<br/>
+Add textures like this: Channel R - Smoothness, Channel G - Metallic, Channel B - Ambient Occlusion.<br/>
+Choose a directory, name and file type. Click "Create".
 
-
+<br/><br/>
 
 </div>
 </div>
