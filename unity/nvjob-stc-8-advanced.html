@@ -70,8 +70,9 @@ gtag('config', 'UA-151102873-1');
 <br/><br/>
 
 This is an extended version of the <a href="https://nvjob.github.io/unity/nvjob-stc-8" target="_blank">STC8 shader</a>. There are two modifications <a href="https://nvjob.github.io/unity/nvjob-stc-8-pro" target="_blank">STC8 Pro</a> and <a href="https://nvjob.github.io/unity/nvjob-stc-8-advanced" target="_blank">STC8 Pro Advanced</a>.<br/>
-The STC8 Pro and STC8 Pro Advanced shaders support Instanced Indirect from <a href="https://www.awesometech.no/index.php/home/vegetation-studio/" target="_blank">Vegetation Studio</a>.<br/>
-There is also a version of <a href="https://nvjob.github.io/unity/nvjob-stc-8-toon" target="_blank">STC8 Pro Toon</a>.
+The STC8 Pro and STC8 Pro Advanced shaders support Instanced Indirect from <a href="https://www.awesometech.no/" target="_blank">Vegetation Studio Pro</a>.
+<br/>
+If you intend to use STC8 Pro or STC8 Pro Advanced with Vegetation Studio Pro, read carefully - <a href="#setupvsp">Installation on Vegetation Studio Pro</a>.
 
 <br/><indent></indent>
 
@@ -89,7 +90,9 @@ This is next gen shader for powerful platforms (High End Gaming PC, PlayStation 
 
 This is a shader for SpeedTree version 8.x for Unity. The shader has advanced settings compared to the standard Unity shader for SpeedTree.
 The shader fully functions in Forward Rendering and Deferred Rendering (including Subsurface Emission). Shaders have great scalability. The shader allows you to increase performance, but to the detriment of appearance, or to get a better image, but to the detriment of performance. 
+
 <br/><indent></indent>
+
 Using this shader, you can adjust the wind (speed, amplitude, swaying branches, etc.). The wind settings in the shader, allow you to fix incorrectly configured wind settings in SpeedTree, as well as synchronize and adjust the wind for all vegetation separately. You can adjust the wind parameters for each vegetation individually.
 
 <br><br>
@@ -130,9 +133,7 @@ Current version 3.2
 
 
 <h3>Information</h3>
-This shader does not work with SRP (HDRP, URP)!
-<br/><indent></indent>
-In fairness, it should be said that the standard shader for SpeedTree 8 is not so bad, especially when compared with the standard shader SpeedTree 7. Since the standard shader for SpeedTree 8 is based on Surface Shaders.
+<strong>Attention!</strong> This shader does not work with SRP (HDRP, URP)!
 <br/><indent></indent>
 <strong>Attention!</strong> The speed of shader compilation when importing into a project depends on the power of your CPU in your PC. Initial compilation can take a lot of time, so wait for compilation, the shader is large and complex.
 <br/>
@@ -144,7 +145,6 @@ There is an example in this asset to understand the operation and settings.<br/>
 Trees (Broadleaf, Palm) used in the examples are standard examples from SpeedTree for Unity v8.x.
 
 <br/><br/>
-
 
 
 <h3>Shaders Settings (#NVJOB / STC8 Pro Advanced)</h3>
@@ -293,8 +293,54 @@ Trees (Broadleaf, Palm) used in the examples are standard examples from SpeedTre
 <br/><br/>
 
 <h3>Deferred and Forward rendering path</h3>
-
 The STC8 shader supports Deferred and Forward rendering paths. But due to the difference in rendering in the rendering paths of Deferred and Forward, the shader (material) settings for different rendering paths will be different.
+
+
+<br/><br/>
+
+
+<a name="setupvsp"></a>
+
+<h3>Installation on Vegetation Studio Pro</h3>
+
+STC8 Pro and STC8 Pro Advanced support Vegetation Studio Pro, but to work, you will need to prepare the Vegetation Studio Pro itself in your project.
+
+<br/><indent></indent>
+
+Instructions for installing and configuring Vegetation Studio Pro can be found on the official website of <a href="https://www.awesometech.no/index.php/setup-guide/">Vegetation Studio</a>.
+
+<br/><indent></indent>
+
+<strong>Attention!</strong> STC8 Pro and STC8 Pro Advanced only works with Vegetation Studio Pro. Vegetation Studio without Pro is not supported.
+
+<br/><indent></indent>
+
+&#8226; Open the file:<br/>
+<i>Speedtree8ShaderController.cs</i><br/>
+located in the directory: <br/>
+<i>Assets\AwesomeTechnologies\VegetationStudioPro\Runtime\ShaderSystem\Speedtree</i>
+
+<br/><indent></indent>
+
+&#8226; Find the code (located at the top):
+<br/>
+<code class="prettyprint ">public bool MatchShader(string shaderName)
+{
+   return (shaderName == "Nature/SpeedTree8");
+}
+</code>
+
+
+Replace "Nature/SpeedTree8" with "#NVJOB/STC8 Pro VS":
+<br/>
+<code class="prettyprint ">public bool MatchShader(string shaderName)
+{
+  return (shaderName == "#NVJOB/STC8 Pro VS");
+}
+</code>
+
+&#8226; Import the STC8 Pro VS shaders (the entire STC8 Pro asset, or only the STC8 Pro VS shaders).
+
 
 
 <br/><br/>
