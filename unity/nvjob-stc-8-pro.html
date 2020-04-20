@@ -291,12 +291,24 @@ Instructions for installing and configuring Vegetation Studio Pro can be found o
 
 <br/><br/>
 
-<strong>Setup:</strong><br/>
-Open the file:<br/>
+<strong>Setup:</strong>
+
+<br/><indent></indent>
+
+&#8226; Open the file:<br/>
 <i>Speedtree8ShaderController.cs</i><br/>
 located in the directory: <br/>
 <i>\Assets\AwesomeTechnologies\VegetationStudioPro\Runtime\ShaderSystem\Speedtree</i>
 
+<br/><indent></indent>
+
+&#8226; Find the code (located at the top):<br/>
+
+<code class="prettyprint ">        public bool MatchShader(string shaderName)
+        {
+            return (shaderName == "Nature/SpeedTree8");
+        }
+</code>
 
 
 
