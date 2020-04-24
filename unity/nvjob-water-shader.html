@@ -162,15 +162,12 @@ In asset this fix is already added to the general script.
 <br/><br/>
 
 <code class="prettyprint ">using UnityEngine;
-
-using UnityEngine;
-
 [ExecuteInEditMode]
 public class depthTextureFix : MonoBehaviour
 {
     void OnEnable()
     {
-        GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
+        gameObject.GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
     }
 }
 </code>
