@@ -177,7 +177,7 @@ On the processor level i3-8100, i5-6600, AMD Ryzen 5 1400, compilation time will
 <img src="/repo/unity%20assets/stc8/pro/3.png" alt="#NVJOB STC8 Pro (Shader for Unity SpeedTree 8) Unity Asset" title="#NVJOB STC8 Pro (Shader for Unity SpeedTree 8). Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
 <br/><indent></indent>
 
-&#8226; <i>Extra Maps (Smoothness, Metallic, AO)</i> - enable Extra Maps, disabled by default. You can use Extra Maps exported from SpeedTree 8, or create your own textures and pack them in Extra Maps using the <a href="" target="_blank">#NVJOB Extra Maps Creator</a>.<br/>
+&#8226; <i>Extra Maps (Smoothness, Metallic, AO)</i> - enable Extra Maps, disabled by default. You can use Extra Maps exported from SpeedTree 8, or create your own textures and pack them in Extra Maps using the <a href="/apps/extra-maps-creator" target="_blank">#NVJOB Extra Maps Creator</a>.<br/>
 &#8226; <i>Smoothness (R), Metallic (G), AO (B)</i> - extra maps texture, green channel. R channel - Smoothness, G channel - Metallic, B channel - Ambient Occlusion.<br/>
 &#8226; <i>Smoothness Strength</i> - strength of the smoothness texture (Extra Maps R channel), according to the principle of contrast. HDR.<br/>
 &#8226; <i>Smoothness Intensity</i> - is a multiplier for smoothness texture (Extra Maps R channel). HDR.<br/>
@@ -202,6 +202,12 @@ On the processor level i3-8100, i5-6600, AMD Ryzen 5 1400, compilation time will
 &#8226; <i>Subsurface Indirect</i> - it is a combination of diffuse coefficient and indirect illumination.<br/>
 &#8226; <i>Subsurface Rough</i> - rough subsurface emission.
 
+<br/><indent></indent>
+<img src="/repo/unity%20assets/stc8/pro/11.png" alt="#NVJOB STC8 Pro (Shader for Unity SpeedTree 8) Unity Asset" title="#NVJOB STC8 Pro (Shader for Unity SpeedTree 8). Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
+<br/><indent></indent>
+
+&#8226; <i>Rim Color<i> - color rim lighting. Emissive light based on the angle between surface normal and view direction.<br/>
+&#8226; <i>Rim Power</i> - intensity of the rim lighting.
 
 <br/><indent></indent>
 <img src="/repo/unity%20assets/stc8/pro/5.png" alt="#NVJOB STC8 Pro (Shader for Unity SpeedTree 8) Unity Asset" title="#NVJOB STC8 Pro (Shader for Unity SpeedTree 8). Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
@@ -221,11 +227,9 @@ On the processor level i3-8100, i5-6600, AMD Ryzen 5 1400, compilation time will
 <br/><indent></indent>
 
 &#8226; <i>Enable Tuning</i> - enable color and light tuning, disabled by default.<br/>
-&#8226; <i>Light</i> - vertex light, HDR.<br/>
 &#8226; <i>Brightness</i> - final color brightness, HDR.<br/>
 &#8226; <i>Saturation</i> - final color saturation, HDR.<br/>
 &#8226; <i>Contrast</i> - final color contrast, HDR.
-
 
 <br/><indent></indent>
 
@@ -244,7 +248,6 @@ On the processor level i3-8100, i5-6600, AMD Ryzen 5 1400, compilation time will
 &#8226; <i>Wind Amplitude</i> - general amplitude of wind.<br/>
 &#8226; <i>Wind Degree Slope</i> - general amount of slope due to wind power.<br/>
 &#8226; <i>Wind Constant Tilt</i> - constant slope due to wind power.<br/>
-
 &#8226; <i>Leaf Ripple</i> - effect of leaf ripples using offset.<br/>
 &#8226; <i>Leaf Ripple Speed</i> - speed of leaf ripples.<br/>
 &#8226; <i>Leaf Tumble</i> - tumbling effect of the leaves, relative to the attachment point.<br/>
@@ -284,14 +287,14 @@ The STC8 shader supports Deferred and Forward rendering paths. But due to the di
 <h3>Installation on Vegetation Studio Pro</h3>
 
 STC8 Pro support Vegetation Studio Pro, but to work, you will need to prepare the Vegetation Studio Pro itself in your project.
-
-<br/><indent></indent>
-
+<br/>
 Instructions for installing and configuring Vegetation Studio Pro can be found on the official website of <a href="https://www.awesometech.no/index.php/setup-guide/">Vegetation Studio</a>.
-
-<br/><indent></indent>
-
+<br/>
 <strong>Attention!</strong> STC8 Pro only works with Vegetation Studio Pro. Vegetation Studio without Pro is not supported.
+
+<br/><br/>
+
+<strong>Installation</strong>
 
 <br/><indent></indent>
 
@@ -322,6 +325,15 @@ Replace "Nature/SpeedTree8" with "#NVJOB/STC8 Pro VS":
 <indent></indent>
 
 &#8226; Import the STC8 Pro VS shaders (the entire STC8 Pro asset, or only the STC8 Pro VS shaders).
+
+
+<br/><br/>
+
+
+<strong>Setting up Materials</strong><br/>
+To see visual changes in material settings in real time, create a tree prefab in the scene. After a restart, you will see a change on all the trees that were instantiate Vegetation Studio.
+
+
 
 
 
