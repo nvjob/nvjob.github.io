@@ -62,303 +62,91 @@ gtag('config', 'UA-151102873-1');
 </div>
 
 
+
+
+
+
 <div class="contentall">
 <div class="contentall-in">
 
 
-<video class="mbr-embedded-video" src="/repo/unity%20assets/stc7/pic/0.vd4" width="1280" height="720" loop="true" autoplay="true" preload="metadata" muted="muted"></video>
 
-<br/><br/>
-
-
-This is a shader for SpeedTree version 7.x for Unity. The shader has advanced settings compared to the standard Unity shader for SpeedTree.
-The shader fully functions in Forward Rendering and Deferred Rendering (including Subsurface Emission). Shaders have great scalability. The shader allows you to increase performance, but to the detriment of appearance, or to get a better image, but to the detriment of performance. 
-<br/><indent></indent>
-Using this shader, you can adjust the wind (speed, amplitude, swaying branches, etc.). The wind settings in the shader, allow you to fix incorrectly configured wind settings in SpeedTree, as well as synchronize and adjust the wind for all vegetation separately. You can adjust the wind parameters for each vegetation individually.
-
-<br><br>
-
-<h3>Features:</h3>
-- Full wind setting.<br>
-- Advanced settings for visualization of vegetation.<br>
-- Support for all functions in Forward Rendering and Deferred Rendering.<br>
-- Good performance.
-<br><br>
-
-Only Built-in Render Pipeline.
-<br>
-For Unity version of at least 2019.1.8 (64-bit)
+<img src="/repo/unity%20assets/stc7/pic/0.jpg" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Free Asset." title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
 <br/>
-Current version 3.2
-
-<br/><br/>
-
-
-
-<img src="/repo/unity%20assets/stc7/pic/0.jpg" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Free Asset." title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-
-<br/><br/>
-
-<img src="/repo/unity%20assets/stc7/pic/6.jpg" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Free Asset." title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-
-
-
-<table class="downloadc"><tbody><tr>
-<td>
-<a href="/link/?url=https://github.com/nvjob/stc7" target="_blank" title="#NVJOB">Download from GitHub</a>
-<a href="/link/?url=https://nvjob.itch.io/nvjob-stc7" target="_blank" title="#NVJOB">Download from Itch.io</a>
-<a href="/link/?url=https://nvjob.itch.io/nvjob-stc7-td" target="_blank" title="#NVJOB">Download Techno Demo (Itch.io)</a>
-<a href="/reportaproblem/" target="_blank">Report a Problem / Issue Tracker / FAQ</a>
-</td>
-<td>
-<div class="downloadicon"></div>
-</td>
-</tr></tbody></table>
-
-
-
-<h3>Information</h3>
-<strong>Attention!</strong> The speed of shader compilation when importing into a project depends on the power of your CPU in your PC. Initial compilation can take a lot of time, so wait for compilation, the shader is large and complex.
-<br/>
-On the processor level i3-8100, i5-6600, AMD Ryzen 5 1400, compilation time will take more than 3.5 minutes.
-
-<br/><indent></indent>
-<strong>I recommend</strong> importing this asset into a new project. Study the operation of the asset and copy the components you need to your project.
-
-<br/><indent></indent>
-There is an example in this asset to understand the operation and settings.
-The trees (Broadleaf, Palm) used in the examples are taken from the - <a href="https://assetstore.unity.com/packages/3d/vegetation/speedtree/free-speedtrees-package-29170" target="_blank">Free SpeedTrees Package</a>.
-
-
-<br/><br/>
-
-
-
-<h3>Shaders Settings (#NVJOB / STC7)</h3>
-
-<indent></indent>
-
-<img src="/repo/unity%20assets/stc7/pic/0.png" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7) Unity Asset" title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-
-<br/><br/>
-
-<strong>Geometry Type & Culling</strong>
-<br/><indent></indent>
-<img src="/repo/unity%20assets/stc7/pic/1.png" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7) Unity Asset" title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-<br/><indent></indent>
-
-&#8226; <i>Geometry Type</i> - type of geometry. Branch - tree trunk, material bark of a tree, opaque. Branch Detail - tree trunk, material bark of a tree, opaque, two albedo. Frond - leaf palm or fern, material alpha cutoff. Leaf - one leaf, branch with leaves, material alpha cutoff. Mesh - essentially no different from "Branch" (Legacy, Wind: Better, Best, Palm), not recommended for trees.<br/>
-&#8226; <i>Backface Culling</i> - culling is an optimization that does not render polygons facing away from the viewer. All polygons have a front and a back side. Back - Don’t render polygons that are facing away from the viewer i.e. back-facing polygons are culled. Front - Don’t render polygons that are facing towards the viewer. Used for turning objects inside-out. Off - Disables culling - all faces are drawn. Used for special effects.
-
-<br/><indent></indent>
-
-<strong>Texture and Color Settings</strong>
-<br/><indent></indent>
-<img src="/repo/unity%20assets/stc7/pic/2.png" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7) Unity Asset" title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-<br/><indent></indent>
-<img src="/repo/unity%20assets/stc7/pic/3.png" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7) Unity Asset" title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-<br/><indent></indent>
-
-&#8226; <i>Albedo Map</i> - enable albedo, disabled by default.<br/>
-&#8226; <i>Main Texture</i> - main texture, depending on the type of geometry, with or without transparency. For "Branch", "Branch Detail" and "Mesh", a non-transparent texture. For "Frond" and "Leaf" texture with alpha transparency.<br/>
-&#8226; <i>Detail Texture</i> - an additional texture for details, only for the "Branch Detail" geometry type.<br/>
-&#8226; <i>Main Color</i> - main color, HDR. Final color hue depends on "Hue Color" and "Color and Light Tuning".<br/>
-&#8226; <i>Hue Variation</i> - enable hue variation, the hue depends on the set hue color, and the intensity of the hue depends on the position of the object in world space. In this way you can get many shades for the forest with one material.<br/>
-&#8226; <i>Hue Color</i> - color of the hue, HDR. Alpha channel also affects the intensity of the hue.<br/>
-&#8226; <i>Alpha Cutoff</i> - determine the cutoff point for the which areas will be shown. For "Frond" and "Leaf".<br/>
-&#8226; <i>Shadow Cutoff</i> - determine the cutoff point for shadow. For design or to increase performance. For "Frond" and "Leaf".
-
-<br/><indent></indent>
-<img src="/repo/unity%20assets/stc7/pic/4.png" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7) Unity Asset" title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-<br/><indent></indent>
-
-&#8226; <i>Specular Map</i> - enable specular, disabled by default.<br/>
-&#8226; <i>Specular Map Texture</i> - specular texture, green channel. Black areas will be zero specular reflection, while white areas will be full specular reflection.<br/>
-&#8226; <i>Specular Intensity</i> - intensity of the specular texture, according to the principle of contrast. HDR.<br/>
-&#8226; <i>Shininess</i> - shininess, is a multiplier for "Specular Map Texture". If "Specular Map Texture" is none, then "Shininess" * 1. HDR.<br/>
-&#8226; <i>Gloss</i> - degree of gloss, HDR.<br/>
-&#8226; <i>Specular Color</i> - specular color, HDR.
-
-
-<br/><indent></indent>
-<img src="/repo/unity%20assets/stc7/pic/5.png" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7) Unity Asset" title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-<br/><indent></indent>
-
-&#8226; <i>Occlusion Map</i> - enable occlusion, disabled by default.<br/>
-&#8226; <i>Occlusion Map Texture</i> - occlusion texture, red channel.<br/>
-&#8226; <i>Strength Occlusion</i> - intensity of the occlusion texture, HDR.
-
-
-<br/><indent></indent>
-<img src="/repo/unity%20assets/stc7/pic/6.png" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7) Unity Asset" title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-<br/><indent></indent>
-
-&#8226; <i>Emission Map (Subsurface)</i> - enable emission, disabled by default. For the effect of fake subsurface emission.<br/>
-&#8226; <i>Emission Map Texture (Subsurface)</i> - occlusion emission.<br/>
-&#8226; <i>Emission Color</i> - emission color, HDR.
-
-
-<br/><indent></indent>
-<img src="/repo/unity%20assets/stc7/pic/7.png" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7) Unity Asset" title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-<br/><indent></indent>
-
-&#8226; <i>Normal Map</i> - enable bump map, disabled by default.<br/>
-&#8226; <i>Normal Map Texture</i> - bump map texture.<br/>
-&#8226; <i>Strength Normal</i> - intensity of the bump map texture.
-
-
-<br/><indent></indent>
-
-<strong>Color and Light Tuning</strong>
-<br/><indent></indent>
-<img src="/repo/unity%20assets/stc7/pic/8.png" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7) Unity Asset" title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-<br/><indent></indent>
-
-&#8226; <i>Enable Tuning</i> - enable color and light tuning, disabled by default.<br/>
-&#8226; <i>Light</i> - vertex light, HDR.<br/>
-&#8226; <i>Brightness</i> - final color brightness, HDR.<br/>
-&#8226; <i>Saturation</i> - final color saturation, HDR.<br/>
-&#8226; <i>Contrast</i> - final color contrast, HDR.
-
-
-<br/><indent></indent>
-
-<strong>Wind Settings</strong>
-<br/><indent></indent>
-<img src="/repo/unity%20assets/stc7/pic/9.png" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7) Unity Asset" title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-<br/><indent></indent>
-
-&#8226; <i>Wind Quality</i>. None - disabled Wind. Fastest - highest performance, only basic parameters. Fast - high performance, basic parameters and leaf ripple. Better - quality and performance, basic parameters, leaf and branch ripple, branch twitch. Best - high quality, basic parameters, leaf and branch ripple, leaf tumble, branch twitch. Palm - high quality, basic parameters and palm settings.
-
-<br/><indent></indent>
-<img src="/repo/unity%20assets/stc7/pic/10.png" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7) Unity Asset" title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-<br/><indent></indent>
-
-&#8226; <i>Wind Speed</i> - general wind speed.<br/>
-&#8226; <i>Wind Amplitude</i> - general amplitude of wind.<br/>
-&#8226; <i>Wind Degree Slope</i> - general amount of slope due to wind power.<br/>
-&#8226; <i>Wind Constant Tilt</i> - constant slope due to wind power.<br/>
-
-&#8226; <i>Leaf Ripple</i> - effect of leaf ripples using offset.<br/>
-&#8226; <i>Leaf Ripple Speed</i> - speed of leaf ripples.<br/>
-&#8226; <i>Leaf Tumble</i> - tumbling effect of the leaves, relative to the attachment point.<br/>
-&#8226; <i>Leaf Tumble Speed</i> - leaf tumbling speed.<br/>
-&#8226; <i>Branch Ripple</i> - effect of branch ripples using offset.<br/>
-&#8226; <i>Branch Ripple Speed</i> - speed of branch ripples.<br/>
-&#8226; <i>Branch Twitch</i> - twitch branches.
-
-<br/><indent></indent>
-<img src="/repo/unity%20assets/stc7/pic/11.png" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7) Unity Asset" title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-<br/><indent></indent>
-
-&#8226; <i>Branch Ripple</i> - effect of branch ripples using offset.<br/>
-&#8226; <i>Branch Ripple Speed</i> - speed of branch ripples.<br/>
-&#8226; <i>Branch Twitch</i> - twitch branches.<br/>
-&#8226; <i>Elasticity</i> - elasticity of branches and leaves.<br/>
-&#8226; <i>Turbulences</i> - degree of turbulence effect.<br/>
-&#8226; <i>Branch Force Wind</i> - wind force acting on branches (along the X axis).<br/>
-&#8226; <i>Branch Heaviness</i> - wind force acting on branches from top to bottom (along the Y axis).
-
-<br/><br/>
-
-<h3>Shaders Settings (#NVJOB / STC7 billboard)</h3>
-
-<indent></indent>
-
-<img src="/repo/unity%20assets/stc7/pic/12.png" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7) Unity Asset" title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-
-<br/><indent></indent>
-
-Shader "Billboard", almost no different from the "General" shader. The differences are in the absence of a choice of geometry in the "Billboard" shader and support only of the "Fastest" wind.
-
-
-<br/><br/>
-
-
-<h3>Deferred, Forward and Vertex Lit rendering path</h3>
-
-<indent></indent>
-
-<img src="/repo/unity%20assets/stc7/pic/13.jpg" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7) Unity Asset" title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-
-<br/><indent></indent>
-
-The STC7 shader supports all major rendering paths. But due to the difference in rendering in the rendering paths of Deferred, Forward and Vertex Lit, the shader (material) settings for different rendering paths will be different.
-
-
-<br/><br/>
-
-
-<h3>Render Queue</h3>
-
-<indent></indent>
-
-<img src="/repo/unity%20assets/stc7/pic/13.png" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7) Unity Asset" title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-
-<br/><indent></indent>
-
-If you use the Forward rendering path, in some cases, when there is an object with transparent material on the background of the tree, a small halo may occur, in such cases, change the Render Queue to a value higher than 2500. <br/>
-It also makes sense to set the Render Queue to a value above 2500, to change the lighting, see examples.
-
-
-<br/><br/>
-
-
-<h3>Screenshots</h3>
-
-<indent></indent>
-
-<img src="/repo/unity%20assets/stc7/pic/8.jpg" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Free Asset." title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-
-<br/><br/>
-
-<img src="/repo/unity%20assets/stc7/pic/9.jpg" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Free Asset." title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-
-<br/><br/>
-
-<img src="/repo/unity%20assets/stc7/pic/7.jpg" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Free Asset." title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-
-<br/><br/>
-
-<img src="/repo/unity%20assets/stc7/pic/1.jpg" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Free Asset." title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-
-<br/><br/>
-
-<img src="/repo/unity%20assets/stc7/pic/2.jpg" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Free Asset." title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-
-<br/><br/>
-
-<img src="/repo/unity%20assets/stc7/pic/3.jpg" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Free Asset." title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-
-<br/><br/>
-
-<img src="/repo/unity%20assets/stc7/pic/4.jpg" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Free Asset." title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-
-<br/><br/>
-
-<img src="/repo/unity%20assets/stc7/pic/5.jpg" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Free Asset." title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-
-<br/><br/>
-
-<img src="/repo/unity%20assets/stc7/pic/10.jpg" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Free Asset." title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-
-<br/><br/>
-
-<img src="/repo/unity%20assets/stc7/pic/11.jpg" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Free Asset." title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-
 <br/>
 
-<div class="razdelline2"></div>
-
-<h3>License</h3>
-This project is licensed under <a href="https://nvjob.github.io/mit-license" target="_blank">MIT License</a>
 
 
+&#8226; Import the SpeedTree 7 tree into your Unity project.
+<indent></indent>
+<img src="/repo/unity%20assets/stc7/pic/i/0.png" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Free Asset." title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
+<br/>
+<br/>
+
+
+&#8226; Drag the tree in scene and create a new prefab from it.
+<indent></indent>
+<img src="/repo/unity%20assets/stc7/pic/i/2.png" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Free Asset." title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
+<br/>
+<img src="/repo/unity%20assets/stc7/pic/i/1.png" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Free Asset." title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
+<br/>
+<br/>
+
+
+&#8226; Create new materials.
+<indent></indent>
+<img src="/repo/unity%20assets/stc7/pic/i/3.png" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Free Asset." title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
+<br/>
+<br/>
+
+
+&#8226; For new materials, replace the shader with the STC7 shader.
+<indent></indent>
+<img src="/repo/unity%20assets/stc7/pic/i/4.png" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Free Asset." title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
+<br/>
+<br/>
+
+
+
+&#8226; Set up new materials (add textures, color, etc.).
+<indent></indent>
+<img src="/repo/unity%20assets/stc7/pic/i/5.png" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Free Asset." title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
+<br/>
+<br/>
+
+
+
+&#8226; See the description of all shader settings here - <a href="/unity/nvjob-stc-8-pro" target="_blank">nvjob.github.io/unity/nvjob-stc-8-pro</a>
+<indent></indent>
+<img src="/repo/unity%20assets/stc7/pic/i/6.png" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Free Asset." title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
+<br/>
+<br/>
+
+
+
+
+&#8226; Apply the materials to the prefab.
+<indent></indent>
+<img src="/repo/unity%20assets/stc7/pic/i/7.png" alt="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Free Asset." title="#NVJOB STC7 (Advanced Shader for Unity SpeedTree 7). Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
+<br/>
+<br/>
+
+
+
+&#8226; Save the prefab. Use this prefab instead of the original SpeedTree 7 file.
+
+
+
+
+<br/>
 <br/>
 
 
 </div>
 </div>
+
+
+
 
 
 
