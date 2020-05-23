@@ -10,10 +10,10 @@
 <link rel="stylesheet" href="/res/style/navbar.css" type="text/css">
 <link rel="stylesheet" href="/res/style/style.css">
 <title>#NVJOB Simple Water Shaders. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург.</title>
-<meta name="description" content="Two types of water. Supported rendering path deferred and forward. This shader is suitable for scenes where water is not a key element of the scene, but a decorative element.">
-<meta property="og:title" content="#NVJOB Water Shader (simple and fast). Free Unity Asset.">
-<meta property="og:description" content="Two types of water. Supported rendering path deferred and forward. This shader is suitable for scenes where water is not a key element of the scene, but a decorative element.">
-<meta name="image" property="og:image" content="https://nvjob.github.io/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/3.jpg">
+<meta name="description" content="#NVJOB Simple Water Shaders are fast and easy water shaders running on mobile and desktop platforms. The asset includes two shaders, Specular and Surface.">
+<meta property="og:title" content="#NVJOB Simple Water Shaders. Free Unity Asset.">
+<meta property="og:description" content="#NVJOB Simple Water Shaders are fast and easy water shaders running on mobile and desktop platforms. The asset includes two shaders, Specular and Surface.">
+<meta name="image" property="og:image" content="https://nvjob.github.io/repo/unity%20assets/simple-water-shaders/pic/3.jpg">
 <meta property="og:url" content="https://nvjob.github.io/unity/nvjob-water-shader">
 <meta name="twitter:card" content="summary_large_image">
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151102873-1"></script>
@@ -69,7 +69,7 @@ gtag('config', 'UA-151102873-1');
 <div class="contentall">
 <div class="contentall-in">
 
-<video class="mbr-embedded-video" src="/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/3.vd4" width="1280" height="720" loop="true" autoplay="true" preload="metadata" muted="muted"></video>
+<video class="mbr-embedded-video" src="/repo/unity%20assets/simple-water-shaders/pic/3.vd4" width="1280" height="720" loop="true" autoplay="true" preload="metadata" muted="muted"></video>
 
 <br><br>
 
@@ -109,116 +109,63 @@ Current version 1.5
 </tr></tbody></table>
 
 
-
 <h3>Information</h3>
 This shader does not work with SRP (HDRP, URP)!
 <br/><indent></indent>
-The movement of the waves is carried out using global shader variables: _WaterLocalUvX, _WaterLocalUvZ, _WaterLocalUvNX, _WaterLocalUvNZ.
-
-<br/><br/>
-
-_WaterLocalUvX, _WaterLocalUvZ - Offset main texture.<br/>
-_WaterLocalUvNX, _WaterLocalUvNZ - Offset normal map texture.
-
-<br/><br/>
-
-
-<code class="prettyprint ">using UnityEngine;
-
-public class Water : MonoBehaviour
-{
-    public float UvRotateSpeed = 0.4f;
-    public float UvRotateDistance = 2.0f;
-    public float UvBumpRotateSpeed = 0.4f;
-    public float UvBumpRotateDistance = 2.0f;
-
-    Vector2 lwVector, lwNVector;
-
-    private void Awake()
-    {
-        lwVector = Vector2.zero;
-        lwNVector = Vector2.zero;
-    }
-
-    void Update()
-    {
-        lwVector = Quaternion.AngleAxis(Time.time * UvRotateSpeed, Vector3.forward) * Vector2.one * UvRotateDistance;
-        lwNVector = Quaternion.AngleAxis(Time.time * UvBumpRotateSpeed, Vector3.forward) * Vector2.one * UvBumpRotateDistance;
-        Shader.SetGlobalFloat("_WaterLocalUvX", lwVector.x);
-        Shader.SetGlobalFloat("_WaterLocalUvZ", lwVector.y);
-        Shader.SetGlobalFloat("_WaterLocalUvNX", lwNVector.x);
-        Shader.SetGlobalFloat("_WaterLocalUvNZ", lwNVector.y);
-    }
-}
-</code>
+<strong>Attention!</strong> For shaders to work on mobile platforms with Forward Rendering, enable "Depth Texture Mode" function.
+<br/><indent></indent>
+<strong>I recommend</strong> importing this asset into a new project. Study the operation of the asset and copy the components you need to your project.
 
 
 
-<br/>
 
-<img src="/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/5.jpg" alt="#NVJOB Water Shader (simple and fast). Free Unity Asset." title="#NVJOB Water Shader (simple and fast). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
+
+<h3>Component Settings (#NVJOB / Simple Water Shaders)</h3>
+
+<indent></indent>
+
+<img src="/repo/unity%20assets/simple-water-shaders/pic/0.png" alt="#NVJOB Simple Water Shaders. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." title="#NVJOB Simple Water Shaders. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
+
+
+
+
+
+
+
+
+
 
 
 <br/><br/>
 
-<h3>For working shaders on mobile platforms with Forward Rendering.</h3>
-In asset this fix is already added to the general script.
+
+<h3>Shaders Settings (#NVJOB / Simple Water Shader / Water Specular)</h3>
+
+<indent></indent>
+
+
+
 
 <br/><br/>
 
-<code class="prettyprint ">using UnityEngine;
-[ExecuteInEditMode]
-public class depthTextureFix : MonoBehaviour
-{
-    void OnEnable()
-    {
-        gameObject.GetComponent&lt;Camera&gt;().depthTextureMode = DepthTextureMode.Depth;
-    }
-}
-</code>
 
-<br/>
+<h3>Screenshots</h3>
 
-<h3>The rotation of the wind synchronously with water.</h3>
-Optionally, you can not use.
+<indent></indent>
+
+<img src="/repo/unity%20assets/simple-water-shaders/pic/1.jpg" alt="#NVJOB Simple Water Shaders. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." title="#NVJOB Simple Water Shaders. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
 
 <br/><br/>
 
-<code class="prettyprint ">using UnityEngine;
-
-using UnityEngine;
-
-public class WindZoneRot : MonoBehaviour
-{
-    Transform tr;
-
-    private void Awake()
-    {
-        tr = transform;
-    }
-
-    void LateUpdate()
-    {
-        tr.rotation = Quaternion.LookRotation(new Vector3(Shader.GetGlobalFloat("_WaterLocalUvNX"), 0, Shader.GetGlobalFloat("_WaterLocalUvNZ")), Vector3.zero) * Quaternion.Euler(0, -40, 0);
-    }
-}
-</code>
-
-<br/>
-
-<img src="/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/1.jpg" alt="#NVJOB Water Shader (simple and fast). Free Unity Asset." title="#NVJOB Water Shader (simple and fast). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
+<img src="/repo/unity%20assets/simple-water-shaders/pic/2.jpg" alt="#NVJOB Simple Water Shaders. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." title="#NVJOB Simple Water Shaders. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." />
 
 <br/><br/>
 
-<img src="/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/2.jpg" alt="#NVJOB Water Shader (simple and fast). Free Unity Asset." title="#NVJOB Water Shader (simple and fast). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." />
+<img src="/repo/unity%20assets/simple-water-shaders/pic/3.jpg" alt="#NVJOB Simple Water Shaders. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." title="#NVJOB Simple Water Shaders. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." />
 
 <br/><br/>
 
-<img src="/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/3.jpg" alt="#NVJOB Water Shader (simple and fast). Free Unity Asset." title="#NVJOB Water Shader (simple and fast). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." />
-
-<br/><br/>
-
-<img src="/repo/unity%20assets/water%20shader%20saf%20sr/144/pic/4.jpg" alt="#NVJOB Water Shader (simple and fast). Free Unity Asset." title="#NVJOB Water Shader (simple and fast). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." />
+<img src="/repo/unity%20assets/simple-water-shaders/pic/4.jpg" alt="#NVJOB Simple Water Shaders. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." title="#NVJOB Simple Water Shaders. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." />
 
 
 <br/>
