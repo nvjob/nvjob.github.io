@@ -282,6 +282,35 @@ float:right;
 margin-right: 7px;
 }
 /*==========================================================================*/
+table.infoc{
+border: 0.05rem dashed #999;
+width: 100%;
+margin: 40px 0px;
+background: #e1e1e1;
+padding: 0px;
+}
+table.infoc a{
+border-bottom: 0.04rem dashed #b1b1b1;
+color: #565656;
+display:block;
+margin: 13px 0px;
+}
+table.infoc a:hover{
+border-bottom: 0.04rem dashed #c1c1c1;
+}
+.infoc td{
+padding: 5px 15px;
+}
+.infoicon{
+background:url(/res/images/info.png) no-repeat left;
+background-size: contain;
+width: 60px;
+height: 60px;
+display:table;
+float:right;
+margin-right: 7px;
+}
+/*==========================================================================*/
 .inlineblock{
 display: inline-block;
 margin: 0 45px 22px 0;
@@ -523,6 +552,21 @@ table.downloadc a{
 margin: 13px 0px;
 }
 .downloadc td{
+padding: 5px 0px;
+}
+table.infoc{
+border: 0px;
+border-top: 7px solid #D5D5D5;
+border-bottom: 7px solid #D5D5D5;
+width: 100%;
+margin: 40px 0px;
+background: #f5f5f5;
+padding: 0px;
+}
+table.infoc a{
+margin: 13px 0px;
+}
+.infoc td{
 padding: 5px 0px;
 }
 .contentall img.patreon_logo{
