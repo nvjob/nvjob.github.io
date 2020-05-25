@@ -462,9 +462,6 @@ text-overflow: clip;
 display: none;
 }
 .bannerdp {
-display: block;
-margin: 0 auto;
-padding: 0;
 height: 70x;
 }
 }
