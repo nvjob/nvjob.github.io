@@ -178,6 +178,12 @@ display: none;
 .typed-cursor{
 display:none;
 }
+.bannerdp {
+display: block;
+margin: 0 auto;
+padding: 0;
+height: 90px;
+}
 /*==========================================================================*/
 .topnameblank{
 background: #777;
