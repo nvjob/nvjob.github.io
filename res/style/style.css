@@ -461,6 +461,8 @@ text-overflow: clip;
 .bannerpc {
 display: none;
 }
+}
+@media (max-width: 992px) {
 .bannerdp {
 height: 70px;
 }
