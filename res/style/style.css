@@ -182,7 +182,7 @@ display:none;
 display: block;
 margin: 0 auto;
 padding: 0;
-height: 100x;
+height: 100px;
 }
 /*==========================================================================*/
 .topnameblank{
@@ -460,6 +460,9 @@ text-overflow: clip;
 display: none;
 }
 .bannerdp {
+display: block;
+margin: 0 auto;
+padding: 0;
 height: 70x;
 }
 }
