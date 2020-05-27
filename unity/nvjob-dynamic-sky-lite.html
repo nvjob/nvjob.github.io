@@ -77,12 +77,21 @@ This is not just a static skybox, but a dynamic sky (clouds move and change shap
 
 <br/><br/>
 
-Only Built-in Render Pipeline.<br>
-For Unity version of at least 2019.1.8 (64-bit)
+<h3>Information</h3>
+
+This shader does not work with SRP (HDRP, URP)!<br/>
+There is an example in the asset that allows you to quickly understand how to use the "sky" in your project. For the shader to work properly, a dome model with prepared UV is required (model of the dome is in the asset).
+
+
+<br><br>
+
+For Unity version of at least 2019.1.8 (Built-in Render Pipeline)
 <br/>
-Current version 2.3
+Current version 2.5
+
 
 <br/>
+
 
 <table class="downloadc"><tbody><tr><td>
 <a href="/link/?url=https://assetstore.unity.com/packages/slug/152747" target="_blank">Unity Asset Store</a>
@@ -92,58 +101,7 @@ Current version 2.3
 </td><td><div class="downloadicon"></div></td></tr></tbody></table>
 
 
-<h3>Information</h3>
 
-This shader does not work with SRP (HDRP, URP)!
-<br/>
-There is an example in the asset that allows you to quickly understand how to use the "sky" in your project. For the shader to work properly, a dome model with prepared UV is required (model of the dome is in the asset).
-
-<br/><br/>
-
-The movement of clouds is carried out using global shader variables: _SkyShaderUvX, _SkyShaderUvZ.
-
-<br/>
-
-_SkyShaderUvX, _SkyShaderUvZ - Offset main texture (Sky shader).
-
-<br/><br/>
-
-
-
-<code class="prettyprint ">using UnityEngine;
-
-public class DynamicSkyLite : MonoBehaviour
-{
-    public float ssgUvRotateSpeed = 1;
-    public float ssgUvRotateDistance = 1;
-    public Transform player;
-    Vector2 ssgVector;
-    Transform tr;
-
-    private void Awake()
-    { 
-        ssgVector = Vector2.zero;
-        tr = transform;
-    }
-
-    void Update()
-    {
-        ssgVector = Quaternion.AngleAxis(Time.time * ssgUvRotateSpeed, Vector3.forward) * Vector2.one * ssgUvRotateDistance;
-        Shader.SetGlobalFloat("_SkyShaderUvX", ssgVector.x);
-        Shader.SetGlobalFloat("_SkyShaderUvZ", ssgVector.y);
-        tr.position = new Vector3(player.position.x, tr.position.y, player.position.z);
-    }
-}
-</code>
-
-
-
-<br/>
-
-
-<img src="/repo/unity%20assets/dynamic%20sky%20lite%20sr/221/pic/3a.jpg" alt="#NVJOB Dynamic Sky. Free Unity Asset." title="#NVJOB Dynamic Sky. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-
-<br/><br/>
 
 <iframe style="width: 100%;" class="mbr-embedded-video" src="https://www.youtube.com/embed/8xBBqnpXuRY?rel=0&amp;showinfo=0&amp;autoplay=0&amp;loop=1&amp;playlist=8xBBqnpXuRY" width="1280" height="720" frameborder="0" allowfullscreen=""></iframe>
 
