@@ -9,10 +9,10 @@
 <link rel="stylesheet" href="/res/style/bootstrap.min.css">
 <link rel="stylesheet" href="/res/style/navbar.css" type="text/css">
 <link rel="stylesheet" href="/res/style/style.css">
-<title>#NVJOB Dynamic Sky. Shaders Settings (#NVJOB / Dynamic Sky). #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург.</title>
-<meta name="description" content="#NVJOB Dynamic Sky. Shaders Settings (#NVJOB / Dynamic Sky). #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург.">
-<meta property="og:title" content="#NVJOB Dynamic Sky. Shaders Settings (#NVJOB / Dynamic Sky). #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург.">
-<meta property="og:description" content="#NVJOB Dynamic Sky. Shaders Settings (#NVJOB / Dynamic Sky). #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург.">
+<title>#NVJOB Dynamic Sky. Camera Setup. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург.</title>
+<meta name="description" content="#NVJOB Dynamic Sky. Camera Setup. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург.">
+<meta property="og:title" content="#NVJOB Dynamic Sky. Camera Setup. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург.">
+<meta property="og:description" content="#NVJOB Dynamic Sky. Camera Setup. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург.">
 <meta name="image" property="og:image" content="https://nvjob.github.io/repo/unity%20assets/dynamic-sky/pic/10.jpg">
 <meta property="og:url" content="https://nvjob.github.io/instructions/nvjob-dynamic-sky-component-settings">
 <meta name="twitter:card" content="summary_large_image">
@@ -53,83 +53,21 @@ gtag('config', 'UA-151102873-1');
 
 
 <div class="topnameblank">
-<h1>#NVJOB Dynamic Sky (Shaders Settings)</h1>
+<h1>#NVJOB Dynamic Sky (Camera Setup)</h1>
 </div>
 
 
 <div class="contentall">
 <div class="contentall-in">
 
-<img src="/repo/unity%20assets/dynamic-sky/pic/11.jpg" alt="#NVJOB Dynamic Sky. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." title="#NVJOB Dynamic Sky. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-
-<br/><br/>
 
 
-<h3>Shaders Settings (#NVJOB / Dynamic Sky)</h3>
-
-<indent></indent>
-
-<img src="/repo/unity%20assets/dynamic-sky/pic/1.png" alt="#NVJOB Dynamic Sky. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." title="#NVJOB Dynamic Sky. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-
-<br/><br/>
-
-<strong>Sky Type</strong>
-<br/><indent></indent>
-<img src="/repo/unity%20assets/dynamic-sky/pic/2.png" alt="#NVJOB Dynamic Sky. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." title="#NVJOB Dynamic Sky. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-<br/><indent></indent>
-
-&#8226; <i>Sky Type</i> - is the choice of the type of element for the Sky. Shader has two types of Clouds (Cloud 1, Cloud 2) and one Horizon. Clouds differ from each other in the type of texture mixing. In different scenes, this or that type of Clouds is best suited.
 
 
-<br/><br/>
 
 
-<strong>Clouds Type 1 (or Clouds Type 2)</strong>
-<br/><indent></indent>
-<img src="/repo/unity%20assets/dynamic-sky/pic/3.png" alt="#NVJOB Dynamic Sky. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." title="#NVJOB Dynamic Sky. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-<br/><indent></indent>
-
-&#8226; <i>Texture 1</i> - is texture of clouds 1.<br/>
-&#8226; <i>Texture 1 Tiling</i> - texture 1 tiling.<br/>
-&#8226; <i>Intensity</i> - texture intensity 1.<br/>
-&#8226; <i>Motion Vector X</i> - this is motion vector of texture 1 along the x axis.<br/>
-&#8226; <i>Motion Vector Y</i> - this is motion vector of texture 1 along the Y axis.
-<br/><indent></indent>
-&#8226; <i>Texture 2</i> - is texture of clouds 2. Multiplied by the first texture.<br/>
-&#8226; <i>Texture 2 Tiling</i> - texture 2 tiling.<br/>
-&#8226; <i>Intensity</i> - texture intensity 2.<br/>
-&#8226; <i>Motion Vector X</i> - this is motion vector of texture 2 along the x axis.<br/>
-&#8226; <i>Motion Vector Y</i> - this is motion vector of texture 2 along the Y axis.
-<br/><indent></indent>
-&#8226; <i>Texture 3</i> - is texture of clouds 3. Multiplied by the first and second texture.<br/>
-&#8226; <i>Texture 3 Tiling</i> - texture 3 tiling.<br/>
-&#8226; <i>Intensity</i> - texture intensity 3.<br/>
-&#8226; <i>Motion Vector X</i> - this is motion vector of texture 3 along the x axis.<br/>
-&#8226; <i>Motion Vector Y</i> - this is motion vector of texture 3 along the Y axis.
-<br/><indent></indent>
-&#8226; <i>Color</i> - primary color. The primary color is important as is transparency. Using color transparency, you can change the effect of self-shadowing clouds. Also, the main color of the clouds depends on the Background color on the camera.<br/>
-&#8226; <i>Intensity Input</i> - intensity of the mixed textures, before normalizing and changing the contrast.<br/>
-&#8226; <i>Fluffiness</i> - fluffiness of clouds, it works on the principle of contrast.<br/>
-&#8226; <i>Intensity Output</i> - this is overall intensity, takes the color range of the texture to HDR.
 
 
-<br/><br/>
-
-<strong>Horizon</strong>
-<br/><indent></indent>
-<img src="/repo/unity%20assets/dynamic-sky/pic/4.png" alt="#NVJOB Dynamic Sky. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." title="#NVJOB Dynamic Sky. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-<br/><indent></indent>
-
-
-&#8226; <i>Top Horizon Color</i> - color of the top of the horizon. To display clouds, the transparency of this color should be maximal.<br/>
-&#8226; <i>Top Horizon Level</i> - level of the top horizon, this is the real coordinate along the y axis in world space.
-<br/><indent></indent>
-&#8226; <i>Bottom Horizon Color</i> - color of the bottom of the horizon. To hide the clouds, the transparency of this color should be minimal. As a rule, the color of the bottom of the horizon should be the same as the color of the fog.<br/>
-&#8226; <i>Bottom Horizon Level</i> - level of the bottom horizon, this is the real coordinate along the y axis in world space.
-
-<br/><indent></indent>
-
-<img src="/repo/unity%20assets/dynamic-sky/pic/5.png" />
 
 <br/>
 
