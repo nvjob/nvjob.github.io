@@ -9,12 +9,12 @@
 <link rel="stylesheet" href="/res/style/bootstrap.min.css">
 <link rel="stylesheet" href="/res/style/navbar.css" type="text/css">
 <link rel="stylesheet" href="/res/style/style.css">
-<title>#NVJOB Dynamic Sky. Shaders Settings (#NVJOB / Dynamic Sky). #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург.</title>
-<meta name="description" content="#NVJOB Dynamic Sky. Shaders Settings (#NVJOB / Dynamic Sky). #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург.">
-<meta property="og:title" content="#NVJOB Dynamic Sky. Shaders Settings (#NVJOB / Dynamic Sky). #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург.">
-<meta property="og:description" content="#NVJOB Dynamic Sky. Shaders Settings (#NVJOB / Dynamic Sky). #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург.">
-<meta name="image" property="og:image" content="https://nvjob.github.io/repo/unity%20assets/dynamic-sky/pic/11.jpg">
-<meta property="og:url" content="https://nvjob.github.io/instructions/nvjob-dynamic-sky-shader-settings">
+<title>#NVJOB Simple Boids. Shaders Settings (#NVJOB / Dynamic Sky). #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург.</title>
+<meta name="description" content="#NVJOB Simple Boids. Shaders Settings (#NVJOB / Dynamic Sky). #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург.">
+<meta property="og:title" content="#NVJOB Simple Boids. Shaders Settings (#NVJOB / Dynamic Sky). #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург.">
+<meta property="og:description" content="#NVJOB Simple Boids. Shaders Settings (#NVJOB / Dynamic Sky). #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург.">
+<meta name="image" property="og:image" content="https://nvjob.github.io/repo/unity%20assets/nvjob%20boids/scr/Fish%20Boids%201.jpg">
+<meta property="og:url" content="https://nvjob.github.io/instructions/nvjob-boids-shader-settings">
 <meta name="twitter:card" content="summary_large_image">
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151102873-1"></script>
 <script>
@@ -53,83 +53,66 @@ gtag('config', 'UA-151102873-1');
 
 
 <div class="topnameblank">
-<h1>#NVJOB Dynamic Sky (Shaders Settings)</h1>
+<h1>#NVJOB Simple Boids (Shaders Settings)</h1>
 </div>
 
 
 <div class="contentall">
 <div class="contentall-in">
 
-<img src="/repo/unity%20assets/dynamic-sky/pic/11.jpg" alt="#NVJOB Dynamic Sky. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." title="#NVJOB Dynamic Sky. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
+<img src="/repo/unity%20assets/nvjob%20boids/scr/Fish%20Boids%201.jpg" alt="#NVJOB Simple Boids. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." title="#NVJOB Simple Boids. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
 
 <br/><br/>
 
 
-<h3>Shaders Settings (#NVJOB / Dynamic Sky)</h3>
 
-<indent></indent>
 
-<img src="/repo/unity%20assets/dynamic-sky/pic/1.png" alt="#NVJOB Dynamic Sky. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." title="#NVJOB Dynamic Sky. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
+The asset includes two shaders, one for birds and butterflies, the second for fish. I did not combine the shaders into one, because the animation in the shaders is not the same.
+<br/><br/>
+<strong>Important!</strong> You must set the Render Queue to more than 2500 if you are using the Forward rendering path (please read "Performance Tuning" carefully).
 
 <br/><br/>
 
-<strong>Sky Type</strong>
-<br/><indent></indent>
-<img src="/repo/unity%20assets/dynamic-sky/pic/2.png" alt="#NVJOB Dynamic Sky. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." title="#NVJOB Dynamic Sky. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-<br/><indent></indent>
-
-&#8226; <i>Sky Type</i> - is the choice of the type of element for the Sky. Shader has two types of Clouds (Cloud 1, Cloud 2) and one Horizon. Clouds differ from each other in the type of texture mixing. In different scenes, this or that type of Clouds is best suited.
-
+<img src="/repo/unity%20assets/nvjob%20boids/pic/3.png" alt="#NVJOB Simple Boids (Simulation Flock). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." title="#NVJOB Simple Boids (Simulation Flock). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
 
 <br/><br/>
 
-
-<strong>Clouds Type 1 (or Clouds Type 2)</strong>
-<br/><indent></indent>
-<img src="/repo/unity%20assets/dynamic-sky/pic/3.png" alt="#NVJOB Dynamic Sky. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." title="#NVJOB Dynamic Sky. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-<br/><indent></indent>
-
-&#8226; <i>Texture 1</i> - is texture of clouds 1.<br/>
-&#8226; <i>Texture 1 Tiling</i> - texture 1 tiling.<br/>
-&#8226; <i>Intensity</i> - texture intensity 1.<br/>
-&#8226; <i>Motion Vector X</i> - this is motion vector of texture 1 along the x axis.<br/>
-&#8226; <i>Motion Vector Y</i> - this is motion vector of texture 1 along the Y axis.
-<br/><indent></indent>
-&#8226; <i>Texture 2</i> - is texture of clouds 2. Multiplied by the first texture.<br/>
-&#8226; <i>Texture 2 Tiling</i> - texture 2 tiling.<br/>
-&#8226; <i>Intensity</i> - texture intensity 2.<br/>
-&#8226; <i>Motion Vector X</i> - this is motion vector of texture 2 along the x axis.<br/>
-&#8226; <i>Motion Vector Y</i> - this is motion vector of texture 2 along the Y axis.
-<br/><indent></indent>
-&#8226; <i>Texture 3</i> - is texture of clouds 3. Multiplied by the first and second texture.<br/>
-&#8226; <i>Texture 3 Tiling</i> - texture 3 tiling.<br/>
-&#8226; <i>Intensity</i> - texture intensity 3.<br/>
-&#8226; <i>Motion Vector X</i> - this is motion vector of texture 3 along the x axis.<br/>
-&#8226; <i>Motion Vector Y</i> - this is motion vector of texture 3 along the Y axis.
-<br/><indent></indent>
-&#8226; <i>Color</i> - primary color. The primary color is important as is transparency. Using color transparency, you can change the effect of self-shadowing clouds. Also, the main color of the clouds depends on the Background color on the camera.<br/>
-&#8226; <i>Intensity Input</i> - intensity of the mixed textures, before normalizing and changing the contrast.<br/>
-&#8226; <i>Fluffiness</i> - fluffiness of clouds, it works on the principle of contrast.<br/>
-&#8226; <i>Intensity Output</i> - this is overall intensity, takes the color range of the texture to HDR.
-
+<strong>Bird Flapping</strong><br/>
+<i>Flapping Speed</i> - the speed of flapping wings.<br/>
+<i>Flapping Y Power</i> - the power of flapping wings along the Y axis.<br/>
+<i>Flapping Y Offset</i> - offset of flapping wings along the Y axis.<br/>
+<img src="/repo/unity%20assets/nvjob%20boids/pic/5.png"/><br/>
+<i>Flapping X Power</i> - the power of flapping wings along the X axis.<br/>
+<i>Flapping X Offset</i> - offset of flapping wings along the X axis.<br/>
+<img src="/repo/unity%20assets/nvjob%20boids/pic/6.png"/><br/>
+<i>Flapping X Center Indent</i> - Indent in the center along the X axis.<br/>
+<img src="/repo/unity%20assets/nvjob%20boids/pic/6a.png"/><br/>
+<i>Flapping Z Power</i> - the power of flapping wings along the Z axis.<br/>
+<i>Wave Y</i> - the general oscillation of the object along the Y axis.<br/>
+<i>Wave Y Speed</i> - the speed of the oscillation.<br/>
+<i>Butterfly</i> - enable butterfly animation mode.
 
 <br/><br/>
 
-<strong>Horizon</strong>
-<br/><indent></indent>
-<img src="/repo/unity%20assets/dynamic-sky/pic/4.png" alt="#NVJOB Dynamic Sky. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." title="#NVJOB Dynamic Sky. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-<br/><indent></indent>
+<img src="/repo/unity%20assets/nvjob%20boids/pic/4.png" alt="#NVJOB Simple Boids (Simulation Flock). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." title="#NVJOB Simple Boids (Simulation Flock). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
+
+<br/><br/>
+
+<strong>Swimming Fish</strong><br/>
+<i>Swimming Power</i> - the general power of swimming.<br/>
+<i>Swimming Scale</i> - the general wavelength.<br/>
+<img src="/repo/unity%20assets/nvjob%20boids/pic/7.png"/><br/>
+<i>Swimming Speed</i> - the general swimming speed.<br/>
+<i>Wave Body</i> - wave amplitude, XZ axis.<br/>
+<img src="/repo/unity%20assets/nvjob%20boids/pic/8.png"/><br/>
+<i>Wobble</i> - swing locally along the YZ axis.<br/>
+<img src="/repo/unity%20assets/nvjob%20boids/pic/9.png"/><br/>
+<i>Wave Y</i> - the general oscillation of the object along the Y axis.<br/>
+<i>Wave Y Speed</i> - the speed of the oscillation.<br/>
+<i>Script Control [HideInInspector]</i> - change the speed and direction of the animation through a script. This parameter is used optionally. For more details see the shark script from the "Fish Boids Danger" example.
 
 
-&#8226; <i>Top Horizon Color</i> - color of the top of the horizon. To display clouds, the transparency of this color should be maximal.<br/>
-&#8226; <i>Top Horizon Level</i> - level of the top horizon, this is the real coordinate along the y axis in world space.
-<br/><indent></indent>
-&#8226; <i>Bottom Horizon Color</i> - color of the bottom of the horizon. To hide the clouds, the transparency of this color should be minimal. As a rule, the color of the bottom of the horizon should be the same as the color of the fog.<br/>
-&#8226; <i>Bottom Horizon Level</i> - level of the bottom horizon, this is the real coordinate along the y axis in world space.
 
-<br/><indent></indent>
-
-<img src="/repo/unity%20assets/dynamic-sky/pic/5.png" />
 
 <br/>
 
