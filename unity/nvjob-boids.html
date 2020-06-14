@@ -123,11 +123,13 @@ Current version 1.1.1
 
 
 
-
-
-
-
-
+<table class="infoc"><tbody><tr><td>
+<a href="/instructions/nvjob-boids-component-settings" target="_blank">Component Settings</a>
+<a href="/instructions/nvjob-boids-shader-settings" target="_blank">Shader Settings</a>
+<a href="/instructions/nvjob-boids-performance-tuning" target="_blank">Performance Tuning</a>
+<a href="/instructions/nvjob-boids-model-creation" target="_blank">Model Creation</a>
+<a href="/reportaproblem/" target="_blank">Report a Problem</a>
+</td><td><div class="infoicon"></div></td></tr></tbody></table>
 
 
 
@@ -138,7 +140,6 @@ Current version 1.1.1
 <a href="/link/?url=https://github.com/nvjob/nvjob-boids" target="_blank">Download from GitHub</a>
 <a href="/link/?url=https://nvjob.itch.io/nvjob-simple-boids" target="_blank">Download from Itch.io</a>
 <a href="/link/?url=https://nvjob.itch.io/nvjob-simple-boids-td" target="_blank">Download Techno Demo (Itch.io)</a>
-<a href="/support" target="_blank">Report a Problem / Issue Tracker / FAQ</a>
 </td>
 <td>
 <div class="downloadicon"></div>
@@ -147,143 +148,7 @@ Current version 1.1.1
 
 
 
-
-
-
-
-<h3>Component Settings</h3>
-
-Description of component settings. There are already two prefabs in the asset, with settings for birds and fish, you can also explore examples.
-
-<br/><br/>
-
-<img src="/repo/unity%20assets/nvjob%20boids/pic/2.png" alt="#NVJOB Simple Boids (Simulation Flock). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." title="#NVJOB Simple Boids (Simulation Flock). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-
-<br/><br/>
-
-<strong>General Settings</strong><br/>
-<i>Behavioral Ch</i> - random time of changing the behavior of flocks and objects in a flock. Set the minimum and maximum value.<br/>
-<i>Debug</i> - enable flock target position display.
-<br/><br/>
-<strong>Flock Settings</strong><br/>
-<i>Flock Num</i> - the number of flocks within this script.<br/>
-<i>Fragmented Flock</i> - scatter of targets for flocks, relative to the object to which the component is attached.<br/>
-<i>Fragmented Flock Y Limit</i> - limit the scatter of targets along the Y axis. This is a multiplier (this value * fragmentedFlock.y).<br/>
-<i>Migration Frequency</i> - frequency of migration from one flock to another, from 0 to 1. The higher the value, the more often the migration.<br/>
-<i>Pos Change Frequency</i> - frequency of change position of target for flock, from 0 to 1. The larger the value, the more often the position changes.<br/>
-<i>Smooth Ch Frequency</i> - smoothing the change in position of the target for flock. This is necessary so that there is no sharp change in the direction of movement of the flock.
-<br/><br/>
-<strong>Bird Settings</strong><br/>
-<i>Bird Pref</i> - prefab object that will be in a flock.<br/>
-<i>Birds Num</i> - the number of objects in total in all flocks.<br/>
-<i>Bird Speed</i> - the speed of objects in flocks, this value is multiplied by the random speed of a particular object (from 3 to 7).<br/>
-<i>Fragmented Birds</i> - scatter of objects inside the flock.<br/>
-<i>Fragmented Birds Y Limit</i> - limit the scatter of objects within the flock along the Y axis. This is a multiplier (this value * fragmentedBirds.y).<br/>
-<i>Soaring</i> - soaring object. The lower the value, the more soaring. For sharp turns, increase the value.<br/>
-<i>Vertical Wawe</i> - swinging an object along the Y axis.<br/>
-<i>Rotation Clamp</i> - enables the restriction of rotation of the object along the X axis. Prevents a strong turn up or down. This option imposes certain costs on performance.<br/>
-<i>Rotation Clamp Value</i> - value of the rotation angle limit up and down.<br/>
-<i>Scale Random</i> - local random size of the object in the flock. Set the minimum and maximum value.
-<br/><br/>
-<strong>Danger Settings</strong><br/>
-<i>Danger</i> - enable danger detection. Also, one collider is turned on, for the hunter to detect flocks. Danger is determined by one script, for one flock. See the "Fish Boids Danger" example.<br/>
-<i>Danger Radius</i> - radius of danger detection.<br/>
-<i>Danger Speed</i> - change in the speed of objects in a flock when danger is detected. This is a multiplier (this value * birdSpeed).<br/>
-<i>Danger Soaring</i> - change in the soaring of objects when danger is detected. This is a multiplier (this value * soaring).<br/>
-<i>Danger Layer</i> - LayerMask of the object being the danger.
-
-
-<br/><br/>
-
-<h3>Shaders Settings</h3>
-The asset includes two shaders, one for birds and butterflies, the second for fish. I did not combine the shaders into one, because the animation in the shaders is not the same.
-<br/><br/>
-<strong>Important!</strong> You must set the Render Queue to more than 2500 if you are using the Forward rendering path (please read "Performance Tuning" carefully).
-
-<br/><br/>
-
-<img src="/repo/unity%20assets/nvjob%20boids/pic/3.png" alt="#NVJOB Simple Boids (Simulation Flock). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." title="#NVJOB Simple Boids (Simulation Flock). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-
-<br/><br/>
-
-<strong>Bird Flapping</strong><br/>
-<i>Flapping Speed</i> - the speed of flapping wings.<br/>
-<i>Flapping Y Power</i> - the power of flapping wings along the Y axis.<br/>
-<i>Flapping Y Offset</i> - offset of flapping wings along the Y axis.<br/>
-<img src="/repo/unity%20assets/nvjob%20boids/pic/5.png"/><br/>
-<i>Flapping X Power</i> - the power of flapping wings along the X axis.<br/>
-<i>Flapping X Offset</i> - offset of flapping wings along the X axis.<br/>
-<img src="/repo/unity%20assets/nvjob%20boids/pic/6.png"/><br/>
-<i>Flapping X Center Indent</i> - Indent in the center along the X axis.<br/>
-<img src="/repo/unity%20assets/nvjob%20boids/pic/6a.png"/><br/>
-<i>Flapping Z Power</i> - the power of flapping wings along the Z axis.<br/>
-<i>Wave Y</i> - the general oscillation of the object along the Y axis.<br/>
-<i>Wave Y Speed</i> - the speed of the oscillation.<br/>
-<i>Butterfly</i> - enable butterfly animation mode.
-
-<br/><br/>
-
-<img src="/repo/unity%20assets/nvjob%20boids/pic/4.png" alt="#NVJOB Simple Boids (Simulation Flock). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." title="#NVJOB Simple Boids (Simulation Flock). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
-
-<br/><br/>
-
-<strong>Swimming Fish</strong><br/>
-<i>Swimming Power</i> - the general power of swimming.<br/>
-<i>Swimming Scale</i> - the general wavelength.<br/>
-<img src="/repo/unity%20assets/nvjob%20boids/pic/7.png"/><br/>
-<i>Swimming Speed</i> - the general swimming speed.<br/>
-<i>Wave Body</i> - wave amplitude, XZ axis.<br/>
-<img src="/repo/unity%20assets/nvjob%20boids/pic/8.png"/><br/>
-<i>Wobble</i> - swing locally along the YZ axis.<br/>
-<img src="/repo/unity%20assets/nvjob%20boids/pic/9.png"/><br/>
-<i>Wave Y</i> - the general oscillation of the object along the Y axis.<br/>
-<i>Wave Y Speed</i> - the speed of the oscillation.<br/>
-<i>Script Control [HideInInspector]</i> - change the speed and direction of the animation through a script. This parameter is used optionally. For more details see the shark script from the "Fish Boids Danger" example.
-
-<br/><br/>
-
-<h3>Performance Tuning</h3>
-- Use no more than 500 birds and fish in the scene, this amount will almost not affect performance. A noticeable drawdown in performance starts with 2000 objects.<br/>
-- Do not use shadows for prefab objects unless necessary.<br/>
-- Use models with as few polygons as possible.<br/>
-- <strong>Important!</strong> Do not enable the "Rotation Clamp" option. This option uses eulerAngles twice. See "BirdsRotationClamp" for details.<br/>
-- <strong>Important!</strong> If you expose the Render Queue of the shader over 2500, make sure that the Render Queue for different materials for the prefabs is not the same, for example 2501 and 2502.<br/>
-<img src="/repo/unity%20assets/nvjob%20boids/pic/10.png"/><br/>
-<img src="/repo/unity%20assets/nvjob%20boids/pic/11.png"/><indent></indent>
-- <strong>Important!</strong> Enable "enable GPU Instancing" in the material settings.<br/>
-<img src="/repo/unity%20assets/nvjob%20boids/pic/12.png"/>
-
-<br/><br/>
-
-
-
-<h3>Model Creation</h3>
-
-<img src="/repo/unity%20assets/nvjob%20boids/pic/13.png"/><br/><indent></indent>
-
-Asset already includes several models (three fish models, one bird model and one butterfly model).<br/>
-In fact, you can use any model, see the example "Fish Boids Danger", the shark is animated using a shader.
-
-<br/><indent></indent>
-
-
-<h5>Creating Models in Blender</h5>
-
-<img src="/repo/unity%20assets/nvjob%20boids/pic/14.png"/><br/>
-Place the cursor in the center (Shift + S -> Cursor to Center), create a cube.<br/>
-Now this cube is the border, make sure that the size of your model does not go beyond the boundaries of this cube.<br/><indent></indent>
-
-
-<img src="/repo/unity%20assets/nvjob%20boids/pic/17.png"/><br/>
-Center the object (Shift + S -> Selection to Cursor (Offset)) and rotate the object along the axes, as shown in the image.<br/>
-Lift the model slightly.<br/><indent></indent>
-
-
-<img src="/repo/unity%20assets/nvjob%20boids/pic/18.png"/><br/>
-Apply object transform (Ctrl + A).<br/>
-Export the model to FBX with the specified parameters.
-
-
+<img src="/repo/unity%20assets/nvjob%20boids/scr/Fish%20Boids%20Danger%204.jpg" alt="#NVJOB Simple Boids (Simulation Flock). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." title="#NVJOB Simple Boids (Simulation Flock). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
 <br/><br/>
 <img src="/repo/unity%20assets/nvjob%20boids/scr/Bird%20Boids%202.jpg" alt="#NVJOB Simple Boids (Simulation Flock). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." title="#NVJOB Simple Boids (Simulation Flock). Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
 <br/><br/>
