@@ -261,62 +261,41 @@ border-top: 2px solid #999;
 margin: 30px 0px 20px 0px;
 }
 /*==========================================================================*/
-table.downloadc{
+table.downloadc, table.infoc{
 border: 0.05rem dashed #999;
 width: 100%;
 margin: 40px 0px;
 background: #e1e1e1;
 padding: 0px;
 }
-table.downloadc a{
+table.downloadc a, table.infoc a{
 border-bottom: 0.04rem dashed #b1b1b1;
 color: #565656;
 display:block;
 margin: 13px 0px;
 }
-table.downloadc a:hover{
+table.downloadc a:hover, table.infoc a:hover{
 border-bottom: 0.04rem dashed #c1c1c1;
 }
-.downloadc td{
+.downloadc td, .infoc td{
 padding: 5px 15px;
+}
+.downloadicon, .infoicon, .sponsorsicon{
+background-size: contain;
+width: 60px;
+height: 60px;
+display:table;
+float:right;
+margin-right: 7px;
 }
 .downloadicon{
 background:url(/res/images/download.png) no-repeat left;
-background-size: contain;
-width: 60px;
-height: 60px;
-display:table;
-float:right;
-margin-right: 7px;
-}
-/*==========================================================================*/
-table.infoc{
-border: 0.05rem dashed #999;
-width: 100%;
-margin: 40px 0px;
-background: #e1e1e1;
-padding: 0px;
-}
-table.infoc a{
-border-bottom: 0.04rem dashed #b1b1b1;
-color: #565656;
-display:block;
-margin: 13px 0px;
-}
-table.infoc a:hover{
-border-bottom: 0.04rem dashed #c1c1c1;
-}
-.infoc td{
-padding: 5px 15px;
 }
 .infoicon{
 background:url(/res/images/info.png) no-repeat left;
-background-size: contain;
-width: 60px;
-height: 60px;
-display:table;
-float:right;
-margin-right: 7px;
+}
+.sponsorsicon{
+background:url(/res/images/donate.png) no-repeat left;
 }
 /*==========================================================================*/
 .inlineblock{
