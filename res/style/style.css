@@ -280,18 +280,13 @@ border-bottom: 0.04rem dashed #c1c1c1;
 .downloadc td, .infoc td, .sponsorsc td{
 padding: 5px 15px;
 }
-
-
 table.sponsorsc p{
 display:block;
 margin: 13px 0px;
 }
 table.sponsorsc p a{
 display:inline;
-border-bottom: 0.04rem dotted #b1b1b1;
 }
-
-
 .downloadicon, .infoicon, .sponsorsicon{
 width: 60px;
 height: 60px;
