@@ -545,7 +545,7 @@ border-bottom: 7px solid #D5D5D5;
 font-size: 0.75rem;
 line-height: 1.4;
 }
-table.downloadc{
+table.downloadc, table.infoc, table.sponsorsc{
 border: 0px;
 border-top: 7px solid #D5D5D5;
 border-bottom: 7px solid #D5D5D5;
@@ -554,25 +554,10 @@ margin: 40px 0px;
 background: #f5f5f5;
 padding: 0px;
 }
-table.downloadc a{
+table.downloadc a, table.infoc a, table.sponsorsc a{
 margin: 13px 0px;
 }
-.downloadc td{
-padding: 5px 0px;
-}
-table.infoc{
-border: 0px;
-border-top: 7px solid #D5D5D5;
-border-bottom: 7px solid #D5D5D5;
-width: 100%;
-margin: 40px 0px;
-background: #f5f5f5;
-padding: 0px;
-}
-table.infoc a{
-margin: 13px 0px;
-}
-.infoc td{
+.downloadc td, .infoc td, .sponsorsc td{
 padding: 5px 0px;
 }
 .contentall img.patreon_logo{
