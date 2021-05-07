@@ -280,32 +280,24 @@ border-bottom: 0.04rem dashed #c1c1c1;
 .downloadc td, .infoc td{
 padding: 5px 15px;
 }
-.downloadicon{
-background:url(/res/images/download.png) no-repeat left;
-background-size: contain;
+.downloadicon, .infoicon, .sponsorsicon{
 width: 60px;
 height: 60px;
 display:table;
 float:right;
 margin-right: 7px;
+}
+.downloadicon{
+background:url(/res/images/download.png) no-repeat left;
+background-size: contain;
 }
 .infoicon{
 background:url(/res/images/info.png) no-repeat left;
 background-size: contain;
-width: 60px;
-height: 60px;
-display:table;
-float:right;
-margin-right: 7px;
 }
 .sponsorsicon{
 background:url(/res/images/donate.png) no-repeat left;
 background-size: contain;
-width: 60px;
-height: 60px;
-display:table;
-float:right;
-margin-right: 7px;
 }
 /*==========================================================================*/
 .inlineblock{
