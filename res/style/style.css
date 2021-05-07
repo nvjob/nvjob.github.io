@@ -277,7 +277,7 @@ margin: 13px 0px;
 table.downloadc a:hover, table.infoc a:hover, table.sponsorsc a:hover{
 border-bottom: 0.04rem dashed #c1c1c1;
 }
-.downloadc td, .infoc td{
+.downloadc td, .infoc td, .sponsorsc td{
 padding: 5px 15px;
 }
 .downloadicon, .infoicon, .sponsorsicon{
