@@ -288,6 +288,7 @@ margin: 13px 0px;
 }
 table.sponsorsc p a{
 display:inline;
+border-bottom: 0.04rem dotted #b1b1b1;
 }
 
 
