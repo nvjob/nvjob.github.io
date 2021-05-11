@@ -102,10 +102,10 @@ gtag('config', 'UA-151102873-1');
 <img src="/repo-a/unity/water-shaders-2/i17.jpg" alt="#NVJOB Water Shaders V2.x. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." title="#NVJOB Water Shaders V2.x. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
 <br/><indent></indent>
 
-&#8226; <i>Normal Map 1</i> - basic normal map texture 1 for water. Used in parallax.<br/>
+&#8226; <i>Normal Map 1</i> - basic normal map texture 1 for water.<br/>
 &#8226; <i>Normal Map 1 Strength</i> -  intensity of normal map texture 1.<br/>
 &#8226; <i>Normal Map 2 Enable</i> - enable mormal map texture 2, disabled by default. Normal map 2 mixes with normal map 1.<br/>
-&#8226; <i>Normal Map 2</i> - secondary normal map for water. Used in parallax.<br/>
+&#8226; <i>Normal Map 2</i> - secondary normal map for water.<br/>
 &#8226; <i>Normal Map 2 Tiling</i> - normal map 2 tiling relative to normal map 1.<br/>
 &#8226; <i>Normal Map 2 Strength</i> - intensity of normal map texture 2.<br/>
 &#8226; <i>Normal Map 2 Flow</i> - motion of normal map 2 relative to motion of normal map 1.<br/>
@@ -122,12 +122,15 @@ gtag('config', 'UA-151102873-1');
 <img src="/repo-a/unity/water-shaders-2/i18.jpg" alt="#NVJOB Water Shaders V2.x. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." title="#NVJOB Water Shaders V2.x. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
 <br/><indent></indent>
 
-&#8226; <i>Parallax Map Enable</i> - enable parallax map, disabled by default.<br/>
-&#8226; <i>Parallax Map</i> - parallax map texture 1 for water.<br/>
-&#8226; <i>Parallax Map Tiling</i> - parallax map tiling relative to normal map 1.<br/>
+&#8226; <i>Parallax Enable</i> - enable parallax, disabled by default.<br/>
 &#8226; <i>Parallax Amount</i> - amount of parallax.<br/>
+&#8226; <i>Parallax Flow</i> - parallax flow rate.<br/>
 &#8226; <i>Parallax Normal Map 2 Offset</i> - degree of parallax offset for normal map 2.<br/>
-&#8226; <i>Parallax Flow</i> - parallax flow rate.
+&#8226; <i>Parallax Noise Gain</i> - rigidity of parallax waves.<br/>
+&#8226; <i>Parallax Noise Amplitude</i> - height of parallax waves.<br/>
+&#8226; <i>Parallax Noise Frequency</i> - frequency of parallax waves.<br/>
+&#8226; <i>Parallax Noise Scale</i> - size of parallax waves.<br/>
+&#8226; <i>Parallax Noise Lacunarity</i> - lacunarity of parallax waves (gives the difference between waves).
 
 
 <br/><br/>
@@ -144,6 +147,48 @@ gtag('config', 'UA-151102873-1');
 &#8226; <i>Reflection Strength</i> - intensity of reflections.<br/>
 &#8226; <i>Reflection Saturation</i> - saturation of reflection.<br/>
 &#8226; <i>Reflection Contrast</i> - contrast of reflection.
+
+
+<br/><br/>
+
+
+<strong>Mirror Reflection Settings</strong>
+<br/><indent></indent>
+<img src="/repo-a/unity/water-shaders-2/i20.jpg" alt="#NVJOB Water Shaders V2.x. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." title="#NVJOB Water Shaders V2.x. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
+<br/><indent></indent>
+
+&#8226; <i>Mirror Reflection Enable</i> - enable real-time mirroring, disabled by default.<br/>
+&#8226; <i>Mirror Reflection Color</i> - sets the hue to reflections.<br/>
+&#8226; <i>Mirror Reflection Depth Color</i> - sets the shade of the depth reflections.<br/>
+&#8226; <i>Reflection Strength</i> - strength of reflections.<br/>
+&#8226; <i>Reflection Saturation</i> - reflection color saturation.<br/>
+&#8226; <i>Reflection Contrast</i> - reflection contrast.<br/>
+&#8226; <i>Mirror FPOW</i> - fresnel effect strength.<br/>
+&#8226; <i>Mirror R0</i> - fresnel r0.<br/>
+&#8226; <i>Reflections Wave Strength</i> - pseudo-wave power on reflections.<br/>
+&#8226; <i>Reflections Wave Scale</i> - size of pseudo-wave on reflections.<br/>
+&#8226; <i>Reflections Wave Flow</i> - speed of pseudo-wave on reflections.
+
+
+<br/><br/>
+
+
+<strong>Foam Settings</strong>
+<br/><indent></indent>
+<img src="/repo-a/unity/water-shaders-2/i21.jpg" alt="#NVJOB Water Shaders V2.x. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург." title="#NVJOB Water Shaders V2.x. Free Unity Asset. #NVJOB Nicholas Veselov Unity Developer. Николай Веселов Unity Разработчик Санкт-Петербург."/>
+<br/><indent></indent>
+
+&#8226; <i>Foam Enable</i> - enable foam on the water near the shore, disabled by default.<br/>
+&#8226; <i>Foam Color</i> - foam color on water.<br/>
+&#8226; <i>Foam Flow</i> - foam speed on water.<br/>
+&#8226; <i>Foam Gain</i> - foam hardness on water.<br/>
+&#8226; <i>Foam Amplitude</i> - amount of foam on the water.<br/>
+&#8226; <i>Foam Frequency</i> - water foam frequency.<br/>
+&#8226; <i>Foam Scale</i> - foam size on water.<br/>
+&#8226; <i>Foam Lacunarity</i> - lacunarity foam on water.<br/>
+&#8226; <i>Foam Soft</i> - location of foam on water relative to the shore (x - beginning, y - end, z - dissolution).
+
+
 
 
 <br/>
