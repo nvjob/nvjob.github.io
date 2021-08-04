@@ -242,8 +242,8 @@ display: none;
 #overlayZZ{
 width:102%;
 height:102%;
-left:1%;
-top:1%;
+left:0;
+top:0;
 position:fixed;
 z-index:99999;
 overflow:hidden;
@@ -259,4 +259,3 @@ left: -100px;
 top:  -100px;
 color: #999999;
 }
-
