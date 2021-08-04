@@ -242,8 +242,8 @@ display: none;
 #overlayZZ{
 width:102%;
 height:102%;
-left:0;
-top:0;
+left:-1%;
+top:-1%;
 position:fixed;
 z-index:99999;
 overflow:hidden;
