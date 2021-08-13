@@ -136,7 +136,7 @@ SimplePool.Takeobj(GameObject)-> GameObject - is an object that to be returned t
 
 <br/>
 
-<h3>Example script:</h3>
+<h3>Example script (Getting an object from a pool):</h3>
 <code class="prettyprint">using UnityEngine;
 
 public class Example : MonoBehaviour
@@ -145,22 +145,32 @@ public class Example : MonoBehaviour
 
     void Start()
     {
-        if(SimplePool.numObjectsList == 0) obj = SimplePool.GiveObj(0);
-        else obj = SimplePool.GiveObj(Random.Range(0, SimplePool.numObjectsList));
+        obj = SimplePool.GiveObj(0);
         if (obj != null)
         {
-            obj.transform.SetPositionAndRotation(transform.position, transform.rotation);
+            obj.transform.SetPositionAndRotation(transform.position, transform.rotation); // Move the object to the desired position, etc.
             obj.transform.parent = transform;
-            obj.SetActive(true);
-            Invoke("DestroyObject", 5);
+            obj.SetActive(true); // After all the transformations of the object, activate it.
         }
     }
+}</code>
 
-    void DestroyObject()
+
+<br/>
+
+
+<h3>Example script (Return object to the pool):</h3>
+<code class="prettyprint">using UnityEngine;
+
+public class Example : MonoBehaviour
+{
+    void Start()
     {
-        SimplePool.Takeobj(obj);
+        SimplePool.Takeobj(obj); // obj - is an object that to be returned to the pool.
     }
 }</code>
+
+
 
 <br/>
 
