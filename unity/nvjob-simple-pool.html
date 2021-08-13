@@ -146,10 +146,10 @@ public class Example : MonoBehaviour
     void Start()
     {
         obj = SimplePool.GiveObj(0); // 0 - number of the Element in editor (SimplePool).
-        if (obj != null)
+        if (obj != null) // Checking that the pool is not empty.
         {
             obj.transform.SetPositionAndRotation(transform.position, transform.rotation); // Move the object to the desired position, etc.
-            obj.transform.parent = transform;
+            obj.transform.parent = transform; // Changing the parent. Optionally. You can leave the pool as the parent of the object.
             obj.SetActive(true); // After all the transformations of the object, activate it.
         }
     }
