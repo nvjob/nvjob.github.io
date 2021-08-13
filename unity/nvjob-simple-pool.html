@@ -145,7 +145,7 @@ public class Example : MonoBehaviour
 
     void Start()
     {
-        obj = SimplePool.GiveObj(0);
+        obj = SimplePool.GiveObj(0); // 0 - number of the Element in editor (SimplePool).
         if (obj != null)
         {
             obj.transform.SetPositionAndRotation(transform.position, transform.rotation); // Move the object to the desired position, etc.
