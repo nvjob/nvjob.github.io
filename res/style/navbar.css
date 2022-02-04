@@ -608,12 +608,12 @@ bottom: initial !important;
 
 .topnavmenu .navbar {
 padding: .5rem 0;
-background: #777777;
+background: #3E3F45;
 transition: none;
 min-height: 77px;
 }
 .topnavmenu .navbar-dropdown.bg-color.transparent.opened {
-background: #777777;
+background: #3E3F45;
 }
 .topnavmenu a {
 font-style: normal;
@@ -697,7 +697,7 @@ padding-left: 0;
 padding-bottom: 0;
 }
 .topnavmenu .dropdown .dropdown-menu {
-background: #777777;
+background: #3E3F45;
 display: none;
 position: absolute;
 min-width: 5rem;
