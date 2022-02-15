@@ -1012,6 +1012,13 @@ this.paused ? this.play() : this.pause();
 return false;
 });
 
+
+$('video').on('ended', function () {
+this.load();
+this.play();
+});
+
+
 })(jQuery);
 
 
